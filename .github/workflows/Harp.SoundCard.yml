@@ -261,8 +261,8 @@ jobs:
   workflow-images:
     name: Render workflow images
     runs-on: windows-latest
-    needs: build
-    if: needs.build.outputs.need-workflow-image-render == 'true'
+    needs: build-interface
+    if: needs.build-interface.outputs.need-workflow-image-render == 'true'
     steps:
       # ----------------------------------------------------------------------- Checkout
       - name: Checkout
