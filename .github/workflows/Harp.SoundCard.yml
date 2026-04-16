@@ -153,7 +153,7 @@ jobs:
 
       # ----------------------------------------------------------------------- Regenerate
       - name: Run generators
-        run: dotnet harp.toolkit generate interface -o software/${{github.workflow}}
+        run: dotnet harp.toolkit generate interface -o Interface/${{github.workflow}}
 
       - name: Verify pre-generated code was up-to-date
         id: verify-dist
