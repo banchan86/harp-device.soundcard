@@ -8,6 +8,13 @@
         "docfx"
       ],
       "rollForward": false
+    },
+    "harp.toolkit": {
+      "version": "0.2.2",
+      "commands": [
+        "harp.toolkit"
+      ],
+      "rollForward": false
     }
   }
 }
