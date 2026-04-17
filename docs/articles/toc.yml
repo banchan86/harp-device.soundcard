@@ -8,3 +8,12 @@
 - name: Configuration
 - name: Generate and upload waveforms
   href: upload-waveform-gui.md
+- name: Controlling the Soundcard with Bonsai
+  href: bonsai-harp.md
+- name: Sound Playback
+- name: Play sounds
+  href: play-sound.md
+- name: Adjust volume
+  href: adjust-volume.md
+- name: Trigger sound playback
+  href: trigger-sound.md
