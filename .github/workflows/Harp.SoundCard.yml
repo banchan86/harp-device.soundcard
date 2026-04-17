@@ -132,6 +132,8 @@ jobs:
             collect-packages: true
     name: Build Interface (${{ matrix.platform.name }} ${{ matrix.configuration }})
     runs-on: ${{ matrix.platform.os }}
+    outputs:
+      need-workflow-image-render: ${{steps.configure-build.outputs.need-workflow-image-render}}
     steps:
       # ----------------------------------------------------------------------- Checkout
       - name: Checkout
