@@ -18,6 +18,18 @@ Set up the standard Harp [device pattern](../articles/operators.md#device-patter
    - Name the generated [``BehaviourSubject`1``] [source subject](https://bonsai-rx.org/docs/articles/subjects.html#source-subjects) `SoundCard Commands`. 
    - Connect it as input to the [`Device`] operator.
 
+## Testing the device in Bonsai
+
+:::workflow
+![SoundCard Hello World](../workflows/soundcard-helloworld.bonsai)
+:::
+
+- Hover over the workflow cell above, click the "Copy" icon in the top right, and paste the workflow into Bonsai.
+- Set the `PortName` property of the [`SoundCard`](xref:Harp.SoundCard.Device) operator to the communications port of the `SoundCard` (e.g. COM7).
+- Run the workflow. If the `SoundCard` is properly connected, you should hear a short tone.
+
+[!INCLUDE [](version-footer.md)]
+
 <!--Reference Style Links -->
 [`AttenuationAndPlaySoundOrFreq`]: xref:Harp.SoundCard.AttenuationAndPlaySoundOrFreq
 [`AttenuationAndPlaySoundOrFreqPayload`]: xref:Harp.SoundCard.CreateAttenuationAndPlaySoundOrFreqPayload

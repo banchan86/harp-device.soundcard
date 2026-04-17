@@ -10,12 +10,4 @@
 
 ## Testing the device
 
-:::workflow
-![SoundCard Hello World](../workflows/soundcard-helloworld.bonsai)
-:::
-
-- Hover over the workflow cell above, click the "Copy" icon in the top right, and paste the workflow into Bonsai.
-- Set the `PortName` property of the [`SoundCard`](xref:Harp.SoundCard.Device) operator to the communications port of the `SoundCard` (e.g. COM7).
-- Run the workflow. If the `SoundCard` is properly connected, you should hear a short tone.
-
-[!INCLUDE [](version-footer.md)]
+Placeholder for testing with the SoundCard GUI.

@@ -81,7 +81,7 @@ Run the workflow and press the <kbd>A</kbd> key to upload the waveform. Test it 
 Waveforms can be loaded from uncompressed WAV files, but will require bit depth conversion and scaling.
 
 :::workflow
-![Upload Waveform WAV File](../workflows/soundcard-uploadwaveform-wavfile.bonsai)
+![Upload Waveform WAV File](../workflows/uploadwaveform-wavfile.bonsai)
 :::
 
 - Insert a [`KeyDown`] source and set the `Filter` property to `A`.

@@ -1,19 +1,26 @@
 - name: Introduction
+- name: Overview
   href: ../index.md
+- name: Accessories and peripherals
+  href: accessories.md
 - name: Getting Started
 - name: Installation
   href: installation.md
-- name: Connections
+- name: Connecting and testing the device
   href: connections.md
-- name: Configuration
 - name: Generate and upload waveforms
   href: upload-waveform-gui.md
-- name: Controlling the Soundcard with Bonsai
+- name: Device Control
+- name: Using the Soundcard in Bonsai
   href: bonsai-harp.md
-- name: Sound Playback
 - name: Play sounds
   href: play-sound.md
 - name: Adjust volume
   href: adjust-volume.md
 - name: Trigger sound playback
   href: trigger-sound.md
+- name: Data Acquisition and Visualization
+- name: Saving data
+  href: save-data.md
+- name: Visualizing data
+  href: visualize-data.md
