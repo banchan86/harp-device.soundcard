@@ -5,3 +5,6 @@
   href: installation.md
 - name: Connections
   href: connections.md
+- name: Configuration
+- name: Generate and upload waveforms
+  href: upload-waveform-gui.md

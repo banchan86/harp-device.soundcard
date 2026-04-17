@@ -1,4 +1,4 @@
-# Connections
+## Connections
 
 ![Harp SoundCard Connections](../images/connection.jpg){width=450}
 
