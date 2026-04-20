@@ -1,8 +1,8 @@
 - name: Introduction
 - name: Overview
   href: ../index.md
-- name: Accessories and peripherals
-  href: accessories.md
+- name: Peripherals
+  href: audio-amp.md
 - name: Getting Started
 - name: Installation
   href: installation.md
