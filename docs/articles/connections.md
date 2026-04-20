@@ -1,17 +1,33 @@
-## SoundCard Device Pinout
+## Connections
+
 ![Harp SoundCard Device Pinout](../images/soundcard-devicepinout.svg){width=600}
 
-* 1x reset button [tactile switch]
-* 3x general purpose digital outputs (3.3V or 5V) (OUT0-OUT2) [screw terminal]
-* 3x general purpose digital inputs (5V tolerant) (IN0-IN2) [screw terminal]
-* 2x analog inputs (3.3V máx - 5V tolerant) (ADC0-ADC1) [screw terminal]
+**Power** - The device requires a 12 V power supply.
 
-## Wiring Diagram for Speaker and Amplifier
+**Soundbank** - This port connects to the device's onboard sound memory bank for uploading of waveforms for sound playback. To use this functionality, install the [WinUSB drivers](./installation.md). Once the sounds have been uploaded, this cable can be disconnected, as it is not required for playing of sounds. Waveform upload can be accomplished with either the [SoundCard GUI](./upload-waveform-gui.md) or [Bonsai](../tutorials/upload-waveform-bonsai.md). 
+
+**Computer** - This port connects to the device's internal controller to control sound playback with [Bonsai](./bonsai-harp.md).
+
+**Harp Clock Input** - The device is compatible with the [Harp](https://harp-tech.org/articles/about.html) family of devices, which can self-synchronize their internal clocks to a precision of +/- 64 us. To use this functionality, connect an output from a [Harp Timestamp Generator](https://github.com/harp-tech/device.timestampgeneratorgen3).
+
+**GPIO** - The general purpose input/output (GPIO) pins can be used to communicate with external devices to trigger sound playback, control volume, etc. The follow pins are provided:
+
+* 3x general purpose digital outputs (3.3V or 5V) (OUT0-OUT2)
+* 3x general purpose digital inputs (5V tolerant) (IN0-IN2)
+* 2x analog inputs (3.3V máx - 5V tolerant) (ADC0-ADC1)
+
+For more information on how to use them, refer to the [GPIO](trigger-sound.md) article.
+
+**Audio Channels** - The `SoundCard` provides stereo channel outputs that have to be connected with external amplifiers via RCA cables.
+
+## Wiring diagram for sound playback
+
+To play sounds, the `SoundCard` needs to be connected to external amplifiers and speakers. The wiring diagram below shows the connection for a single mono channel:
 
 ![Harp SoundCard Connections](../images/connection.jpg){width=450}
 
-*<small>Single channel connection diagram with Harp Audio Amplifier and attached speaker. Reproduced from [Silva et al. (2024)](https://doi.org/10.1016/j.ohx.2024.e00555). CC BY 4.0.</small>*
+*<small>Reproduced from [Silva et al. (2024)](https://doi.org/10.1016/j.ohx.2024.e00555). CC BY 4.0.</small>*
 
-**Amplifier** - The `SoundCard` requires an external amplifier. For high-fidelity applications, consider using the [Harp Audio Amplifier](https://github.com/harp-tech/peripheral.audioamp).
+**Amplifier** - Any external amplifier is supported. For high-fidelity applications, consider using the [Harp Audio Amplifier](./audio-amp.md). 
 
-**Speaker** - The choice of speaker depends on the amplifier. For the `Harp Audio Amplifier`, any speaker with an impedance from 4 to 8 ohms can be used. The XT25SC90-04 (Peerless by Tymphany) has been tested and has a good frequency response up to 80 kHz.
+**Speaker** - The choice of speaker depends on the amplifier. For the `Harp Audio Amplifier`, any speaker with an impedance from 4 to 8 ohms can be used. The XT25SC90-04 (Peerless by Tymphany) has been tested and offers a good frequency response up to 80 kHz.

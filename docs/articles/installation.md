@@ -8,6 +8,7 @@
    - Select the "WinUSB" driver and click "Install Driver".
 
 ### Bonsai
+
 - Install [Bonsai](https://bonsai-rx.org/docs/articles/installation.html).
 - Install the `Harp.SoundCard` package by searching for it in the [Bonsai package manager](https://bonsai-rx.org/docs/articles/packages.html).
 
