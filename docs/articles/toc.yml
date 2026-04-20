@@ -4,10 +4,10 @@
 - name: Peripherals
   href: audio-amp.md
 - name: Getting Started
+- name: Connections
+  href: connections.md
 - name: Installation
   href: installation.md
-- name: Connecting and testing the device
-  href: connections.md
 - name: Generate and upload waveforms
   href: upload-waveform-gui.md
 - name: Device Control
