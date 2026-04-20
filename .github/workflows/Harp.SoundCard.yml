@@ -76,36 +76,6 @@ jobs:
           if-no-files-found: error
           path: Interface/bin/${{matrix.configuration}}/**
 
-  publish-packages-nuget-org:
-    name: Publish packages to NuGet.org
-    runs-on: ubuntu-latest
-    permissions:
-      # Needed to attach files to releases
-      contents: write
-    environment: public-release
-    needs: build
-    if: github.event_name == 'release'
-    steps:
-      # ----------------------------------------------------------------------- Set up .NET
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 8.x
-
-      # ----------------------------------------------------------------------- Download built packages
-      - name: Download built packages
-        uses: actions/download-artifact@v4
-        with:
-          name: Packages
-          path: artifacts/packages/
-
-      # ----------------------------------------------------------------------- Push to NuGet.org
-      - name: Push to NuGet.org
-        run: dotnet nuget push "artifacts/packages/*.nupkg" --api-key ${{secrets.NUGET_API_KEY}} --source ${{vars.NUGET_API_URL}}
-        env:
-          # This is a workaround for https://github.com/NuGet/Home/issues/9775
-          DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER: 0
-
   # =====================================================================================================================================================================
   # Build interface
   #  ___      _ _    _   _     _            __             
