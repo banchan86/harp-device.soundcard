@@ -1,13 +1,21 @@
 ## Installation
 
-### WinUSB
-- Install the WinUSB driver if you plan to upload sounds to the onboard memory:
-   - Download and launch [Zadig](https://zadig.akeo.ie/).
-   - Connect the USB Micro-B cable to the computer.
-   - Select the "Harp Sound Card" from the list. If the device is not available, go to "Options" > "List All Devices".
-   - Select the "WinUSB" driver and click "Install Driver".
+These steps are only required the first time you connect the Harp SoundCard to a new computer and if you plan to use the specific functionality.
+
+### WinUSB 
+
+Install the WinUSB driver if you plan to upload sounds to the onboard memory:
+
+[]
+
+- Download and launch [Zadig](https://zadig.akeo.ie/).
+- Connect the USB Micro-B cable to the computer.
+- Select the "Harp Sound Card" from the list. If the device is not available, go to "Options" > "List All Devices".
+- Select the "WinUSB" driver and click "Install Driver".
 
 ### Bonsai
+
+Install Bonsai to control the SoundCard with 
 
 - Install [Bonsai](https://bonsai-rx.org/docs/articles/installation.html).
 - Install the `Harp.SoundCard` package by searching for it in the [Bonsai package manager](https://bonsai-rx.org/docs/articles/packages.html).

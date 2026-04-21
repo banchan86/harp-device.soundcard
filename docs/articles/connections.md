@@ -4,7 +4,7 @@
 
 **Power** - The device requires a 12 V power supply.
 
-**Soundbank** - This port connects to the device's onboard sound memory bank for uploading of waveforms for sound playback. To use this functionality, install the [WinUSB drivers](./installation.md). Once the sounds have been uploaded, this cable can be disconnected, as it is not required for playing of sounds. Waveform upload can be accomplished with either the [SoundCard GUI](./upload-waveform-gui.md) or [Bonsai](../tutorials/upload-waveform-bonsai.md). 
+**Soundbank** - This port connects to the device's onboard sound memory bank for uploading of waveforms for sound playback. To use this functionality, install the [WinUSB drivers](./installation.md). Once the sounds have been uploaded, this cable can be disconnected, as it is not required for playing of sounds. 
 
 **Computer** - This port connects to the device's internal controller to control sound playback with [Bonsai](./bonsai-harp.md).
 
@@ -18,16 +18,16 @@
 
 For more information on how to use them, refer to the [GPIO](trigger-sound.md) article.
 
-**Audio Channels** - The `SoundCard` provides stereo channel outputs that have to be connected with external amplifiers via RCA cables.
+**Audio Channels** - The `SoundCard` provides stereo channel outputs that connect with external amplifiers via RCA cables.
 
-## Wiring diagram for sound playback
+## Audio Setup
 
-To play sounds, the `SoundCard` needs to be connected to external amplifiers and speakers. The wiring diagram below shows the connection for a single mono channel:
+To play sounds, the `SoundCard` must be connected to external amplifiers and speakers. The wiring diagram below shows how to connect the `SoundCard` for mono channel playback on a single speaker:
 
 ![Harp SoundCard Connections](../images/connection.jpg){width=450}
 
 *<small>Reproduced from [Silva et al. (2024)](https://doi.org/10.1016/j.ohx.2024.e00555). CC BY 4.0.</small>*
 
-**Amplifier** - Any external amplifier is supported. For high-fidelity applications, consider using the [Harp Audio Amplifier](./audio-amp.md). 
+**Amplifier** - Any external amplifier that accepts line-level RCA inputs is supported. For high-fidelity applications, consider using the [Harp Audio Amplifier](./audio-amp.md) (pictured above).
 
-**Speaker** - The choice of speaker depends on the amplifier. For the `Harp Audio Amplifier`, any speaker with an impedance from 4 to 8 ohms can be used. The XT25SC90-04 (Peerless by Tymphany) has been tested and offers a good frequency response up to 80 kHz.
+**Speaker** - The choice of speaker depends on the amplifier's rated impedance and power. For the `Harp Audio Amplifier`, any speaker with an impedance from 4 to 8 ohms can be used. The XT25SC90-04 (Peerless by Tymphany) has been tested and offers a good frequency response up to 80 kHz.
