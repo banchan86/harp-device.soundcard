@@ -15,7 +15,7 @@ Install the WinUSB driver if you plan to upload sounds to the onboard memory:
 
 ### Bonsai
 
-Install Bonsai to control the SoundCard with 
+Install Bonsai to control the SoundCard:
 
 - Install [Bonsai](https://bonsai-rx.org/docs/articles/installation.html).
 - Install the `Harp.SoundCard` package by searching for it in the [Bonsai package manager](https://bonsai-rx.org/docs/articles/packages.html).
