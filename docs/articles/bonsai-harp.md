@@ -1,3 +1,23 @@
+## Harp Communication Protocol
+
+[Harp devices](https://harp-tech.org/articles/about.html) are controlled by a host PC using the [Harp Protocol](https://harp-tech.org/protocol/BinaryProtocol-8bit.html). Communication is structured as [`HarpMessages`](https://harp-tech.org/api/Bonsai.Harp.HarpMessage.html), which are linked to `Registers` on the device. `Registers` are addresses for specific functions on the device (such as the command to play a sound). They will also carry a message `Payload` (such as the index of the sound to play from the sound bank).
+
+```mermaid
+sequenceDiagram
+    participant C as PC
+    participant D as SoundCard
+
+    Note over C,D: HarpMessages with Payloads
+
+    C->>D: Command (read or write a register)
+    D->>C: Reply (echoes command execution + hardware timestamp)
+    D->>C: Event (errors or signals + hardware timestamp)
+```
+
+After the host PC sends the command, the device will send a reply back with the register that was executed as well as the hardware timestamps. 
+
+In addition, the device can send event messages without a command from the host PC. These include events such as error messages, or signals from analog/digital inputs. 
+
 ## Intro to Bonsai
 
 Placeholder for short guide to Bonsai.
