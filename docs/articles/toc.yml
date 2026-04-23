@@ -11,8 +11,8 @@
 - name: Generate and upload waveforms
   href: upload-waveform-gui.md
 - name: Device Control
-- name: Using the Soundcard in Bonsai
-  href: bonsai-harp.md
+- name: Harp Bonsai Interface
+  href: harp-bonsai.md
 - name: Play sounds
   href: play-sound.md
 - name: Adjust volume

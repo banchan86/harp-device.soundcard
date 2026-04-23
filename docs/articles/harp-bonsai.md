@@ -18,11 +18,31 @@ After the host PC sends the command, the device will send a reply back with the 
 
 In addition, the device can send event messages without a command from the host PC. These include events such as error messages, or signals from analog/digital inputs. 
 
-## Intro to Bonsai
+## Harp Bonsai Interface
 
-Placeholder for short guide to Bonsai.
+While there are several ways of controlling the `SoundCard`, [Bonsai](https://bonsai-rx.org/) offers the most flexible and complete control of the SoundCard as it exposes every register available on the device. It also integrates well with hundreds of open source and closed source hardware and software that are used in the neuroscience community.
 
-## Device pattern
+For users unfamiliar with Bonsai, it is a visual programming language, where functions are represented by operators/nodes. Operators connect together to form data processing pipelines that are embedded in scripts called workflows. For instance, a simple example of the Harp communication protocol above, as represented in Bonsai, will look like this:
+
+:::workflow
+![Harp Generic Basic Example](../workflows/harp-generic-basic-example.bonsai)
+:::
+
+- `KeyDown` - This is an example of a [Source](https://bonsai-rx.org/docs/articles/operators.html?tabs=quantitative-operators%2Cmulti-sample-operators#source) operator, which produces a stream of elements or data. In Bonsai, there are many types of sources, such as timers or analog or digital signals. In this instance, we can use keyboard keys to trigger the creation of a `HarpMessage` in the next node.
+
+- `CreateMessage` - This is another [Source](https://bonsai-rx.org/docs/articles/operators.html?tabs=quantitative-operators%2Cmulti-sample-operators#source) operator, which in this case creates a `HarpMessage` to send to the device in the next connected node. In a `CreateMessage` operator, you would select the `Register` as well as the `Payload` values to send.
+
+- `Device` - This operator is used to initialize and communicate with the device, in this case receiving commands to send as well as issuing replies and events, which can be read in the next node.
+
+- `Parse` - This operator is used to filter and read the `HarpMessages`. Similar to the `CreateMessage` operator, you would select the `Register` to filter the messages to listen to.
+
+If you have installed the Bonsai `Harp.SoundCard` package, once you have selected the `Register` and `Payload`, the same operators will morph to reflect the `Register` and `Payload` that is selected.
+
+:::workflow
+![Harp Generic Basic Example](../workflows/harp-soundcard-basic-example.bonsai)
+:::
+
+## Harp Device Pattern
 
 Set up the standard Harp [device pattern](../articles/operators.md#device-pattern) to initialize the device, log data, broadcast events, and send commands to the `SoundCard`.
 
@@ -38,7 +58,7 @@ Set up the standard Harp [device pattern](../articles/operators.md#device-patter
    - Name the generated [``BehaviourSubject`1``] [source subject](https://bonsai-rx.org/docs/articles/subjects.html#source-subjects) `SoundCard Commands`. 
    - Connect it as input to the [`Device`] operator.
 
-## Testing the device in Bonsai
+## Harp Bonsai Test
 
 :::workflow
 ![SoundCard Hello World](../workflows/soundcard-helloworld.bonsai)
