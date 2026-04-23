@@ -19,6 +19,7 @@ Install Bonsai to control the SoundCard:
 
 - Install [Bonsai](https://bonsai-rx.org/docs/articles/installation.html).
 - Install the `Harp.SoundCard` package by searching for it in the [Bonsai package manager](https://bonsai-rx.org/docs/articles/packages.html).
+- Install the `Bonsai.Windows.Input` package from the Bonsai [package manager](https://bonsai-rx.org/docs/articles/packages.html) to follow along with the examples in the documentation.
 
 ### SoundCard GUI
 Waveforms can be generated and uploaded to the `SoundCard` in Bonsai. Optionally, you can use the [Harp SoundCard GUI](https://bitbucket.org/fchampalimaud/downloads/downloads/Harp_Sound_Card_v1.3.2.zip) as a standalone interface for waveform management. This requires the [LabVIEW runtime](https://bitbucket.org/fchampalimaud/downloads/downloads/Runtime-1.0.zip) to be installed first.

@@ -5,10 +5,6 @@ The [Harp SoundCard](https://github.com/harp-tech/device.soundcard) supports pla
 > [!WARNING]
 > When adding these operators to the workflow, make sure to use the device-specific versions, e.g. `Device (Harp.SoundCard)` instead of `Device (Harp)`. If correctly selected, the names of these operators in the workflow panel will change to reflect either the name of the device or the selected register/payload.
 
-## Prerequisites
-
-- Install the `Bonsai.Windows.Input` package from the Bonsai [package manager](https://bonsai-rx.org/docs/articles/packages.html).
-
 ## Play sound index
 
 Sounds can be played from the `SoundCard` onboard memory by using the [`PlaySoundOrFrequency`] register.
