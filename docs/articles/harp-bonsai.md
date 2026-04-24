@@ -22,7 +22,7 @@ In addition, the device can send event messages without a command from the host 
 
 While there are several ways of controlling the `SoundCard`, [Bonsai](https://bonsai-rx.org/) offers the most flexible and complete control of the SoundCard as it exposes every register available on the device. It also integrates well with hundreds of open source and closed source hardware and software that are used in the neuroscience community.
 
-For users unfamiliar with Bonsai, it is a visual programming language, where functions are represented by operators/nodes. Operators connect together to form data processing pipelines that are embedded in scripts called workflows. For instance, a simple example of the Harp communication protocol above, as represented in Bonsai, will look like this:
+Bonsai is a visual programming language, where functions are represented by operators/nodes. Operators connect together to form data processing pipelines that are embedded in scripts called workflows. For instance, a generic example of the Harp communication protocol above, as represented in Bonsai, will look like this:
 
 :::workflow
 ![Harp Generic Basic Example](../workflows/harp-generic-basic-example.bonsai)
@@ -30,21 +30,31 @@ For users unfamiliar with Bonsai, it is a visual programming language, where fun
 
 - `KeyDown` - This is an example of a [Source](https://bonsai-rx.org/docs/articles/operators.html?tabs=quantitative-operators%2Cmulti-sample-operators#source) operator, which produces a stream of elements or data. In Bonsai, there are many types of sources, such as timers or analog or digital signals. In this instance, we can use keyboard keys to trigger the creation of a `HarpMessage` in the next node.
 
-- `CreateMessage` - This is another [Source](https://bonsai-rx.org/docs/articles/operators.html?tabs=quantitative-operators%2Cmulti-sample-operators#source) operator, which in this case creates a `HarpMessage` to send to the device in the next connected node. In a `CreateMessage` operator, you would select the `Register` as well as the `Payload` values to send.
+- `CreateMessage` - This source operator creates a `HarpMessage` to send to the device in the next node. In a `CreateMessage` operator, you would select the `Register` as well as the `Payload` values to send.
 
-- `Device` - This operator is used to initialize and communicate with the device, in this case receiving commands to send as well as issuing replies and events, which can be read in the next node.
+- `Device` - This operator is used to initialize and communicate with the device such as receiving commands to send as well as issuing replies and events. There can be only one `Device` operator for each Harp device in the workflow. 
 
-- `Parse` - This operator is used to filter and read the `HarpMessages`. Similar to the `CreateMessage` operator, you would select the `Register` to filter the messages to listen to.
+- `Parse` - This operator is used to filter and read the `HarpMessages` replies and events issued by the previous node. Similar to the `CreateMessage` operator, you would select the `Register` to filter the messages to listen to.
 
-If you have installed the Bonsai `Harp.SoundCard` package, once you have selected the `Register` and `Payload`, the same operators will morph to reflect the `Register` and `Payload` that is selected.
+When using the Bonsai `Harp.SoundCard` package, once you have selected the `Register` and `Payload`, the same operators will morph to reflect the `Register` and `Payload` that is selected.
 
 :::workflow
-![Harp Generic Basic Example](../workflows/harp-soundcard-basic-example.bonsai)
+![Harp SoundCard Basic Example](../workflows/harp-soundcard-basic-example.bonsai)
 :::
+
+If you have uploaded a sound to the `SoundCard`, and connected it to speakers and amplifiers, you can give this workflow a try!
+
+- Hover over the workflow cell above, click the "Copy" icon in the top right, and paste the workflow into Bonsai. 
+- Set the `PortName` property of the [`SoundCard`](xref:Harp.SoundCard.Device) operator to the communications port of the `SoundCard` (e.g. COM7).
+- Change the value of the `PlaySoundOrFrequency` property to the index of the sound that you have uploaded and want to play.
+- Hit the "Start" button on the toolbar in Bonsai to run the workflow.
+
+> [!TIP]
+> For the rest of the examples in this user guide, you can also directly copy and paste them into Bonsai to run them.
 
 ## Harp Device Pattern
 
-Set up the standard Harp [device pattern](../articles/operators.md#device-pattern) to initialize the device, log data, broadcast events, and send commands to the `SoundCard`.
+While we can connect operators directly to the `SoundCard` device operator, often we want to access the Harp device from multiple points in the workflow, which can quickly become unwieldy. To streamline this process, we will set up a Harp [device pattern](../articles/operators.md#device-pattern) which makes use of Bonsai [subjects](https://bonsai-rx.org/docs/articles/subjects.html). Subjects are special Bonsai operators that allow us to retrieve data and broadcast commands from anywhere else in the workflow.
 
 :::workflow
 ![SoundCard Device Pattern](../workflows/harp-devicepattern.bonsai)
@@ -57,16 +67,6 @@ Set up the standard Harp [device pattern](../articles/operators.md#device-patter
 - Right-click the [`Device`] operator, select "Create Source (Bonsai.Harp.HarpMessage)" > "BehaviorSubject". 
    - Name the generated [``BehaviourSubject`1``] [source subject](https://bonsai-rx.org/docs/articles/subjects.html#source-subjects) `SoundCard Commands`. 
    - Connect it as input to the [`Device`] operator.
-
-## Harp Bonsai Test
-
-:::workflow
-![SoundCard Hello World](../workflows/soundcard-helloworld.bonsai)
-:::
-
-- Hover over the workflow cell above, click the "Copy" icon in the top right, and paste the workflow into Bonsai.
-- Set the `PortName` property of the [`SoundCard`](xref:Harp.SoundCard.Device) operator to the communications port of the `SoundCard` (e.g. COM7).
-- Run the workflow. If the `SoundCard` is properly connected, you should hear a short tone.
 
 [!INCLUDE [](version-footer.md)]
 
