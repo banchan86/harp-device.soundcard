@@ -35,3 +35,7 @@ Assembled units are available from the [Open Ephys store](https://open-ephys.org
 ### Licensing
 
 Each subdirectory will contain a license or, possibly, a set of licenses if it involves both hardware and software.
+
+### Acknowledgments
+
+Hardware design contributed by [Champalimaud Foundation](https://www.cf-hw.org/), software interface by [Neurogears](https://neurogears.org/), and documentation by [Open Ephys](https://open-ephys.org/).

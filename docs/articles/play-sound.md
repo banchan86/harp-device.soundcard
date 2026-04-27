@@ -61,6 +61,8 @@ Run the workflow, press the <kbd>A</kbd> key to play the sound, and press the <k
 > [!WARNING]
 > The [`Stop`] register can only be used to stop playback from the internal sine wave generator, not sounds from the onboard memory.
 
+[!INCLUDE [](version-footer.md)]
+
 <!--Reference Style Links -->
 [`AttenuationAndPlaySoundOrFreq`]: xref:Harp.SoundCard.AttenuationAndPlaySoundOrFreq
 [`AttenuationAndPlaySoundOrFreqPayload`]: xref:Harp.SoundCard.CreateAttenuationAndPlaySoundOrFreqPayload

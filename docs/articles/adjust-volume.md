@@ -20,6 +20,8 @@ Run the workflow and press the <kbd>A</kbd> key to play the sound at reduced vol
 > [!TIP]
 > Pure tone playback must be stopped explicitly via the [`Stop`] register.
 
+[!INCLUDE [](version-footer.md)]
+
 <!--Reference Style Links -->
 [`AttenuationAndPlaySoundOrFreq`]: xref:Harp.SoundCard.AttenuationAndPlaySoundOrFreq
 [`AttenuationAndPlaySoundOrFreqPayload`]: xref:Harp.SoundCard.CreateAttenuationAndPlaySoundOrFreqPayload

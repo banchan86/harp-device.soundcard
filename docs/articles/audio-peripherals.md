@@ -33,3 +33,5 @@ Assembled units are available from the [Open Ephys store](https://open-ephys.org
 
 * Configuration of up to 15 speakers (depending on the input signal strength)
 * Several speakers can be activated concurrently
+
+[!INCLUDE [](version-footer.md)]

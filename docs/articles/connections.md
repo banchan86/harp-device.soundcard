@@ -31,3 +31,5 @@ To play sounds, the `SoundCard` must be connected to external amplifiers and spe
 **Amplifier** - Any external amplifier that accepts line-level RCA inputs is supported. For high-fidelity applications, consider using the [Harp Audio Amplifier](./audio-amp.md) (pictured above).
 
 **Speaker** - The choice of speaker depends on the amplifier's rated impedance and power. For the `Harp Audio Amplifier`, any speaker with an impedance from 4 to 8 ohms can be used. The XT25SC90-04 (Peerless by Tymphany) has been tested and offers a good frequency response up to 80 kHz.
+
+[!INCLUDE [](version-footer.md)]

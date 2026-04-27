@@ -120,6 +120,8 @@ Run the workflow and press the <kbd>A</kbd> key to upload the waveform. Test it 
 > [!TIP]
 > Add a [`ConvertScale`] after [`MatrixReader`] if the `*.bin` bit depth is not `S32`.
 
+[!INCLUDE [](../articles/version-footer.md)]
+
 <!--Reference Style Links -->
 [`AudioReader`]: xref:Bonsai.Audio.AudioReader
 [`ConvertScale`]: xref:Bonsai.Dsp.ConvertScale

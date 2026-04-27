@@ -26,6 +26,8 @@ Run the workflow and send the TTL signal from the other device to trigger sound 
 > [!TIP]
 > The `SoundCard Events` > `Take(1)` is another useful pattern for ensuring that configuration commands are sent as soon as the `SoundCard` has initialized. It also relies on the `DumpRegisters` property being set to `True` in the [`Device`] operator.
 
+[!INCLUDE [](version-footer.md)]
+
 <!--Reference Style Links -->
 [`AttenuationAndPlaySoundOrFreq`]: xref:Harp.SoundCard.AttenuationAndPlaySoundOrFreq
 [`AttenuationAndPlaySoundOrFreqPayload`]: xref:Harp.SoundCard.CreateAttenuationAndPlaySoundOrFreqPayload
