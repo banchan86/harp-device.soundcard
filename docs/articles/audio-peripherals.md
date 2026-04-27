@@ -4,6 +4,8 @@ Low distortion, high bandwidth audio amplifier for use in high fidelity applicat
 
 !["harpaudioamplifier"](../images/audioamp-pcb.png)
 
+Assembled units are available from the [Open Ephys store](https://open-ephys.org/harp), or build your own using the [hardware design files](https://github.com/harp-tech/peripheral.audioamp).
+
 ### Key Features
 
 * 119 dB SNR (A-weighted 80kHz bandwidth)
@@ -24,6 +26,8 @@ Low distortion, high bandwidth audio amplifier for use in high fidelity applicat
 This is a multiplexer device that allows an analog input signal to be forwarded to several output channels. It allows forwarding an audio signal to a single speaker or a combination of speakers. The configuration of speakers can be predefined by software or by using a set of digital inputs.
 
 ![harpaudioswitch](../images/audioswitch-pcb.png)
+
+Assembled units are available from the [Open Ephys store](https://open-ephys.org/harp), or build your own using the [hardware design files](https://github.com/harp-tech/device.audioswitch).
 
 ### Key Features
 

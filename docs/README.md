@@ -1,7 +1,9 @@
 ## Harp Soundcard
-This is a high performance sound card with two output channels using 24 bits DACs at 192kHz sample rate. 
+This is a high performance sound card with two output channels using 24 bits DACs at 192kHz sample rate.
 
 ![HarpSoundcard](./images/pcb.png)
+
+Assembled units are available from the [Open Ephys store](https://open-ephys.org/harp), or build your own using the [hardware design files](https://github.com/harp-tech/device.soundcard).
 
 ### Key Features
 
