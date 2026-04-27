@@ -2,23 +2,23 @@
 
 ![Harp SoundCard Device Pinout](../images/soundcard-devicepinout.svg){width=600}
 
-**Power** - The device requires a 12 V power supply.
+**Power** - This port requires a 12 V power supply (wall adapter included with device).
 
-**Soundbank** - This port connects to the device's onboard sound memory bank for uploading of waveforms for sound playback. To use this functionality, install the [WinUSB drivers](./installation.md). Once the sounds have been uploaded, this cable can be disconnected, as it is not required for playing of sounds. 
+**Soundbank** - This port connects to the device's onboard sound memory bank for uploading of waveforms. To use this functionality, install the [WinUSB drivers](./installation.md). Once the sounds have been uploaded, this cable can be disconnected, as it is not required for sound playback.
 
 **Computer** - This port connects to the device's internal controller to control sound playback with [Bonsai](./bonsai-harp.md).
 
-**Harp Clock Input** - The device is compatible with the [Harp](https://harp-tech.org/articles/about.html) family of devices, which can self-synchronize their internal clocks to a precision of +/- 64 us. To use this functionality, connect an output from a [Harp Timestamp Generator](https://github.com/harp-tech/device.timestampgeneratorgen3).
+**Harp Clock Input** - The device is compatible with the [Harp](https://harp-tech.org/articles/about.html) family of devices, which can self-synchronize their internal clocks to a precision of +/- 64 us. To use this functionality, connect an output from a [Harp Timestamp Generator](https://github.com/harp-tech/device.timestampgeneratorgen3) to this port.
 
-**GPIO** - The general purpose input/output (GPIO) pins can be used to communicate with external devices to trigger sound playback, control volume, etc. The follow pins are provided:
+**GPIO** - The general purpose input/output (GPIO) pins can be used to communicate with external devices to trigger sound playback, control volume, etc. The following pins are provided:
 
 * 3x general purpose digital outputs (3.3V or 5V) (OUT0-OUT2)
 * 3x general purpose digital inputs (5V tolerant) (IN0-IN2)
-* 2x analog inputs (3.3V máx - 5V tolerant) (ADC0-ADC1)
+* 2x analog inputs (3.3V max - 5V tolerant) (ADC0-ADC1)
 
 For more information on how to use them, refer to the [GPIO](trigger-sound.md) article.
 
-**Audio Channels** - The `SoundCard` provides stereo channel outputs that connect with external amplifiers via RCA cables.
+**Audio Channels** - The left and right channels can be used independently for mono output or together for stereo output. Each port needs to be connected to an external amplifier.
 
 ## Audio Setup
 
