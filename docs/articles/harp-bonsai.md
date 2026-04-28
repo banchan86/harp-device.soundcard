@@ -18,7 +18,7 @@ After the host PC sends the command, the device will send a reply back with the 
 
 In addition, the device can send event messages without a command from the host PC. These include events such as error messages, or signals from analog/digital inputs. 
 
-## Harp Bonsai Interface
+## Harp Bonsai Package
 
 While there are several ways of controlling the `SoundCard`, [Bonsai](https://bonsai-rx.org/) offers the most flexible and complete control of the SoundCard as it exposes every register available on the device. It also integrates well with hundreds of open source and closed source hardware and software that are used in the neuroscience community.
 
@@ -36,7 +36,7 @@ Bonsai is a visual programming language, where functions are represented by oper
 
 - `Parse` - This operator is used to filter and read the `HarpMessages` replies and events issued by the previous node. Similar to the `CreateMessage` operator, you would select the `Register` to filter the messages to listen to.
 
-When using the Bonsai `Harp.SoundCard` package, once you have selected the `Register` and `Payload`, the same operators will morph to reflect the `Register` and `Payload` that is selected.
+When using the device-specific `Harp.SoundCard` package, the same operators will reflect the name of the `Device`, `Register` and `Payload` that is selected.
 
 :::workflow
 ![Harp SoundCard Basic Example](../workflows/harp-soundcard-basic-example.bonsai)
@@ -48,6 +48,7 @@ If you have uploaded a sound to the `SoundCard`, and connected it to speakers an
 - Set the `PortName` property of the [`SoundCard`](xref:Harp.SoundCard.Device) operator to the communications port of the `SoundCard` (e.g. COM7).
 - Change the value of the `PlaySoundOrFrequency` property to the index of the sound that you have uploaded and want to play.
 - Hit the "Start" button on the toolbar in Bonsai to run the workflow.
+- Press the <kbd>A</kbd> key to play the sound.
 
 > [!TIP]
 > For the rest of the examples in this user guide, you can also directly copy and paste them into Bonsai to run them.
