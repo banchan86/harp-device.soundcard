@@ -2,7 +2,7 @@
 
 ---
 
-This guide was written and tested with:<br>
+Tested with:<br>
 **Hardware** v2.2<br>
 **Firmware** v2.2<br>
-**Harp.SoundCard** v0.2
+**Bonsai Package** v0.2

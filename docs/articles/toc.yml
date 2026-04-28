@@ -8,7 +8,7 @@
   href: connections.md
 - name: Installation
   href: installation.md
-- name: Generate and upload waveforms
+- name: Upload waveforms
   href: upload-waveform-gui.md
 - name: Device Control
 - name: Harp Bonsai Interface

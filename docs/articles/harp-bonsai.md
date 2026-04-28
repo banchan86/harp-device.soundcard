@@ -54,7 +54,7 @@ If you have uploaded a sound to the `SoundCard`, and connected it to speakers an
 
 ## Harp Device Pattern
 
-While we can connect operators directly to the `SoundCard` device operator, often we want to access the Harp device from multiple points in the workflow, which can quickly become unwieldy. To streamline this process, we will set up a Harp [device pattern](../articles/operators.md#device-pattern) which makes use of Bonsai [subjects](https://bonsai-rx.org/docs/articles/subjects.html). Subjects are special Bonsai operators that allow us to retrieve data and broadcast commands from anywhere else in the workflow.
+While we can connect operators directly to the `SoundCard` device operator, often we want to access the Harp device from multiple points in the workflow, which can quickly become unwieldy. To streamline this process, we will set up a Harp [device pattern](https://harp-tech.org/articles/operators.html#device-pattern) which makes use of Bonsai [subjects](https://bonsai-rx.org/docs/articles/subjects.html). Subjects are special Bonsai operators that allow us to retrieve data and broadcast commands from anywhere else in the workflow.
 
 :::workflow
 ![SoundCard Device Pattern](../workflows/harp-devicepattern.bonsai)
@@ -62,7 +62,7 @@ While we can connect operators directly to the `SoundCard` device operator, ofte
 
 - Insert a [`Device`] operator and set the `PortName` property to the communications port for the device.
 - Insert a [`DeviceDataWriter`] sink and set the `Path` property (e.g. `SoundCard.harp`). 
-   - This will save the data in the standard Harp logging format, which can be loaded with [`harp-python`](../articles/python.md).
+   - This will save the data in the standard Harp logging format, which can be loaded with [`harp-python`](visualize-data.md).
 - Insert a [`PublishSubject`] operator and name it `SoundCard Events`.
 - Right-click the [`Device`] operator, select "Create Source (Bonsai.Harp.HarpMessage)" > "BehaviorSubject". 
    - Name the generated [``BehaviourSubject`1``] [source subject](https://bonsai-rx.org/docs/articles/subjects.html#source-subjects) `SoundCard Commands`. 
