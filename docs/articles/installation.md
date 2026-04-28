@@ -1,37 +1,48 @@
-## Installation
+## Software packages
 
-These steps are only required the first time you connect the Harp SoundCard to a new computer and if you plan to use the specific functionality.
+These steps are only required the first time you connect the SoundCard to a new computer. Feel free to install only the packages you need.
 
 ### WinUSB 
 
-Install the WinUSB driver if you plan to upload sounds to the onboard memory:
+The WinUSB driver is required to upload waveforms to the onboard sound memory bank.
 
-[]
+![Zadig binding WinUSB driver](../images/zadig.png)
 
 - Download and launch [Zadig](https://zadig.akeo.ie/).
 - Connect the USB Micro-B cable to the computer.
 - Select the "Harp Sound Card" from the list. If the device is not available, go to "Options" > "List All Devices".
 - Select the "WinUSB" driver and click "Install Driver".
 
+### SoundCard GUI
+
+The SoundCard GUI offers a graphical interface for [generating and uploading waveforms](upload-waveform-gui.md). Alternatively, waveforms can be [generated and uploaded in Bonsai](../tutorials/upload-waveform-bonsai.md).
+
+- Download and install the [SoundCard GUI](https://github.com/fchampalimaud/device.soundcard/releases/tag/app1.0.0-alpha.1).
+
 ### Bonsai
 
-Install Bonsai to control the SoundCard:
+[Bonsai](https://bonsai-rx.org/) is a visual reactive programming language that provides flexible and comprehensive control of the SoundCard.
 
-- Install [Bonsai](https://bonsai-rx.org/docs/articles/installation.html).
-- Install the `Harp.SoundCard` package by searching for it in the [Bonsai package manager](https://bonsai-rx.org/docs/articles/packages.html).
-- Install the `Bonsai.Windows.Input` package from the Bonsai [package manager](https://bonsai-rx.org/docs/articles/packages.html) to follow along with the examples in the documentation.
+- Download and install [Bonsai](https://bonsai-rx.org/docs/articles/installation.html).
+- Launch Bonsai and install the `Harp.SoundCard` package by searching for it in the [Bonsai package manager](https://bonsai-rx.org/docs/articles/packages.html).
+- (Optional) Install the `Bonsai.Windows.Input` package to follow along with the examples in this user guide.
 
-### SoundCard GUI
-Waveforms can be generated and uploaded to the `SoundCard` in Bonsai. Optionally, you can use the [Harp SoundCard GUI](https://bitbucket.org/fchampalimaud/downloads/downloads/Harp_Sound_Card_v1.3.2.zip) as a standalone interface for waveform management. This requires the [LabVIEW runtime](https://bitbucket.org/fchampalimaud/downloads/downloads/Runtime-1.0.zip) to be installed first.
+### harp-python
 
-### Firmware
+The [harp-python](https://pypi.org/project/harp-python/) library provides a low-level interface to [read and manipulate](visualize-data.md) data from Harp devices. You can install it in a Python environment with:
+
+```cmd
+pip install harp-python 
+```
+
+## Firmware
 
 | Tag | Description |
 | - | - |
 | SoundCard-* | Firmware for the sound card's microcontroller (8 bits processor) |
 | SoundCard.PIC32-* | Firmware for the sound card's 32 bits processor |
 
-#### Firmware Update
+### Updating the firmware
 
 1 - Install the [Harp Converto to CSV](https://bitbucket.org/fchampalimaud/downloads/downloads/Harp_Convert_To_CSV_v1.8.3.zip).
 
