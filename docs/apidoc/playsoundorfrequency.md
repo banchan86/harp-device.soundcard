@@ -51,17 +51,10 @@ Run the workflow, press the <kbd>A</kbd> key to play the sound, and press the <k
 <!--Reference Style Links -->
 [`CreateMessage`]: xref:Harp.SoundCard.CreateMessage
 [`Device`]: xref:Harp.SoundCard.Device
-[`DeviceDataWriter`]: xref:Harp.SoundCard.DeviceDataWriter
 [`HarpMessage`]: xref:Bonsai.Harp.HarpMessage
 [`KeyDown`]: xref:Bonsai.Windows.Input.KeyDown
-[`Merge`]: xref:Bonsai.Reactive.Merge
 [`MulticastSubject`]: xref:Bonsai.Expressions.MulticastSubject
 [`PlaySoundOrFrequency`]: xref:Harp.SoundCard.PlaySoundOrFrequency
 [`PlaySoundOrFrequencyPayload`]: xref:Harp.SoundCard.CreatePlaySoundOrFrequencyPayload
-[`PublishSubject`]: xref:Bonsai.Reactive.PublishSubject
 [`Stop`]: xref:Harp.SoundCard.Stop
 [`StopPayload`]: xref:Harp.SoundCard.CreateStopPayload
-[`SubscribeSubject`]: xref:Bonsai.Expressions.SubscribeSubject
-[`SubscribeWhen`]: xref:Bonsai.Reactive.SubscribeWhen
-[`Take`]: xref:Bonsai.Reactive.Take
-[`Timer`]: xref:Bonsai.Reactive.Timer

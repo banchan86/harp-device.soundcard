@@ -22,20 +22,11 @@ You can replace [`KeyDown`] with other operators to trigger sound playback on ot
 > [!TIP]
 > The `SubscribeWhen` > `SoundCard Events` pattern is useful for ensuring that [`HarpMessage`] commands are only sent after the [`Device`] has been initialized. It relies on the `DumpRegisters` property being set to `True` in [`Device`]. Use it when needed, for instance, if sounds are being played at the start of the workflow.
 
+[!INCLUDE [](version-footer.md)]
+
 <!--Reference Style Links -->
-[`CreateMessage`]: xref:Harp.SoundCard.CreateMessage
 [`Device`]: xref:Harp.SoundCard.Device
-[`DeviceDataWriter`]: xref:Harp.SoundCard.DeviceDataWriter
-[`HarpMessage`]: xref:Bonsai.Harp.HarpMessage
 [`KeyDown`]: xref:Bonsai.Windows.Input.KeyDown
-[`Merge`]: xref:Bonsai.Reactive.Merge
-[`MulticastSubject`]: xref:Bonsai.Expressions.MulticastSubject
-[`PlaySoundOrFrequency`]: xref:Harp.SoundCard.PlaySoundOrFrequency
-[`PlaySoundOrFrequencyPayload`]: xref:Harp.SoundCard.CreatePlaySoundOrFrequencyPayload
-[`PublishSubject`]: xref:Bonsai.Reactive.PublishSubject
-[`Stop`]: xref:Harp.SoundCard.Stop
-[`StopPayload`]: xref:Harp.SoundCard.CreateStopPayload
 [`SubscribeSubject`]: xref:Bonsai.Expressions.SubscribeSubject
 [`SubscribeWhen`]: xref:Bonsai.Reactive.SubscribeWhen
-[`Take`]: xref:Bonsai.Reactive.Take
 [`Timer`]: xref:Bonsai.Reactive.Timer
