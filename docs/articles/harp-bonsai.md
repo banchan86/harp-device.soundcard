@@ -18,7 +18,7 @@ After the host PC sends the command, the device will send a reply back with the 
 
 In addition, the device can send event messages without a command from the host PC. These include events such as error messages, or signals from analog/digital inputs. 
 
-## Harp Bonsai Package
+## Harp Bonsai Interface
 
 While there are several ways of controlling the `SoundCard`, [Bonsai](https://bonsai-rx.org/) offers the most flexible and complete control of the SoundCard as it exposes every register available on the device. It also integrates well with hundreds of open source and closed source hardware and software that are used in the neuroscience community.
 
@@ -36,7 +36,9 @@ Bonsai is a visual programming language, where functions are represented by oper
 
 - `Parse` - This operator is used to filter and read the `HarpMessages` replies and events issued by the previous node. Similar to the `CreateMessage` operator, you would select the `Register` to filter the messages to listen to.
 
-When using the device-specific `Harp.SoundCard` package, the same operators will reflect the name of the `Device`, `Register` and `Payload` that is selected.
+## Harp SoundCard Bonsai Package
+
+When using the device specific `Harp.SoundCard` Bonsai interface package, the same workflow above will reflect the name of the `Device`, `Register` and `Payload` that is selected.
 
 :::workflow
 ![Harp SoundCard Basic Example](../workflows/harp-soundcard-basic-example.bonsai)
