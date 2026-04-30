@@ -19,8 +19,8 @@
   href: adjust-volume.md
 - name: Trigger sound playback
   href: trigger-sound.md
-- name: Data Acquisition and Visualization
-- name: Saving data
+- name: Data Management
+- name: Data Acquisition
   href: save-data.md
-- name: Visualizing data
+- name: Data Analysis
   href: visualize-data.md
