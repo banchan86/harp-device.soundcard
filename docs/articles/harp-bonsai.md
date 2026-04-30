@@ -34,11 +34,11 @@ Bonsai is a visual programming language, where functions are represented by oper
 
 - [`Device`] - This operator is used to initialize and communicate with the device such as receiving commands to send as well as issuing replies and events. There can be only one [`Device`] operator for each Harp device in the workflow. 
 
-- [`Parse`] - This operator is used to filter and read the [`HarpMessage`] replies and events issued by the previous node. Similar to the [`CreateMessage`] operator, you would select the `Register` to filter the messages to listen to.
+- [`Parse`] - This operator is used to filter and read the [`HarpMessage`] replies and events issued by the [`Device`] node. Similar to the [`CreateMessage`] operator, you would select the `Register` to filter the messages to listen to.
 
 ## Harp SoundCard Workflow
 
-The same pattern, when applied to the SoundCard, look like this:
+The same pattern, when applied to the SoundCard, looks like this:
 
 :::workflow
 ![Harp SoundCard Basic Example](../workflows/harp-soundcard-basic-example.bonsai)
