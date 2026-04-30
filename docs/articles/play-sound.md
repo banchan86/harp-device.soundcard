@@ -1,6 +1,6 @@
 ## Play sounds
 
-The [Harp SoundCard](https://github.com/harp-tech/device.soundcard) supports playback of waveforms stored in its onboard memory. It also includes an internal sine wave generator for pure tones.
+The SoundCard supports playback of waveforms stored in its onboard memory. It also includes an internal sine wave generator for pure tones.
 
 > [!WARNING]
 > When adding these operators to the workflow, make sure to use the device-specific versions, e.g. `Device (Harp.SoundCard)` instead of `Device (Harp)`. If correctly selected, the names of these operators in the workflow panel will change to reflect either the name of the device or the selected register/payload.

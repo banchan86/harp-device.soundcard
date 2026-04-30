@@ -20,7 +20,7 @@ In addition, the device can send event messages without a command from the host 
 
 ## Harp Bonsai Interface
 
-While there are several ways of controlling the `SoundCard`, [Bonsai](https://bonsai-rx.org/) offers the most flexible and complete control of the SoundCard as it exposes every register available on the device. It also integrates well with hundreds of open source and closed source hardware and software that are used in the neuroscience community.
+While there are several ways of controlling the SoundCard, [Bonsai](https://bonsai-rx.org/) offers the most flexible and complete control of the SoundCard as it exposes every register available on the device. It also integrates well with hundreds of open source and closed source hardware and software that are used in the neuroscience community.
 
 Bonsai is a visual programming language, where functions are represented by operators/nodes. Operators connect together to form data processing pipelines that are embedded in scripts called workflows. For instance, a generic example of the Harp communication protocol above, as represented in Bonsai, will look like this:
 
@@ -46,10 +46,10 @@ The same pattern, when applied to the SoundCard, looks like this:
 
 In this case, [`CreateMessage`] targets the [`PlaySoundOrFrequency`] register, and [`Parse`] reads the echo from the same register. The operators will reflect the name of the `Device`, `Register` and `Payload` that is selected when using the [`Harp.SoundCard`](installation.md#bonsai) Bonsai package.
 
-If you have uploaded a sound to the `SoundCard`, and connected it to speakers and amplifiers, you can give this workflow a try!
+If you have uploaded a sound to the SoundCard, and connected it to speakers and amplifiers, you can give this workflow a try!
 
 - Hover over the workflow cell above, click the "Copy" icon in the top right, and paste the workflow into Bonsai. 
-- Set the `PortName` property of the [`SoundCard (Device)`](xref:Harp.SoundCard.Device) device operator to the communications port of the `SoundCard` (e.g. COM7).
+- Set the `PortName` property of the [`SoundCard (Device)`](xref:Harp.SoundCard.Device) operator to the communications port of the SoundCard (e.g. COM7).
 - Change the value of the `PlaySoundOrFrequency` property to the index of the sound that you have uploaded and want to play.
 - Hit the "Start" button on the toolbar in Bonsai to run the workflow.
 - Press the <kbd>A</kbd> key to play the sound.
@@ -60,7 +60,7 @@ If you have uploaded a sound to the `SoundCard`, and connected it to speakers an
 
 ## Harp Device Pattern
 
-While we can connect operators directly to the `SoundCard` device operator, often we want to access the Harp device from multiple points in the workflow, which can quickly become unwieldy. To streamline this process, we will set up a Harp [device pattern](https://harp-tech.org/articles/operators.html#device-pattern) which makes use of Bonsai [subjects](https://bonsai-rx.org/docs/articles/subjects.html). Subjects are special Bonsai operators that allow us to retrieve data and broadcast commands from anywhere else in the workflow. We will also add an operator to log the data.
+While we can connect operators directly to the SoundCard [`Device`] operator, often we want to access the Harp device from multiple points in the workflow, which can quickly become unwieldy. To streamline this process, we will set up a Harp [device pattern](https://harp-tech.org/articles/operators.html#device-pattern) which makes use of Bonsai [subjects](https://bonsai-rx.org/docs/articles/subjects.html). Subjects are special Bonsai operators that allow us to retrieve data and broadcast commands from anywhere else in the workflow. We will also add an operator to log the data.
 
 :::workflow
 ![SoundCard Device Pattern](../workflows/harp-devicepattern.bonsai)

@@ -1,12 +1,12 @@
 ## Trigger sound index playback with digital inputs
 
-The `SoundCard` features digital input channels that can be configured to trigger sound index playback.
+The SoundCard features digital input channels that can be configured to trigger sound index playback.
 
 :::workflow
 ![Trigger Sound Configure Digital Input](../workflows/triggersound-configureDI.bonsai)
 :::
 
-- Connect a TTL signal from another device to the digital input channel `DI0` (5 V tolerant) and `GND` on the `SoundCard`.
+- Connect a TTL signal from another device to the digital input channel `DI0` (5 V tolerant) and `GND` on the SoundCard.
 - Insert a [`SubscribeSubject`] operator named `SoundCard Events`.
 - Insert a [`Take`] combinator and set the `Count` property to 1.
 - Insert a [`CreateMessage`] operator and configure these properties:

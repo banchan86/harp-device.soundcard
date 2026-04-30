@@ -1,6 +1,6 @@
 ## Generate and upload waveforms with Bonsai
 
-The `Harp.SoundCard` Bonsai package supports preload and update of sound waveforms during runtime. The following exercises will demonstrate how to generate and load various waveforms for upload to the `SoundCard` in Bonsai.
+The [Harp.SoundCard](../articles/installation.md#bonsai) Bonsai package supports preload and update of sound waveforms during runtime. The following exercises will demonstrate how to generate and load various waveforms for upload to the SoundCard in Bonsai.
 
 ## Prerequisites
 
