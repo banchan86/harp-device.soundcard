@@ -4,11 +4,11 @@
 
 **Power** - This port requires a 12 V power supply (wall adapter included with device).
 
-**Soundbank** - This port connects to the device's onboard sound memory bank for uploading of waveforms. To use this functionality, install the [WinUSB drivers](./installation.md). Once the sounds have been uploaded, this cable can be disconnected, as it is not required for sound playback.
+**Soundbank** - This port connects to the device's onboard sound memory bank for uploading of waveforms. Once the sounds have been uploaded, this cable can be disconnected, as it is not required for sound playback.
 
-**Computer** - This port connects to the device's internal controller to control sound playback with [Bonsai](harp-bonsai.md).
+**Computer** - This port connects to the device's internal controller to control sound playback with [Bonsai](harp-bonsai.md) or the [GUI](upload-waveform-gui.md).
 
-**Harp Clock Input** - The device is compatible with the [Harp](https://harp-tech.org/articles/about.html) family of devices, which can self-synchronize their internal clocks to a precision of +/- 64 us. To use this functionality, connect an output from a [Harp Timestamp Generator](https://github.com/harp-tech/device.timestampgeneratorgen3) to this port.
+**Harp Clock Input** - This port connects to a [Harp Timestamp Generator](https://github.com/harp-tech/device.timestampgeneratorgen3) output, which can be used to synchronize the internal clocks of connected [Harp](https://harp-tech.org/articles/about.html) devices to a precision of +/- 64 us.
 
 **GPIO** - The general purpose input/output (GPIO) pins can be used to communicate with external devices to trigger sound playback, control volume, etc. The following pins are provided:
 

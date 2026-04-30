@@ -1,6 +1,8 @@
 
 ## Receiving data
 
+
+
 ## Logging data
 Data from the SoundCard can be logged in two ways: 
 

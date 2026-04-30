@@ -38,4 +38,4 @@ Each subdirectory will contain a license or, possibly, a set of licenses if it i
 
 ### Acknowledgments
 
-Hardware design and GUI contributed by [Champalimaud Foundation](https://www.cf-hw.org/), bonsai interface by [Neurogears](https://neurogears.org/), and documentation by [Open Ephys](https://open-ephys.org/).
+Hardware design and GUI contributed by [Champalimaud Foundation](https://www.cf-hw.org/), Bonsai interface by [Neurogears](https://neurogears.org/), and documentation by [Open Ephys](https://open-ephys.org/).
