@@ -15,7 +15,7 @@ device = harp.create_reader("./SoundCard.harp")
 # Read data from a specific register
 play_sound_or_frequency_df = device.PlaySoundOrFrequency.read()
 
-# Inspect dataframe
+# Inspect DataFrame
 print(play_sound_or_frequency_df.head())
 
 # Plot sound onset times

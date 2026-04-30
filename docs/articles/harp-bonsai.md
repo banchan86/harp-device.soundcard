@@ -28,17 +28,17 @@ Bonsai is a visual programming language, where functions are represented by oper
 ![Harp Generic Basic Example](../workflows/harp-generic-basic-example.bonsai)
 :::
 
-- `KeyDown` - This is an example of a [Source](https://bonsai-rx.org/docs/articles/operators.html?tabs=quantitative-operators%2Cmulti-sample-operators#source) operator, which produces a stream of elements or data. In Bonsai, there are many types of sources, such as timers or analog or digital signals. In this instance, we can use keyboard keys to trigger the creation of a `HarpMessage` in the next node.
+- [`KeyDown`] - This is an example of a [Source](https://bonsai-rx.org/docs/articles/operators.html?tabs=quantitative-operators%2Cmulti-sample-operators#source) operator, which produces a stream of elements or data. In Bonsai, there are many types of sources, such as timers or analog or digital signals. In this instance, we can use keyboard keys to trigger the creation of a [`HarpMessage`] in the next node.
 
-- `CreateMessage` - This source operator creates a `HarpMessage` to send to the device in the next node. In a `CreateMessage` operator, you would select the `Register` as well as the `Payload` values to send.
+- [`CreateMessage`] - This source operator creates a [`HarpMessage`] to send to the device in the next node. In a [`CreateMessage`] operator, you would select the `Register` as well as the `Payload` values to send.
 
-- `Device` - This operator is used to initialize and communicate with the device such as receiving commands to send as well as issuing replies and events. There can be only one `Device` operator for each Harp device in the workflow. 
+- [`Device`] - This operator is used to initialize and communicate with the device such as receiving commands to send as well as issuing replies and events. There can be only one [`Device`] operator for each Harp device in the workflow. 
 
-- `Parse` - This operator is used to filter and read the `HarpMessages` replies and events issued by the previous node. Similar to the `CreateMessage` operator, you would select the `Register` to filter the messages to listen to.
+- [`Parse`] - This operator is used to filter and read the [`HarpMessage`] replies and events issued by the previous node. Similar to the [`CreateMessage`] operator, you would select the `Register` to filter the messages to listen to.
 
-## Harp SoundCard Bonsai Package
+## Harp SoundCard Workflow
 
-When using the device specific `Harp.SoundCard` Bonsai interface package, the same workflow above will reflect the name of the `Device`, `Register` and `Payload` that is selected.
+The same pattern, when applied to the SoundCard, look like this. In this case, [`CreateMessage`] targets the [`PlaySoundOrFrequency`] register, and [`Parse`] reads the echo from the same register. The operators will reflect the name of the `Device`, `Register` and `Payload` that is selected when using the [`Harp.SoundCard`](installation.md#bonsai) Bonsai package.
 
 :::workflow
 ![Harp SoundCard Basic Example](../workflows/harp-soundcard-basic-example.bonsai)
@@ -47,10 +47,11 @@ When using the device specific `Harp.SoundCard` Bonsai interface package, the sa
 If you have uploaded a sound to the `SoundCard`, and connected it to speakers and amplifiers, you can give this workflow a try!
 
 - Hover over the workflow cell above, click the "Copy" icon in the top right, and paste the workflow into Bonsai. 
-- Set the `PortName` property of the [`SoundCard`](xref:Harp.SoundCard.Device) operator to the communications port of the `SoundCard` (e.g. COM7).
+- Set the `PortName` property of the [`SoundCard (Device)`](xref:Harp.SoundCard.Device) device operator to the communications port of the `SoundCard` (e.g. COM7).
 - Change the value of the `PlaySoundOrFrequency` property to the index of the sound that you have uploaded and want to play.
 - Hit the "Start" button on the toolbar in Bonsai to run the workflow.
 - Press the <kbd>A</kbd> key to play the sound.
+- Double-click on the [`PlaySoundOrFrequency (Parse)`](xref:Harp.SoundCard.Parse) operator to open the visualizer and monitor the echo.
 
 > [!TIP]
 > For the rest of the examples in this user guide, you can also directly copy and paste them into Bonsai to run them.
@@ -64,7 +65,7 @@ While we can connect operators directly to the `SoundCard` device operator, ofte
 :::
 
 - Insert a [`Device`] operator and set the `PortName` property to the communications port for the device.
-- Insert a [`DeviceDataWriter`] sink and set the `Path` property (e.g. `SoundCard.harp`). 
+- Insert a [`DeviceDataWriter`] sink and set the `Path` property for the name and location of the save file (e.g. `Data\SoundCard.harp`). 
    - This will save the data in the standard Harp logging format, which can be loaded with [`harp-python`](visualize-data.md).
 - Insert a [`PublishSubject`] operator and name it `SoundCard Events`.
 - Right-click the [`Device`] operator, select "Create Source (Bonsai.Harp.HarpMessage)" > "BehaviorSubject". 
@@ -78,7 +79,9 @@ While we can connect operators directly to the `SoundCard` device operator, ofte
 [`CreateMessage`]: xref:Harp.SoundCard.CreateMessage
 [`Device`]: xref:Harp.SoundCard.Device
 [`DeviceDataWriter`]: xref:Harp.SoundCard.DeviceDataWriter
+[`Parse`]: xref:Harp.SoundCard.Parse
 [`HarpMessage`]: xref:Bonsai.Harp.HarpMessage
+[`PlaySoundOrFrequency`]: xref:Harp.SoundCard.PlaySoundOrFrequency
 [`KeyDown`]: xref:Bonsai.Windows.Input.KeyDown
 [`MulticastSubject`]: xref:Bonsai.Expressions.MulticastSubject
 [`PublishSubject`]: xref:Bonsai.Reactive.PublishSubject
