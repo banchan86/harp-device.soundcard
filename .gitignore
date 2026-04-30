@@ -1,6 +1,9 @@
 /artifacts/
 desktop.ini
 
+# Bonsai
+*.exe
+
 # Visual studio files
 .vs
 .suo

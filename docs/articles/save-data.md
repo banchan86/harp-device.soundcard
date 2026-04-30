@@ -18,7 +18,7 @@ Data from the SoundCard can be logged in two ways:
 > To use [`CsvWriter], install the `Bonsai.System` and `Bonsai.System.Design` package from the Bonsai package manager.
 
 :::workflow
-![SoundCard CsvWriter](../workflows/harp-csvwriter.bonsai)
+![SoundCard CsvWriter](../workflows/logging-csvwriter.bonsai)
 :::
 
 - Insert a [`CsvWriter`] operator after each [`Parse`] register that you want to record.
