@@ -3,7 +3,6 @@
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xmlns:wie="clr-namespace:Bonsai.Windows.Input;assembly=Bonsai.Windows.Input"
                  xmlns:p1="clr-namespace:Harp.SoundCard;assembly=Harp.SoundCard"
-                 xmlns:harp="clr-namespace:Bonsai.Harp;assembly=Bonsai.Harp"
                  xmlns="https://bonsai-rx.org/2018/workflow">
   <Workflow>
     <Nodes>
@@ -14,30 +13,26 @@
         </Combinator>
       </Expression>
       <Expression xsi:type="p1:CreateMessage">
-        <harp:MessageType>Write</harp:MessageType>
-        <harp:Payload xsi:type="p1:CreatePlaySoundOrFrequencyPayload">
+        <MessageType xmlns="clr-namespace:Bonsai.Harp;assembly=Bonsai.Harp">Write</MessageType>
+        <Payload xsi:type="p1:CreatePlaySoundOrFrequencyPayload" xmlns="clr-namespace:Bonsai.Harp;assembly=Bonsai.Harp">
           <p1:PlaySoundOrFrequency>2</p1:PlaySoundOrFrequency>
-        </harp:Payload>
+        </Payload>
       </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="p1:Device">
-          <harp:OperationMode>Active</harp:OperationMode>
-          <harp:OperationLed>On</harp:OperationLed>
-          <harp:DumpRegisters>true</harp:DumpRegisters>
-          <harp:VisualIndicators>On</harp:VisualIndicators>
-          <harp:Heartbeat>Disabled</harp:Heartbeat>
-          <harp:IgnoreErrors>false</harp:IgnoreErrors>
-          <harp:PortName>COM8</harp:PortName>
+          <OperationMode xmlns="clr-namespace:Bonsai.Harp;assembly=Bonsai.Harp">Active</OperationMode>
+          <OperationLed xmlns="clr-namespace:Bonsai.Harp;assembly=Bonsai.Harp">On</OperationLed>
+          <DumpRegisters xmlns="clr-namespace:Bonsai.Harp;assembly=Bonsai.Harp">true</DumpRegisters>
+          <VisualIndicators xmlns="clr-namespace:Bonsai.Harp;assembly=Bonsai.Harp">On</VisualIndicators>
+          <Heartbeat xmlns="clr-namespace:Bonsai.Harp;assembly=Bonsai.Harp">Disabled</Heartbeat>
+          <IgnoreErrors xmlns="clr-namespace:Bonsai.Harp;assembly=Bonsai.Harp">false</IgnoreErrors>
+          <PortName xmlns="clr-namespace:Bonsai.Harp;assembly=Bonsai.Harp">COM8</PortName>
         </Combinator>
-      </Expression>
-      <Expression xsi:type="p1:Parse">
-        <harp:Register xsi:type="p1:TimestampedPlaySoundOrFrequency" />
       </Expression>
     </Nodes>
     <Edges>
       <Edge From="0" To="1" Label="Source1" />
       <Edge From="1" To="2" Label="Source1" />
-      <Edge From="2" To="3" Label="Source1" />
     </Edges>
   </Workflow>
 </WorkflowBuilder>

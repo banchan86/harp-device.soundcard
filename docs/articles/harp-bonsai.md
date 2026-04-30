@@ -32,9 +32,7 @@ Bonsai is a visual programming language, where functions are represented by oper
 
 - [`CreateMessage`] - This source operator creates a [`HarpMessage`] to send to the device in the next node. In a [`CreateMessage`] operator, you would select the `Register` as well as the `Payload` values to send.
 
-- [`Device`] - This operator is used to initialize and communicate with the device such as receiving commands to send as well as issuing replies and events. There can be only one [`Device`] operator for each Harp device in the workflow. 
-
-- [`Parse`] - This operator is used to filter and read the [`HarpMessage`] replies and events issued by the [`Device`] node. Similar to the [`CreateMessage`] operator, you would select the `Register` to filter the messages to listen to.
+- [`Device`] - This operator is used to initialize and communicate with the device, such as receiving commands to send as well as broadcasting replies and events. There can be only one [`Device`] operator for each Harp device in the workflow. 
 
 ## Harp SoundCard Workflow
 
@@ -53,7 +51,7 @@ If you have uploaded a sound to the SoundCard, and connected it to speakers and 
 - Change the value of the `PlaySoundOrFrequency` property to the index of the sound that you have uploaded and want to play.
 - Hit the "Start" button on the toolbar in Bonsai to run the workflow.
 - Press the <kbd>A</kbd> key to play the sound.
-- Double-click on the [`TimestampedPlaySoundOrRegister (Parse)`](xref:Harp.SoundCard.Parse) operator to open the visualizer and monitor the replies from the device.
+- Double-click on the [`SoundCard (Device)`](xref:Harp.SoundCard.Device) operator to open the visualizer and monitor the replies and events emitted from the device.
 
 > [!TIP]
 > For the rest of the examples in this user guide, you can also directly copy and paste them into Bonsai to run them.
