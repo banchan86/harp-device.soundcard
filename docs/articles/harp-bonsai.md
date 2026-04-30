@@ -38,11 +38,13 @@ Bonsai is a visual programming language, where functions are represented by oper
 
 ## Harp SoundCard Workflow
 
-The same pattern, when applied to the SoundCard, look like this. In this case, [`CreateMessage`] targets the [`PlaySoundOrFrequency`] register, and [`Parse`] reads the echo from the same register. The operators will reflect the name of the `Device`, `Register` and `Payload` that is selected when using the [`Harp.SoundCard`](installation.md#bonsai) Bonsai package.
+The same pattern, when applied to the SoundCard, look like this:
 
 :::workflow
 ![Harp SoundCard Basic Example](../workflows/harp-soundcard-basic-example.bonsai)
 :::
+
+In this case, [`CreateMessage`] targets the [`PlaySoundOrFrequency`] register, and [`Parse`] reads the echo from the same register. The operators will reflect the name of the `Device`, `Register` and `Payload` that is selected when using the [`Harp.SoundCard`](installation.md#bonsai) Bonsai package.
 
 If you have uploaded a sound to the `SoundCard`, and connected it to speakers and amplifiers, you can give this workflow a try!
 
@@ -58,7 +60,7 @@ If you have uploaded a sound to the `SoundCard`, and connected it to speakers an
 
 ## Harp Device Pattern
 
-While we can connect operators directly to the `SoundCard` device operator, often we want to access the Harp device from multiple points in the workflow, which can quickly become unwieldy. To streamline this process, we will set up a Harp [device pattern](https://harp-tech.org/articles/operators.html#device-pattern) which makes use of Bonsai [subjects](https://bonsai-rx.org/docs/articles/subjects.html). Subjects are special Bonsai operators that allow us to retrieve data and broadcast commands from anywhere else in the workflow.
+While we can connect operators directly to the `SoundCard` device operator, often we want to access the Harp device from multiple points in the workflow, which can quickly become unwieldy. To streamline this process, we will set up a Harp [device pattern](https://harp-tech.org/articles/operators.html#device-pattern) which makes use of Bonsai [subjects](https://bonsai-rx.org/docs/articles/subjects.html). Subjects are special Bonsai operators that allow us to retrieve data and broadcast commands from anywhere else in the workflow. We will also add an operator to log the data.
 
 :::workflow
 ![SoundCard Device Pattern](../workflows/harp-devicepattern.bonsai)
