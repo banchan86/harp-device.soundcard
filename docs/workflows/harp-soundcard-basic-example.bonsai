@@ -9,7 +9,7 @@
     <Nodes>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="wie:KeyDown">
-          <wie:Filter>None</wie:Filter>
+          <wie:Filter>A</wie:Filter>
           <wie:SuppressRepetitions>false</wie:SuppressRepetitions>
         </Combinator>
       </Expression>
@@ -27,11 +27,11 @@
           <harp:VisualIndicators>On</harp:VisualIndicators>
           <harp:Heartbeat>Disabled</harp:Heartbeat>
           <harp:IgnoreErrors>false</harp:IgnoreErrors>
-          <harp:PortName>COMx</harp:PortName>
+          <harp:PortName>COM8</harp:PortName>
         </Combinator>
       </Expression>
       <Expression xsi:type="p1:Parse">
-        <harp:Register xsi:type="p1:PlaySoundOrFrequency" />
+        <harp:Register xsi:type="p1:TimestampedPlaySoundOrFrequency" />
       </Expression>
     </Nodes>
     <Edges>

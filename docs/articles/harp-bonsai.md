@@ -53,7 +53,7 @@ If you have uploaded a sound to the SoundCard, and connected it to speakers and 
 - Change the value of the `PlaySoundOrFrequency` property to the index of the sound that you have uploaded and want to play.
 - Hit the "Start" button on the toolbar in Bonsai to run the workflow.
 - Press the <kbd>A</kbd> key to play the sound.
-- Double-click on the [`PlaySoundOrFrequency (Parse)`](xref:Harp.SoundCard.Parse) operator to open the visualizer and monitor the echo.
+- Double-click on the [`TimestampedPlaySoundOrRegister (Parse)`](xref:Harp.SoundCard.Parse) operator to open the visualizer and monitor the replies from the device.
 
 > [!TIP]
 > For the rest of the examples in this user guide, you can also directly copy and paste them into Bonsai to run them.
