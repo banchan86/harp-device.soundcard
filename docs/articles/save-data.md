@@ -1,7 +1,12 @@
 
-## Receiving data
+## Receiving and logging data
 
+:::workflow
+![Logging Top Level](../workflows/harp-devicepattern.bonsai)
+:::
 
+### Receiving data
+Placeholder
 
 ## Logging data
 Data from the SoundCard can be logged in two ways: 
@@ -15,7 +20,7 @@ Data from the SoundCard can be logged in two ways:
 - **CSV format** - Bonsai's [`CsvWriter`] can be used to log data from individual registers into text files. This approach is best used if compatibility with external programs is needed. However, it does not scale well when working with multiple registers or high frequency data streams (>100 Hz).
 
 > [!NOTE]
-> To use [`CsvWriter], install the `Bonsai.System` and `Bonsai.System.Design` package from the Bonsai package manager.
+> To use [`CsvWriter`], install the `Bonsai.System` and `Bonsai.System.Design` package from the Bonsai package manager.
 
 :::workflow
 ![SoundCard CsvWriter](../workflows/logging-csvwriter.bonsai)
@@ -29,4 +34,5 @@ Data from the SoundCard can be logged in two ways:
 
 <!--Reference Style Links -->
 [`CsvWriter`]: xref:Bonsai.IO.CsvWriter
+[`DeviceDataWriter`]: : xref:Harp.SoundCard.DeviceDataWriter
 [`Parse`]: xref:Harp.SoundCard.Parse
