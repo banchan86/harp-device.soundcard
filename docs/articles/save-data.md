@@ -14,12 +14,19 @@ Data from the SoundCard can be logged in two ways:
 
 - **CSV format** - Bonsai's [`CsvWriter`] can be used to log data from individual registers into text files. This approach is best used if compatibility with external programs is needed. However, it does not scale well when working with multiple registers or high frequency data streams (>100 Hz).
 
+> [!NOTE]
+> To use [`CsvWriter], install the `Bonsai.System` and `Bonsai.System.Design` package from the Bonsai package manager.
+
 :::workflow
 ![SoundCard CsvWriter](../workflows/harp-csvwriter.bonsai)
 :::
 
-- Insert a [`CsvWriter`] operator after each [Parse] register that you want to record.
+- Insert a [`CsvWriter`] operator after each [`Parse`] register that you want to record.
 - Configure the `FileName` property of the [`CsvWriter`] with a file name ending in `.csv`, e.g. `PlaySoundOrFrequency.csv`.
 - Set the `IncludeHeader` property of the [`CsvWriter`] to `True` to include column names.
 
 [!INCLUDE [](version-footer.md)]
+
+<!--Reference Style Links -->
+[`CsvWriter`]: xref:Bonsai.IO.CsvWriter
+[`Parse`]: xref:Harp.SoundCard.Parse

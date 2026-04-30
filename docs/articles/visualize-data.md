@@ -21,7 +21,6 @@ play_sound_or_frequency_df = device.PlaySoundOrFrequency.read()
 print(play_sound_or_frequency_df.head())
 
 # Plot sound onset times
-# Uses matplotlib as plotting backend for pandas
 play_sound_or_frequency_df.plot()
 ```
 
