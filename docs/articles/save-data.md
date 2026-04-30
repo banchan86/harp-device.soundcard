@@ -1,14 +1,13 @@
-
-## Receiving and logging data
+## Data Acquisition
 
 :::workflow
-![Logging Top Level](../workflows/harp-devicepattern.bonsai)
+![Logging Top Level](../workflows/logging-toplevel.bonsai)
 :::
 
-### Receiving data
+### Reading Messages
 Placeholder
 
-## Logging data
+### Logging data
 Data from the SoundCard can be logged in two ways: 
 
 - **Harp format** - The [`DeviceDataWriter`] in the [harp device pattern](harp-bonsai.md#harp-device-pattern) will log data from all device registers in the harp binary format, which can be analyzed directly with [harp-python](visualize-data.md).
