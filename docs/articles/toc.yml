@@ -21,6 +21,9 @@
   href: trigger-sound.md
 - name: Data Management
 - name: Data Acquisition
-  href: save-data.md
+  href: acquisition.md
 - name: Data Analysis
   href: visualize-data.md
+- name: Frequently Asked Questions
+- name: Troubleshooting
+  href: troubleshooting.md

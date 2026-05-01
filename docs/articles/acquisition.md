@@ -1,13 +1,23 @@
 ## Data Acquisition
 
+The SoundCard will echo any command that it receives, as well as broadcast events that are happening on the device. In this article, we will go through the different ways of reading/receiving these [`HarpMessages`]. The complete top level workflow we will go through looks like this:
+
 :::workflow
-![Logging Top Level](../workflows/logging-toplevel.bonsai)
+![Logging Top Level](../workflows/acquisition-toplevel.bonsai)
 :::
 
 ### Reading Messages
-Placeholder
+
+:::workflow
+![SoundCard Device Pattern](../workflows/harp-devicepattern.bonsai)
+:::
+
+One way of visualizing all the [`HarpMessages`] coming from the device, is to double-click on the [`SoundCard (Device)`](xref:Harp.SoundCard.Device) operator when the workflow is running to open the visualizer.
+
+Placeholder for more
 
 ### Logging data
+
 Data from the SoundCard can be logged in two ways: 
 
 - **Harp format** - The [`DeviceDataWriter`] in the [harp device pattern](harp-bonsai.md#harp-device-pattern) will log data from all device registers in the harp binary format, which can be analyzed directly with [harp-python](visualize-data.md).
@@ -22,7 +32,7 @@ Data from the SoundCard can be logged in two ways:
 > To use [`CsvWriter`], install the `Bonsai.System` and `Bonsai.System.Design` package from the Bonsai package manager.
 
 :::workflow
-![SoundCard CsvWriter](../workflows/logging-csvwriter.bonsai)
+![SoundCard CsvWriter](../workflows/acquisition-csvwriter.bonsai)
 :::
 
 - Insert a [`CsvWriter`] operator after each [`Parse`] register that you want to record.
@@ -33,5 +43,7 @@ Data from the SoundCard can be logged in two ways:
 
 <!--Reference Style Links -->
 [`CsvWriter`]: xref:Bonsai.IO.CsvWriter
-[`DeviceDataWriter`]: : xref:Harp.SoundCard.DeviceDataWriter
+[`DeviceDataWriter`]: xref:Harp.SoundCard.DeviceDataWriter
+[`HarpMessage`]: xref:Bonsai.Harp.HarpMessage
+[`HarpMessages`]: xref:Bonsai.Harp.HarpMessage
 [`Parse`]: xref:Harp.SoundCard.Parse

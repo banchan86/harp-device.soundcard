@@ -36,13 +36,13 @@ Bonsai is a visual programming language, where functions are represented by oper
 
 ## Harp SoundCard Workflow
 
-The same pattern, when applied to the SoundCard, looks like this:
+The same pattern, when used to control the SoundCard, looks like this:
 
 :::workflow
 ![Harp SoundCard Basic Example](../workflows/harp-soundcard-basic-example.bonsai)
 :::
 
-In this case, [`CreateMessage`] targets the [`PlaySoundOrFrequency`] register, and [`Parse`] reads the echo from the same register. The operators will reflect the name of the `Device`, `Register` and `Payload` that is selected when using the [`Harp.SoundCard`](installation.md#bonsai) Bonsai package.
+When using the [`Harp.SoundCard`](installation.md#bonsai) Bonsai package, the operators will reflect the name of the `Device`, `Register` and `Payload` that is selected. In this case, [`CreateMessage`] targets the [`PlaySoundOrFrequency`] register, and [`Device`] communicates with the SoundCard.
 
 If you have uploaded a sound to the SoundCard, and connected it to speakers and amplifiers, you can give this workflow a try!
 
