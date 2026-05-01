@@ -21,9 +21,11 @@ The three red status LED:
 ## Common Issues
 
 Q: In Bonsai, running the workflow throws an error "The port `ComX` does not exist."
+
 A: Either the wrong communications port in the `PortName` property in [`Device`] was selected, or the [USB mini-B](connections.md) cable is not properly connected. Try selecting a different communications port and checking the connections.
 
 Q: In Bonsai, running the workflow throws an error "Access to the port `ComX` is denied"
+
 A: Only one interface connection to the SoundCard can be opened at one time, check that Bonsai and the SoundCard GUI are not running simultaneously. Also check that multiple instances of either are not running. 
 
 Sometimes, the port can be also be locked by a program that did not terminate correctly, restarting the computer fixes it.
