@@ -18,7 +18,7 @@ The three red status LEDs:
 
 **Q: In Bonsai, running the workflow throws an error "The port `ComX` does not exist."**
 
-A: Either the wrong communications port in the `PortName` property in [`Device`] was selected, or the [USB mini-B](connections.md) cable is not properly connected. Try selecting a different communications port and checking the connections.
+A: Either the wrong communications port in the `PortName` property in [`Device`] was selected, or the [USB mini-B](connections.md) cable is not properly connected. Try selecting a different communications port and checking the connection.
 
 **Q: In Bonsai, running the workflow throws an error "Access to the port `ComX` is denied"**
 

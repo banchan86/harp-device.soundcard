@@ -3,6 +3,8 @@ desktop.ini
 
 # Bonsai
 *.exe
+*.exe.settings
+/.bonsai/Settings/
 
 # Visual studio files
 .vs
