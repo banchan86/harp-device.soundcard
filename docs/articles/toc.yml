@@ -27,3 +27,5 @@
 - name: Frequently Asked Questions
 - name: Troubleshooting
   href: troubleshooting.md
+- name: Bonsai Essentials
+  href: bonsai-essentials.md

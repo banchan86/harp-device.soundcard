@@ -22,7 +22,9 @@ In addition, the device can send event messages without a command from the host 
 
 While there are several ways of controlling the SoundCard, [Bonsai](https://bonsai-rx.org/) offers the most flexible and complete control of the SoundCard as it exposes every register available on the device. It also integrates well with hundreds of open source and closed source hardware and software that are used in the neuroscience community.
 
-Bonsai is a visual programming language, where functions are represented by operators/nodes. Operators connect together to form data processing pipelines that are embedded in scripts called workflows. For instance, a generic example of the Harp communication protocol above, as represented in Bonsai, will look like this:
+Bonsai is a visual programming language, where functions are represented by operators/nodes. Operators connect together to form data processing pipelines that are embedded in scripts called workflows.
+
+For instance, a generic example of the Harp communication protocol above, as represented in Bonsai, will look like this:
 
 :::workflow
 ![Harp Generic Basic Example](../workflows/harp-generic-basic-example.bonsai)
@@ -33,6 +35,9 @@ Bonsai is a visual programming language, where functions are represented by oper
 - [`CreateMessage`] - This source operator creates a [`HarpMessage`] to send to the device in the next node. In a [`CreateMessage`] operator, you would select the `Register` as well as the `Payload` values to send.
 
 - [`Device`] - This operator is used to initialize and communicate with the device, such as receiving commands to send as well as broadcasting replies and events. There can be only one [`Device`] operator for each Harp device in the workflow. 
+
+> [!TIP]
+> For more, check out our [Bonsai Essentials](bonsai-essentials.md) guide or the full Bonsai [documentation](https://bonsai-rx.org/).
 
 ## Harp SoundCard Workflow
 
