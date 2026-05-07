@@ -17,7 +17,7 @@ The WinUSB driver is required to upload waveforms to the onboard sound memory ba
 
 The SoundCard GUI offers a graphical interface for [generating and uploading waveforms](upload-waveform-gui.md). 
 
-![SoundCard GUI](../images/SoundCardGUI_Window.png){width=600}
+![SoundCard GUI](../images/gui-window.png){width=600}
 
 - Download and install the [SoundCard GUI](https://github.com/fchampalimaud/device.soundcard/releases/tag/app1.0.0-alpha.1).
 
