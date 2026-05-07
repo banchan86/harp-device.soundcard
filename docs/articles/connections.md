@@ -1,4 +1,4 @@
-## Connections
+## Ports
 
 ![Harp SoundCard Device Pinout](../images/soundcard-devicepinout.svg){width=600}
 
