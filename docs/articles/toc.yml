@@ -8,21 +8,21 @@
   href: connections.md
 - name: Installation
   href: installation.md
-- name: Upload waveforms
+- name: Upload Waveforms
   href: upload-waveform-gui.md
-- name: Device Control
-- name: Harp Bonsai Interface
+- name: Bonsai Device Connection
   href: harp-bonsai.md
-- name: Play sounds
+- name: Bonsai Workflows
+- name: Play Sounds
   href: play-sound.md
-- name: Adjust volume
+- name: Adjust Volume
   href: adjust-volume.md
-- name: Trigger sound playback
+- name: Trigger Sound Playback
   href: trigger-sound.md
 - name: Data Management
-- name: Data Acquisition
+- name: Acquisition & Logging
   href: acquisition.md
-- name: Data Analysis
+- name: Analysis
   href: visualize-data.md
 - name: Frequently Asked Questions
 - name: Troubleshooting
