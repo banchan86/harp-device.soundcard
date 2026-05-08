@@ -17,7 +17,7 @@ To control the SoundCard with Bonsai, we will setup a Harp [device pattern](http
 - Click on the [`SoundCardDataWriter (DeviceDataWriter)`] operator and set the `Path` property for the name and location of the save file (e.g. `Data\SoundCard.harp`).
 - Press the "Start" button in Bonsai to run the workflow.
 
-If the connection is successful, the green LED indicator light on the device will cycle on and off with a period of 2 secs to indicate that its communicating with Bonsai. If it does not change or an error appears, check out the [troubleshooting](troubleshooting.md) guide. 
+If the connection is successful, the [green LED](troubleshooting.md#indicator-lights) indicator light on the device will cycle on and off with a period of 2 secs to indicate that its communicating with Bonsai. If it does not change or an error appears, check out the [troubleshooting](troubleshooting.md) guide. 
 
 Otherwise, move on to the [play sound](play-sound.md) article to play your first sound!
 
