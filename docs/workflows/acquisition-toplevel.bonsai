@@ -5,7 +5,6 @@
                  xmlns:harp="clr-namespace:Bonsai.Harp;assembly=Bonsai.Harp"
                  xmlns:p1="clr-namespace:Harp.SoundCard;assembly=Harp.SoundCard"
                  xmlns:wie="clr-namespace:Bonsai.Windows.Input;assembly=Bonsai.Windows.Input"
-                 xmlns:io="clr-namespace:Bonsai.IO;assembly=Bonsai.System"
                  xmlns="https://bonsai-rx.org/2018/workflow">
   <Workflow>
     <Nodes>
@@ -74,29 +73,6 @@
       <Expression xsi:type="p1:Parse">
         <harp:Register xsi:type="p1:TimestampedPlaySoundOrFrequency" />
       </Expression>
-      <Expression xsi:type="Annotation">
-        <Name>Logging CsvWriter</Name>
-        <Text><![CDATA[]]></Text>
-      </Expression>
-      <Expression xsi:type="SubscribeSubject">
-        <Name>SoundCard Events</Name>
-      </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="harp:FilterMessageType">
-          <harp:FilterType>Include</harp:FilterType>
-          <harp:MessageType>Event</harp:MessageType>
-        </Combinator>
-      </Expression>
-      <Expression xsi:type="p1:Parse">
-        <harp:Register xsi:type="p1:TimestampedPlaySoundOrFrequency" />
-      </Expression>
-      <Expression xsi:type="io:CsvWriter">
-        <io:FileName>TimestampPlaySound.csv</io:FileName>
-        <io:Append>false</io:Append>
-        <io:Overwrite>false</io:Overwrite>
-        <io:Suffix>Timestamp</io:Suffix>
-        <io:IncludeHeader>true</io:IncludeHeader>
-      </Expression>
     </Nodes>
     <Edges>
       <Edge From="1" To="2" Label="Source1" />
@@ -106,9 +82,6 @@
       <Edge From="7" To="8" Label="Source1" />
       <Edge From="10" To="11" Label="Source1" />
       <Edge From="11" To="12" Label="Source1" />
-      <Edge From="14" To="15" Label="Source1" />
-      <Edge From="15" To="16" Label="Source1" />
-      <Edge From="16" To="17" Label="Source1" />
     </Edges>
   </Workflow>
 </WorkflowBuilder>
