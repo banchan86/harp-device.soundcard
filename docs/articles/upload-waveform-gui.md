@@ -16,13 +16,13 @@ Before beginning, follow the audio setup [guide](connections.md#audio-setup) and
 3. Adjust the parameters for the sound accordingly. Take note that amplitude can be adjusted as a fraction of full-scale (linear) or in dBFS (logarithmic). Select the radio button for the option you want.
 
 > [!TIP]
-> dBFS matches the logarithimic nature of human loudness perception.
+> dBFS is the standard unit for audio levels and maps more naturally to perceived loudness.
 
 4. To prevent "pops" and "clicks" from abrupt transitions during sound onset or sound offset, a windowing function can be applied to fade in and out the sound. Select the channels to apply the window to.
 
 5. Adjust the window properties in this panel.
 
-6. Choose the sampling rate and click on "Generate". The choice of sampling rate will determine the range of reproducible frequencies. 
+6. Choose the sampling rate and click on "Generate". The choice of sampling rate will determine the range of reproducible frequencies.
 
 7. Select the channels to upload.
 
