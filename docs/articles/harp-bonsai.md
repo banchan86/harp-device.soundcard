@@ -1,6 +1,6 @@
 ## Harp Device Pattern
 
-To control the SoundCard with Bonsai, we will setup a Harp [device pattern](https://harp-tech.org/articles/operators.html#device-pattern). This will initialize the device and provide hooks to send commands as well as receive messages from the SoundCard using the [Harp communication protocol](https://harp-tech.org/protocol/BinaryProtocol-8bit.html). It will also [log data](acquisition.md) from the device.
+To control the SoundCard with Bonsai, we will setup a Harp [device pattern](https://harp-tech.org/articles/operators.html#device-pattern). This will initialize the device and provide hooks to send commands as well as receive messages from the SoundCard using the [harp communication protocol](https://harp-tech.org/protocol/BinaryProtocol-8bit.html). It will also [log data](acquisition.md) from the device.
 
 :::workflow
 ![SoundCard Device Pattern](../workflows/harp-devicepattern.bonsai)
