@@ -1,53 +1,33 @@
 ## Upload waveforms
 
-The SoundCard GUI provides an easy to use interface to generate and upload sounds to the SoundCard. Alternatively, you can also [generate and upload sounds in Bonsai](../tutorials/upload-waveform-bonsai.md).
+The SoundCard GUI provides an easy to use interface to generate and upload sounds to the SoundCard. Alternatively, you can [generate and upload sounds in Bonsai](../tutorials/upload-waveform-bonsai.md), which offers greater flexibility and functionality.
 
+Before beginning, follow the audio setup [guide](connections.md#audio-setup) and connect the [USB mini-b](connections.md#ports) cable to the computer. Launch "Harp.SoundCard.App" from the Windows Start menu.
 
-![SoundCard GUI](../images/gui-window.png)
+![SoundCard GUI](../images/gui-labelled.svg)
 
-## Connecting to the device
-
-1) Follow the audio setup [guide](connections.md#audio-setup) and connect the [USB mini-b](connections.md#ports) cable to the computer.
-
-2) Launch "Harp.SoundCard.App" from the Windows Start menu.
-
-3) Select the port for the SoundCard, and press "Connect".
-
-![SoundCard GUI Connect](../images/gui-connect-device.png){width=400}
-
-4) The device details will display if it is successfully connected.
-
-![SoundCard GUI Successful Connection](../images/gui-successful-connection.png){width=400}
+1. Select the port for the SoundCard, and press "Connect". The device details will display on the right side if it is successfully connected.
 
 > [!TIP]
 > If you run into an error, check out the troubleshooting [guide](./troubleshooting.md).
 
-## Generating sounds 
+2. Select the tab for either pure tone or white noise generation:
 
-1) Select the tab for either pure tone or white noise generation:
-
-![SoundCard GUI Sound Generation](../images/gui-sound-generation.png){width=400}
-
-2) Adjust the parameters for the sound accordingly:
-
-- **Amplitude** can be adjusted as a fraction of full-scale (linear) or in dBFS (logarithmic). Select the radio button for the option you want.
-
-![SoundCard GUI Sound Amplitude](../images/gui-sound-amplitude.png){width=400}
+3. Adjust the parameters for the sound accordingly. Take note that amplitude can be adjusted as a fraction of full-scale (linear) or in dBFS (logarithmic). Select the radio button for the option you want.
 
 > [!TIP]
 > dBFS matches the logarithimic nature of human loudness perception.
 
-- **Window** can be applied to the start and end of the waveform, this helps to prevent "pops" and "clicks" from abrupt transitions. Select the channels to apply the window to:
+4. To prevent "pops" and "clicks" from abrupt transitions during sound onset or sound offset, a windowing function can be applied to fade in or out the sound. Select the channels to apply the window to.
 
-![SoundCard GUI Use Window](../images/gui-usewindow.png){width=400}
+5. Adjust the window properties in this panel.
 
-And adjust the window properties on the adjacent panel:
+6. Choose the sampling rate and click on "Generate". The choice of sampling rate will determine both the range of reproducible frequencies. 
 
-![SoundCard GUI Window Panel](../images/gui-windowpanel.png){width=400}
+7. Select the channels to upload
 
-3) Choose the sampling rate and click on "Generate":
+8. Configure the sound index to upload and upload the sound to the device.
 
-
-
+9. Press "Play" on the sound.
 
 [!INCLUDE [](version-footer.md)]
