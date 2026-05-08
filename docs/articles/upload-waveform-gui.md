@@ -18,16 +18,16 @@ Before beginning, follow the audio setup [guide](connections.md#audio-setup) and
 > [!TIP]
 > dBFS matches the logarithimic nature of human loudness perception.
 
-4. To prevent "pops" and "clicks" from abrupt transitions during sound onset or sound offset, a windowing function can be applied to fade in or out the sound. Select the channels to apply the window to.
+4. To prevent "pops" and "clicks" from abrupt transitions during sound onset or sound offset, a windowing function can be applied to fade in and out the sound. Select the channels to apply the window to.
 
 5. Adjust the window properties in this panel.
 
-6. Choose the sampling rate and click on "Generate". The choice of sampling rate will determine both the range of reproducible frequencies. 
+6. Choose the sampling rate and click on "Generate". The choice of sampling rate will determine the range of reproducible frequencies. 
 
-7. Select the channels to upload
+7. Select the channels to upload.
 
-8. Configure the sound index to upload and upload the sound to the device.
+8. Configure the sound index to upload and click on "Send to device"
 
-9. Press "Play" on the sound.
+9. Select the sound index and press "Play" to test the generated sound.
 
 [!INCLUDE [](version-footer.md)]
