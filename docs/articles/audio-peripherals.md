@@ -2,7 +2,7 @@
 
 Low distortion, high bandwidth audio amplifier for use in high fidelity applications to drive high-quality sounds to speakers.
 
-!["harpaudioamplifier"](../images/audioamp-pcb.png)
+!["harpaudioamplifier"](../images/OEPS-Amplifier.png){width=450}
 
 Assembled units are available from the [Open Ephys store](https://open-ephys.org/harp), or build your own using the [hardware design files](https://github.com/harp-tech/peripheral.audioamp).
 
