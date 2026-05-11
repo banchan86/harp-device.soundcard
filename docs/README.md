@@ -1,10 +1,13 @@
 ## Harp Soundcard
 
-The SoundCard is an open-source, high-fidelity audio device that is specifically designed for behavioral research experiments. It can be triggered with low latency, conforms to the [Harp](https://harp-tech.org/articles/about.html) protocol for synchronization, and integrates with [Bonsai](https://bonsai-rx.org/) for experiment acquisition and control.
+This is a high performance sound card with two output channels using 24 bits DACs at 192kHz sample rate.
 
 ![HarpSoundcard](./images/OEPS-SoundCard.png){width=450}
 
-For a full characterization, see the [publication](https://doi.org/10.1016/j.ohx.2024.e00555).
+The SoundCard is an open-source, high-fidelity audio device specifically designed for behavioral research experiments. It supports audio frequencies up to 80kHz, making it suitable for experiments with species that communicate ultrasonically. 
+
+
+It can be triggered with low latency, conforms to the [Harp](https://harp-tech.org/articles/about.html) protocol for synchronization, and integrates with [Bonsai](https://bonsai-rx.org/) for experiment acquisition and control. For a full characterization, see the [publication](https://doi.org/10.1016/j.ohx.2024.e00555).
 
 Assembled units are available from the [Open Ephys store](https://open-ephys.org/harp), or build your own using the [hardware design files](https://github.com/harp-tech/device.soundcard). 
 
@@ -13,10 +16,28 @@ Assembled units are available from the [Open Ephys store](https://open-ephys.org
 * Internal memory to store sounds, enabling low-latency sound delivery
 * Pre-selected sounds can be triggered using an external TTL
 * Internal wave generator allows the user to configure a pure tone without loading a sound file
-* Stereo 24 bit @ 192 kHz maximum sampling rate outputs
-* THD: -111dB (1 kHz @ 2 V rms)
-* Noise Floor:	20 µV rms | -94 dB (20 Hz – 80 kHz)
-* SNR:	100 dB | 113 dbA (20 Hz – 80 kHz @ 2 V rms)
+
+### System Components
+
+To play sounds, the SoundCard must be connected to external amplifiers and speakers. The [Harp Audio Amplifier](./articles/audio-peripherals.md#harp-audio-amplifier) is specifically designed to pair with the SoundCard. 
+
+![Harp SoundCard Connections](./images/connection.svg){width=450}
+
+*<small>Adapted from [Silva et al. (2024)](https://doi.org/10.1016/j.ohx.2024.e00555). CC BY 4.0.</small>*
+
+### Specs
+
+- Maximum sampling rate: 192 kHz
+- Number of channels: 2
+- Bit depth: 24 bits
+- Input voltage: 12 V DC
+- Output voltage: 2 V rms
+- Flash memory: 30 indices, 8 MB per index (2 million samples)
+- Sound duration: 10.922 s at 96 kHz sample rate, or 5.461 s at 192 kHz sample rate
+- Timestamp resolution: 32 µs
+- Digital outputs: 3 (3.3V or 5V)
+- Digital inputs: 3 (5V tolerant)
+- Analog inputs: 2 (3.3V max - 5V tolerant)
 
 ### Hardware Compatibility
 

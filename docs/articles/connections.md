@@ -22,7 +22,7 @@ For more information on how to use them, refer to the [GPIO](trigger-sound.md) a
 
 ## Audio Setup
 
-To play sounds, the SoundCard must be connected to external amplifiers and speakers. The wiring diagram below shows how to connect the SoundCard for mono channel playback on a single speaker:
+To play sounds, the SoundCard must be connected to external amplifiers and speakers. 
 
 ![Harp SoundCard Connections](../images/connection.svg){width=450}
 
