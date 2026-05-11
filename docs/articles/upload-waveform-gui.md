@@ -11,7 +11,7 @@ Before beginning, follow the audio setup [guide](connections.md#audio-setup) and
 > [!TIP]
 > If you run into an error, check out the troubleshooting [guide](./troubleshooting.md).
 
-2. Select the tab for either pure tone or white noise generation:
+2. Select the tab for either pure tone or white noise generation.
 
 3. Adjust the parameters for the sound accordingly. Take note that amplitude can be adjusted as a fraction of full-scale (linear) or in dBFS (logarithmic). Select the radio button for the option you want.
 
@@ -26,8 +26,10 @@ Before beginning, follow the audio setup [guide](connections.md#audio-setup) and
 
 7. Select the channels to upload.
 
-8. Configure the sound index to upload and click on "Send to device"
+8. Configure the sound index to upload and click on "Send to device".
 
 9. Select the sound index and press "Play" to test the generated sound.
+
+10. Save the waveform to a binary file or load a previously saved binary file.
 
 [!INCLUDE [](version-footer.md)]
