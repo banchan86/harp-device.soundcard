@@ -4,7 +4,7 @@ Low distortion, high-bandwidth audio amplifier designed to pair with the SoundCa
 
 !["harpaudioamplifier"](../images/OEPS-Amplifier.png){width=450}
 
-For a full characterization, see the published [article](https://doi.org/10.1016/j.ohx.2024.e00555).
+For a full characterization, see the [publication](https://doi.org/10.1016/j.ohx.2024.e00555).
 
 Assembled units are available from the [Open Ephys store](https://open-ephys.org/harp), or build your own using the [hardware design files](https://github.com/harp-tech/peripheral.audioamp).
 
