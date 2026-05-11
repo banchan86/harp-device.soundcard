@@ -1,6 +1,6 @@
-- name: Documentation
+- name: User Guide
   href: articles/
-- name: API
+- name: Reference
   href: ../artifacts/docs/api/
 - name: Tutorials
   href: tutorials/
