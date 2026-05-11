@@ -1,17 +1,16 @@
-## Play sounds
+## Play pure tones and waveforms
 
-The SoundCard supports playback of waveforms stored in its onboard memory. It also includes an internal sine wave generator for pure tones.
+The SoundCard supports playback of waveforms stored in its onboard memory. It also includes an internal sine wave generator for pure tones. The following article will walk through how to play these sounds in Bonsai using key presses as an example trigger.
 
-> [!WARNING]
-> When adding these operators to the workflow, make sure to use the device-specific versions, e.g. `Device (Harp.SoundCard)` instead of `Device (Harp)`. If correctly selected, the names of these operators in the workflow panel will change to reflect either the name of the device or the selected register/payload.
-
-A complete workflow using the [harp device pattern](./harp-bonsai.md#harp-device-pattern) will look like this:
+A complete workflow using the [harp device pattern](./harp-bonsai.md#harp-device-pattern) will look like this (we will go through each example in detail below):
 
 :::workflow
 ![Play Sound Top Level](../workflows/playsound-toplevel.bonsai)
 :::
 
-The following sections will walk through each example in detail.
+> [!WARNING]
+> When adding these operators to the workflow from the Bonsai [Toolbox](https://bonsai-rx.org/docs/articles/editor.html?tabs=mouse-controls#toolbox), make sure to use the device-specific versions, e.g. `Device (Harp.SoundCard)` instead of `Device (Harp)`. If correctly selected, the names of these operators in the workflow panel will change to reflect either the name of the device or the selected register/payload.
+
 
 [!INCLUDE [](../apidoc/play-sound-index.md)]
 
@@ -25,7 +24,7 @@ You can replace [`KeyDown`] with other operators to trigger sound playback on ot
 ![Play Sound Index Timer](../workflows/playsound-indextimer.bonsai)
 :::
 
-- Replace the [`KeyDown`] source with a [`Timer`] source and set the `DueTime` property to 0.
+- Replace the [`KeyDown`] source with a [`Timer`] source and set the `DueTime` property to the number of seconds to wait before playing the sound (use 0 to play immediately when the workflow starts).
 - Insert a [`SubscribeWhen`] operator after `SoundCard Commands`.
 - Insert a [`SubscribeSubject`] operator named `SoundCard Events`, and connect it to [`SubscribeWhen`].
 
@@ -36,6 +35,7 @@ You can replace [`KeyDown`] with other operators to trigger sound playback on ot
 
 <!--Reference Style Links -->
 [`Device`]: xref:Harp.SoundCard.Device
+[`HarpMessage`]: xref:Bonsai.Harp.HarpMessage
 [`KeyDown`]: xref:Bonsai.Windows.Input.KeyDown
 [`SubscribeSubject`]: xref:Bonsai.Expressions.SubscribeSubject
 [`SubscribeWhen`]: xref:Bonsai.Reactive.SubscribeWhen
