@@ -1,9 +1,12 @@
 ## Harp Soundcard
-This is a high performance sound card with two output channels using 24 bits DACs at 192kHz sample rate.
+
+The SoundCard is an open-source, high-fidelity audio device that is specifically designed for behavioral research experiments. It can be triggered with low latency, conforms to the [Harp](https://harp-tech.org/articles/about.html) protocol for synchronization, and integrates with [Bonsai](https://bonsai-rx.org/) for experiment acquistion and control.
 
 ![HarpSoundcard](./images/OEPS-SoundCard.png){width=450}
 
-Assembled units are available from the [Open Ephys store](https://open-ephys.org/harp), or build your own using the [hardware design files](https://github.com/harp-tech/device.soundcard).
+For a full characterization, see the published [article](https://doi.org/10.1016/j.ohx.2024.e00555).
+
+Assembled units are available from the [Open Ephys store](https://open-ephys.org/harp), or build your own using the [hardware design files](https://github.com/harp-tech/device.soundcard). 
 
 ### Key Features
 
