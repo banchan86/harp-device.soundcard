@@ -1,6 +1,6 @@
 - name: Introduction
 - name: Overview
-  href: system-overview.md
+  href: ../index.md
 - name: SoundCard
   href: soundcard-overview.md
 - name: Peripherals
