@@ -1,6 +1,19 @@
-## Lower sound playback volume
+## Adjust volume
 
-The [`PlaySoundOrFrequency`] register plays the sound at the amplitude of the stored waveform or at maximum amplitude for pure tones. To lower the volume, use the [`AttenuationAndPlaySoundOrFreq`] register instead to set the attenuation in 0.1 dB steps.
+The [`PlaySoundOrFrequency`] register in the [play sound](play-sound.md) article will play the sound at the amplitude of the stored waveform or at maximum amplitude for the pure tone frequency generator. This article will demonstrate how to dynamically lower the amplitude with other registers.
+
+> [!NOTE]
+> The playback amplitude of stored waveforms can be attenuated but not amplified. Upload waveforms at full 24-bit depth to maximise the volume.
+
+The top level workflow will look like this:
+
+:::workflow
+![Adjust Volume Top Level](../workflows/adjustvolume-toplevel.bonsai)
+:::
+
+## Play sound with lower amplitude
+
+Use the [`AttenuationAndPlaySoundOrFreq`] register as a drop in replacement for the [`PlaySoundOrFrequency`] register to play the sound at a lower volume. The attenuation is set in 0.1 dB steps.
 
 :::workflow
 ![Adjust Volume Attenuation](../workflows/adjustvolume-attenuation.bonsai)
@@ -18,7 +31,7 @@ The [`PlaySoundOrFrequency`] register plays the sound at the amplitude of the st
 Run the workflow and press the <kbd>A</kbd> key to play the sound at reduced volume.
 
 > [!TIP]
-> Pure tone playback must be stopped explicitly via the [`Stop`] register.
+> Just like the [`PlaySoundOrFrequency`] register, pure tone playback must be stopped explicitly via the [`Stop`] register.
 
 [!INCLUDE [](version-footer.md)]
 
