@@ -15,8 +15,7 @@ The SoundCard:
 - Hardware timestamping and synchronization with other [Harp](https://harp-tech.org/articles/about.html) devices.
 - Integrates with [Bonsai](https://bonsai-rx.org/) for experiment acquisition and control.
 
-The Audio Amplifier:
-- Provides low-distortion amplification of SoundCard signals, which is required for driving speakers for sound playback.
+The Audio Amplifier provides low-distortion amplification of SoundCard signals, which is required for driving speakers for sound playback.
 
 A full end-to-end audio performance characterization of the SoundCard, Audio Amplifier, and speakers is documented in this [publication](https://doi.org/10.1016/j.ohx.2024.e00555).
 
