@@ -24,7 +24,7 @@ For more information on how to use them, refer to the [GPIO](trigger-sound.md) a
 
 To play sounds, the SoundCard must be connected to external amplifiers and speakers. 
 
-![Harp SoundCard Connections](../images/connection.svg){width=450}
+![Harp SoundCard Connections](../images/connection-labelled.svg){width=450}
 
 *<small>Adapted from [Silva et al. (2024)](https://doi.org/10.1016/j.ohx.2024.e00555). CC BY 4.0.</small>*
 
