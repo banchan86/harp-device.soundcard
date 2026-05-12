@@ -2,15 +2,13 @@
 
 This is a high performance sound card with two output channels using 24 bits DACs at 192kHz sample rate.
 
-![HarpSoundcard](./images/OEPS-SoundCard.png){width=450}
-
-Assembled units are available from the [Open Ephys store](https://open-ephys.org/harp), or build your own using the [hardware design files](https://github.com/harp-tech/device.soundcard). 
+![HarpSoundcard](../images/OEPS-SoundCard.png){width=450}
 
 ### Key Features
 
-* Internal memory to store sounds, enabling low-latency sound delivery
-* Pre-selected sounds can be triggered using an external TTL
-* Internal wave generator allows the user to configure a pure tone without loading a sound file
+- Internal memory to store sounds, enabling low-latency sound delivery
+- Pre-selected sounds can be triggered using an external TTL
+- Internal wave generator allows the user to configure a pure tone without loading a sound file
 
 ### Specs
 
@@ -25,6 +23,12 @@ Assembled units are available from the [Open Ephys store](https://open-ephys.org
 - Digital outputs: 3 (3.3V or 5V)
 - Digital inputs: 3 (5V tolerant)
 - Analog inputs: 2 (3.3V max - 5V tolerant)
+
+### Benchmarks
+
+- THD: -111dB (1 kHz @ 2 V rms)
+- Noise Floor: 20 µV rms | -94 dB (20 Hz – 80 kHz)
+- SNR: 100 dB | 113 dbA (20 Hz – 80 kHz @ 2 V rms)
 
 ### Hardware Compatibility
 
@@ -42,11 +46,3 @@ Assembled units are available from the [Open Ephys store](https://open-ephys.org
 | **<= 2.2** | [Device.SoundCard][2] | >= 1.0           |                                         |
 
 [2]: https://github.com/harp-tech/device.soundcard
-
-### Licensing
-
-Each subdirectory will contain a license or, possibly, a set of licenses if it involves both hardware and software.
-
-### Acknowledgments
-
-Hardware design and GUI contributed by [Champalimaud Foundation](https://www.cf-hw.org/), Bonsai interface by [Neurogears](https://neurogears.org/), and documentation by [Open Ephys](https://open-ephys.org/).

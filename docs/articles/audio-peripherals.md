@@ -10,11 +10,19 @@ Assembled units are available from the [Open Ephys store](https://open-ephys.org
 
 ### Key Features
 
-* 119 dB SNR (A-weighted 80kHz bandwidth)
-* Unity gain
-* <0.03% distortion @ 1W
-* Supports 4Ohms speaker @ 1W
-* Spectral variation <0.1dB 20Hz - 80kHz
+- Unity gain
+
+### Specs
+
+- Number of channels: 1
+- Input voltage: 2 × 12 V DC (positive and negative supply)
+- Speaker output (with SoundCard): 0.5 W @ 8 Ω / 1 W @ 4 Ω
+
+### Benchmarks
+
+- SNR: 119 dB (A-weighted 80kHz bandwidth)
+- Spectral variation: <0.1dB 20Hz - 80kHz
+- Distortion: <0.03% @ 1W
 
 ### Speakers
 
