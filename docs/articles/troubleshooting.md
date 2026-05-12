@@ -14,7 +14,7 @@ The three red status LEDs:
 - `AUDIO` will turn ON when producing audio.
 - `USB` will turn ON when communicating through USB or the USB communication is not available
 
-## Common issues
+## COM Port Errors
 
 **Q: In Bonsai, running the workflow throws an error "The port `ComX` does not exist."**
 

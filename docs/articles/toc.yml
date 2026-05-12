@@ -10,7 +10,7 @@
   href: connections.md
 - name: Installation
   href: installation.md
-- name: Upload Waveforms
+- name: SoundCard GUI
   href: upload-waveform-gui.md
 - name: Bonsai Device Setup
   href: harp-bonsai.md
@@ -26,6 +26,6 @@
   href: acquisition.md
 - name: Analysis
   href: visualize-data.md
-- name: Frequently Asked Questions
 - name: Troubleshooting
+- name: Lights and Errors
   href: troubleshooting.md
