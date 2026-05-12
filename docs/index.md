@@ -1,6 +1,6 @@
 ### Overview
 
-The Harp [SoundCard](articles/soundcard-overview.md) and [Amplifier](articles/audio-peripherals.md) are open-source, high-fidelity audio devices specifically designed for behavioral research experiments. 
+The Harp [SoundCard](articles/soundcard-overview.md) and [Audio Amplifier](articles/audio-peripherals.md) are open-source, high-fidelity audio devices specifically designed for behavioral research experiments. 
 
 ![Harp SoundCard Connections](images/connection.svg){width=450}
 
@@ -8,12 +8,12 @@ The Harp [SoundCard](articles/soundcard-overview.md) and [Amplifier](articles/au
 
 Consumer-grade audio systems are designed to operate within the human auditory domain, are not optimized for real-time audio applications, and rarely support synchronization or precise triggering of auditory stimuli. 
 
-The SoundCard:
+The SoundCard provides:
 
-- Supports wideband frequencies up to 80 kHz, making it suitable for experiments involving ultrasonic communication.
-- Onboard storage of sound waveforms for low-latency triggering.
+- Wideband frequency support up to 80 kHz, suitable for experiments involving ultrasonic communication.
+- Onboard storage and digital input triggering for low-latency sound playback.
 - Hardware timestamping and synchronization with other [Harp](https://harp-tech.org/articles/about.html) devices.
-- Integrates with [Bonsai](https://bonsai-rx.org/) for experiment acquisition and control.
+- [Bonsai](https://bonsai-rx.org/) integration for flexible experiment acquisition and control.
 
 The Audio Amplifier provides low-distortion amplification of SoundCard signals, which is required for driving speakers for sound playback.
 
