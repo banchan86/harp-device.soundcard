@@ -1,0 +1,3 @@
+## Attenuate channel
+
+"Placeholder"
