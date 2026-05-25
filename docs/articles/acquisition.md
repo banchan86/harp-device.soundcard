@@ -1,6 +1,8 @@
 ## Acquisition and Logging
 
-The SoundCard will echo any command it receives and broadcast events occurring on the device using the [harp communication protocol](https://harp-tech.org/protocol/BinaryProtocol-8bit.html). This article covers how to visualize and log these [`HarpMessages`] while the workflow is running. The complete top-level workflow is shown below:
+The SoundCard will echo any command it receives and broadcast events occurring on the device using the [harp communication protocol](https://harp-tech.org/protocol/BinaryProtocol-8bit.html). This article covers how to visualize and log these [`HarpMessages`] while the workflow is running.
+
+The complete workflow is shown below:
 
 :::workflow
 ![Logging Top Level](../workflows/acquisition-toplevel.bonsai)

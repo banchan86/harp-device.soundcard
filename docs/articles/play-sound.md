@@ -2,7 +2,7 @@
 
 The SoundCard supports playback of waveforms stored in its onboard memory. It also includes an internal sine wave generator for pure tones. The following article will walk through how to play these sounds in Bonsai using key presses as an example trigger.
 
-A complete workflow using the [harp device pattern](./harp-bonsai.md#harp-device-pattern) will look like this (we will go through each example in detail below):
+The complete workflow is shown below:
 
 :::workflow
 ![Play Sound Top Level](../workflows/playsound-toplevel.bonsai)

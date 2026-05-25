@@ -5,7 +5,7 @@ The [`PlaySoundOrFrequency`] register in the [play sound](play-sound.md) article
 > [!NOTE]
 > The playback amplitude of stored waveforms can be attenuated but not amplified. Upload waveforms at full 24-bit depth to maximize the volume.
 
-The top level workflow will look like this:
+The complete workflow is shown below:
 
 :::workflow
 ![Adjust Volume Top Level](../workflows/adjustvolume-toplevel.bonsai)
