@@ -16,7 +16,7 @@ A complete workflow using the [harp device pattern](./harp-bonsai.md#harp-device
 
 [!INCLUDE [](../apidoc/play-frequency.md)]
 
-## Controlling sound playback with other events
+## Controlling Sound Playback with Other Events
 
 You can replace [`KeyDown`] with other operators to trigger sound playback on other events in Bonsai.
 

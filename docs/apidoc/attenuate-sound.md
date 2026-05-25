@@ -1,4 +1,4 @@
-## Attenuate and play sound
+### Attenuate and Play Sound
 
 Use the [`AttenuationAndPlaySoundOrFreq`] register as a drop in replacement for the [`PlaySoundOrFrequency`] register to start sound playback at a lower volume. The attenuation is set in 0.1 dB steps.
 

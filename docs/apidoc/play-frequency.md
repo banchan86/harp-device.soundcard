@@ -1,4 +1,4 @@
-## Play pure tone frequency
+### Play Pure Tone Frequency
 
 Pure tones can be played from the `SoundCard` internal sine wave generator by specifying the frequency in the [`PlaySoundOrFrequency`] register. Sounds will be played continuously at the device's max amplitude until stopped.
 

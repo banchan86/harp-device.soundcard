@@ -1,12 +1,12 @@
-## Data Acquisition and Logging
+## Acquisition and Logging
 
-The SoundCard will echo any command it receives and broadcast events occuring on the device using the [harp communication protocol](https://harp-tech.org/protocol/BinaryProtocol-8bit.html). This article covers how to visualize and log these [`HarpMessages`] while the workflow is running. The complete top-level workflow is shown below:
+The SoundCard will echo any command it receives and broadcast events occurring on the device using the [harp communication protocol](https://harp-tech.org/protocol/BinaryProtocol-8bit.html). This article covers how to visualize and log these [`HarpMessages`] while the workflow is running. The complete top-level workflow is shown below:
 
 :::workflow
 ![Logging Top Level](../workflows/acquisition-toplevel.bonsai)
 :::
 
-### Filter and parse messages
+### Filter and Parse Messages
 
 Often, we are interested in visualizing [`HarpMessages`] from a specific `Register` and the `Payload` value. For example, we might want messages indicating when the device played a sound and which sound index was used. To do that, we can filter and parse the messages using the workflow below:
 
@@ -27,7 +27,7 @@ The visualizer will display:
 
 The first number corresponds to the `Payload` value, in this case the sound index, and the second number is the timestamp on the device clock. Note that only one message is now displayed when a sound is played.
 
-### Log data
+### Log Data
 
 :::workflow
 ![SoundCard Device Pattern](../workflows/harp-devicepattern.bonsai)

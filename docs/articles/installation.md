@@ -52,7 +52,7 @@ pip install harp-python
 | SoundCard-* | Firmware for the sound card's microcontroller (8 bits processor) |
 | SoundCard.PIC32-* | Firmware for the sound card's 32 bits processor |
 
-### Updating the firmware
+### Updating Firmware
 
 1 - Install the [Harp Converto to CSV](https://bitbucket.org/fchampalimaud/downloads/downloads/Harp_Convert_To_CSV_v1.8.3.zip).
 

@@ -1,4 +1,4 @@
-## Play sound index
+### Play Sound Index
 
 Sounds can be played from the `SoundCard` onboard memory by specifying the sound index in the [`PlaySoundOrFrequency`] register. Sound duration and amplitude are determined by the properties of the stored waveform.
 
