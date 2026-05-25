@@ -27,5 +27,5 @@
 - name: Analysis
   href: visualize-data.md
 - name: Troubleshooting
-- name: Lights and Errors
+- name: Indicators and Errors
   href: troubleshooting.md
