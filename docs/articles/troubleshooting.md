@@ -1,4 +1,4 @@
-## Indicator lights
+## Indicator Lights
 
 The SoundCard has onboard LED indicators for troubleshooting common errors. 
 

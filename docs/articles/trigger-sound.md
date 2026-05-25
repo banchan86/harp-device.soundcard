@@ -1,4 +1,4 @@
-## Trigger sound index playback with digital inputs
+## Trigger Sound Playback
 
 The SoundCard features digital input channels that can be configured to trigger sound index playback.
 
