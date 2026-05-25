@@ -1,4 +1,4 @@
-## Adjust volume
+## Adjust Volume
 
 The [`PlaySoundOrFrequency`] register in the [play sound](play-sound.md) article will play the sound at the amplitude of the stored waveform or at maximum amplitude for the pure tone frequency generator. This article will demonstrate how to dynamically lower the amplitude with other registers.
 

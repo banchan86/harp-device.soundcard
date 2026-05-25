@@ -1,4 +1,4 @@
-## Software packages
+## Software Packages
 
 These steps are only required the first time you connect the SoundCard to a new computer. Feel free to install only the packages you need.
 

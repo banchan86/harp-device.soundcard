@@ -1,4 +1,4 @@
-## Play pure tones and waveforms
+## Play Sound
 
 The SoundCard supports playback of waveforms stored in its onboard memory. It also includes an internal sine wave generator for pure tones. The following article will walk through how to play these sounds in Bonsai using key presses as an example trigger.
 
