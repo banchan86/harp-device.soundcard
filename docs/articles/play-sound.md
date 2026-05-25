@@ -16,7 +16,7 @@ The complete workflow is shown below:
 
 [!INCLUDE [](../apidoc/play-frequency.md)]
 
-## Controlling Sound Playback with Other Events
+### Controlling Sound Playback with Other Events
 
 You can replace [`KeyDown`] with other operators to trigger sound playback on other events in Bonsai.
 
@@ -29,7 +29,7 @@ You can replace [`KeyDown`] with other operators to trigger sound playback on ot
 - Insert a [`SubscribeSubject`] operator named `SoundCard Events`, and connect it to [`SubscribeWhen`].
 
 > [!TIP]
-> The `SubscribeWhen` > `SoundCard Events` pattern is useful for ensuring that [`HarpMessage`] commands are only sent after the [`Device`] has been initialized. It relies on the `DumpRegisters` property being set to `True` in [`Device`]. Use it when needed, for instance, if sounds are being played at the start of the workflow.
+> The `SubscribeWhen` > `SoundCard Events` ensures that commands are only sent after the SoundCard has been initialized. For this to work, set the `DumpRegisters` property in the [`Device`] operator to `True` so that the device emits events on startup. Use it when needed, for instance, if sounds are being played at the start of the workflow.
 
 [!INCLUDE [](version-footer.md)]
 

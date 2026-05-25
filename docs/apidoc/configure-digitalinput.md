@@ -21,7 +21,7 @@ Run the workflow and send the TTL signal from the other device to trigger sound 
 > Only sound index playback is supported currently.
 
 > [!TIP]
-> The `SoundCard Events` > `Take(1)` ensures that configuration commands are sent as soon as the SoundCard has initialized. For this to work, set the `DumpRegisters` property in the [`Device`] operator to `True` so that the device emits event messages on startup.
+> The `SoundCard Events` > `Take(1)` ensures that configuration commands are sent as soon as the SoundCard has initialized. For this to work, set the `DumpRegisters` property in the [`Device`] operator to `True` so that the device emits events on startup.
 
 <!--Reference Style Links -->
 [`AttenuationAndPlaySoundOrFreq`]: xref:Harp.SoundCard.AttenuationAndPlaySoundOrFreq
