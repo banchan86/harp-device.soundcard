@@ -1,7 +1,7 @@
 ### Trigger Sound Playback
 
 :::workflow
-![Trigger Sound Configure Digital Input](../workflows/configureDI-triggersound.bonsai)
+![Configure Digital Input Trigger Sound](../workflows/configureDI-triggersound.bonsai)
 :::
 
 - Insert a [`SubscribeSubject`] operator named `SoundCard Events`.
@@ -18,30 +18,17 @@
 Run the workflow and send the TTL signal from the other device to trigger sound playback.
 
 > [!WARNING]
-> Only sound index playback is supported currently.
+> Only sound index triggering is supported currently.
 
 > [!TIP]
 > The `SoundCard Events` > `Take(1)` ensures that configuration commands are sent as soon as the SoundCard has initialized. For this to work, set the `DumpRegisters` property in the [`Device`] operator to `True` so that the device emits events on startup.
 
 <!--Reference Style Links -->
-[`AttenuationAndPlaySoundOrFreq`]: xref:Harp.SoundCard.AttenuationAndPlaySoundOrFreq
-[`AttenuationAndPlaySoundOrFreqPayload`]: xref:Harp.SoundCard.CreateAttenuationAndPlaySoundOrFreqPayload
-[``BehaviourSubject`1``]: xref:Bonsai.Reactive.BehaviorSubject
 [`ConfigureDI0Payload`]: xref:Harp.SoundCard.CreateConfigureDI0Payload
-[`SoundIndexDI0Payload`]: xref:Harp.SoundCard.CreateSoundIndexDI0Payload
 [`CreateMessage`]: xref:Harp.SoundCard.CreateMessage
 [`Device`]: xref:Harp.SoundCard.Device
-[`DeviceDataWriter`]: xref:Harp.SoundCard.DeviceDataWriter
-[`HarpMessage`]: xref:Bonsai.Harp.HarpMessage
-[`KeyDown`]: xref:Bonsai.Windows.Input.KeyDown
 [`Merge`]: xref:Bonsai.Reactive.Merge
 [`MulticastSubject`]: xref:Bonsai.Expressions.MulticastSubject
-[`PlaySoundOrFrequency`]: xref:Harp.SoundCard.PlaySoundOrFrequency
-[`PlaySoundOrFrequencyPayload`]: xref:Harp.SoundCard.CreatePlaySoundOrFrequencyPayload
-[`PublishSubject`]: xref:Bonsai.Reactive.PublishSubject
-[`Stop`]: xref:Harp.SoundCard.Stop
-[`StopPayload`]: xref:Harp.SoundCard.CreateStopPayload
+[`SoundIndexDI0Payload`]: xref:Harp.SoundCard.CreateSoundIndexDI0Payload
 [`SubscribeSubject`]: xref:Bonsai.Expressions.SubscribeSubject
-[`SubscribeWhen`]: xref:Bonsai.Reactive.SubscribeWhen
 [`Take`]: xref:Bonsai.Reactive.Take
-[`Timer`]: xref:Bonsai.Reactive.Timer

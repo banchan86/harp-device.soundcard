@@ -9,7 +9,7 @@ For the examples in this article, connect `DO0` (5 V`?`) and `GND` on the SoundC
 The complete workflow is shown below:
 
 :::workflow
-![Trigger Sound Top Level](../workflows/configureDO-toplevel.bonsai)
+![Configure Digital Output Top Level](../workflows/configureDO-toplevel.bonsai)
 :::
 
 [!INCLUDE [](../apidoc/configureDO-signalsound.md)]
