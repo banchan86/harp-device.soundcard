@@ -1,4 +1,4 @@
-## Play Sound
+## Play Sounds
 
 The SoundCard supports playback of waveforms stored in its onboard memory. It also includes an internal sine wave generator for pure tones. The following article will walk through how to play these sounds in Bonsai using key presses as an example trigger.
 
@@ -10,7 +10,6 @@ The complete workflow is shown below:
 
 > [!WARNING]
 > When adding these operators to the workflow from the Bonsai [Toolbox](https://bonsai-rx.org/docs/articles/editor.html?tabs=mouse-controls#toolbox), make sure to use the device-specific versions, e.g. `Device (Harp.SoundCard)` instead of `Device (Harp)`. If correctly selected, the names of these operators in the workflow panel will change to reflect either the name of the device or the selected register/payload.
-
 
 [!INCLUDE [](../apidoc/play-sound-index.md)]
 
