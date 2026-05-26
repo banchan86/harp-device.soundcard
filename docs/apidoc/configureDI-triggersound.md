@@ -1,7 +1,7 @@
-### Configure Digital Input
+### Trigger Sound Playback
 
 :::workflow
-![Trigger Sound Configure Digital Input](../workflows/triggersound-configureDI.bonsai)
+![Trigger Sound Configure Digital Input](../workflows/configureDI-triggersound.bonsai)
 :::
 
 - Insert a [`SubscribeSubject`] operator named `SoundCard Events`.

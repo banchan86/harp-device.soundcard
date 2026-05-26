@@ -19,8 +19,10 @@
   href: play-sound.md
 - name: Adjust Volume
   href: adjust-volume.md
-- name: Trigger Sound Playback
-  href: trigger-sound.md
+- name: Configure Digital Input
+  href: configure-digitalinput.md
+- name: Configure Digital Output
+  href: configure-digitaloutput.md
 - name: Data Management
 - name: Acquisition & Logging
   href: acquisition.md

@@ -2,4 +2,4 @@
 uid: Harp.SoundCard.CreateSoundIndexDI0Payload
 ---
 
-[!INCLUDE [](../apidoc/configure-digitalinput.md)]
+[!INCLUDE [](../apidoc/configureDI-triggersound.md)]

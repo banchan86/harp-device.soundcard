@@ -27,7 +27,7 @@ The visualizer will display:
 2@15346.973344
 ```
 
-The first number corresponds to the `Payload` value, in this case the sound index, and the second number is the timestamp on the device clock. Note that only one message is now displayed when a sound is played.
+The first number corresponds to the `Payload` value, in this case the sound index, and the second number is the timestamp on the device clock.
 
 ### Log Data
 

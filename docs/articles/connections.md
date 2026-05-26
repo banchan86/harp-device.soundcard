@@ -16,7 +16,7 @@
 * 3x general purpose digital inputs (5V tolerant) (IN0-IN2)
 * 2x analog inputs (3.3V max - 5V tolerant) (ADC0-ADC1)
 
-For more information on how to use them, refer to the [GPIO](trigger-sound.md) article.
+For more information on how to use them, refer to the configure [digital input](configure-digitalinput.md) or [digital output](configure-digitaloutput.md) articles.
 
 **Audio Channels** - The left and right channels can be used independently for mono output or together for stereo output.
 
