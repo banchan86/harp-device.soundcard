@@ -1,17 +1,19 @@
 ## Indicator Lights
 
-The SoundCard has onboard LED indicators for troubleshooting common errors. 
+The SoundCard has onboard LED indicators that can be used to troubleshoot common errors. 
 
-The green status LED cycles on and off with a period of:
+![Harp SoundCard LED](../images/soundcard-led.svg){width=600}
+
+The green `Status` LED cycles on and off with a period of:
 
 - 2 seconds when it's communicating with Bonsai
 - 4 seconds when in standby
 - 100 ms when a catastrophic error occurs
 
-The three red status LEDs:
+The three red LEDs:
 
-- `MEMORY` will turn ON when accessing the memory
-- `AUDIO` will turn ON when producing audio.
+- `Memory` will turn ON when accessing the memory
+- `Audio` will turn ON when producing audio.
 - `USB` will turn ON when communicating through USB or the USB communication is not available
 
 ## COM Port Errors
