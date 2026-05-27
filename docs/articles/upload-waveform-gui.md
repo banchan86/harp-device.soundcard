@@ -1,6 +1,9 @@
 ## Upload Waveforms with SoundCard GUI
 
-The SoundCard GUI provides an easy to use interface to generate and upload sounds to the SoundCard. Alternatively, you can play [pure tones](play-sound.md) with the onboard sine wave generator or [generate waveforms in Bonsai](../tutorials/upload-waveform-bonsai.md), which offers greater flexibility and functionality.
+The SoundCard GUI provides an easy to use interface to generate and upload sounds to the SoundCard. 
+
+> [!TIP]
+> Alternatively, you can play [pure tones](play-sound.md) with the onboard sine wave generator or [upload waveforms in Bonsai](../tutorials/upload-waveform-bonsai.md), which offers greater flexibility and functionality.
 
 Before beginning, follow the audio setup [guide](connections.md#audio-setup) and connect the [USB mini-b](connections.md#ports) cable to the computer. Launch "Harp.SoundCard.App" from the Windows Start menu.
 
