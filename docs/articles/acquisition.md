@@ -16,7 +16,7 @@ Often, we are interested in visualizing [`HarpMessages`] from a specific `Regist
 ![SoundCard Filter and Parse](../workflows/acquisition-filterandparse.bonsai)
 :::
 
-- Insert a [`SubscribeSubject`] operator named `SoundCard Events`. This will listen to [`HarpMessages`] broadcast from the [`PublishSubject`] named `SoundCard Events` in the [harp device pattern](harp-bonsai.md#harp-device-pattern).
+- Insert a [`SubscribeSubject`] operator named `SoundCard Events`. This will listen to [`HarpMessages`] broadcast from the [`PublishSubject`] named `SoundCard Events` in the [harp device pattern](harp-bonsai.md#bonsai-device-setup).
 - Insert a [`FilterMessageType`] operator and configure the `MessageType` property to `Event`.
 - Insert a [`Parse`] operator and configure the `Register` property to `TimestampedPlaySoundOrFrequency`.
 - Double-click the [`Parse`] operator to open the text visualizer and play a sound using the [`PlaySoundOrFrequency`] register.
@@ -35,7 +35,7 @@ The first number corresponds to the `Payload` value, in this case the sound inde
 ![SoundCard Device Pattern](../workflows/harp-devicepattern.bonsai)
 :::
 
-The [`DeviceDataWriter`] in the [harp device pattern](harp-bonsai.md#harp-device-pattern) will log raw data from all device registers in the harp binary format, which can be analyzed directly with [harp-python](visualize-data.md).
+The [`DeviceDataWriter`] in the [Harp device pattern](harp-bonsai.md#bonsai-device-setup) will log raw data from all device registers in the harp binary format, which can be analyzed directly with [harp-python](visualize-data.md).
 
 [!INCLUDE [](version-footer.md)]
 

@@ -1,4 +1,4 @@
-## Load Data with Harp-Python
+## Analysis
 
 > [!NOTE]
 > This article assumes basic familiarity with [Python](https://www.python.org/). It requires a Python environment with [harp-python](installation.md#harp-python) and [`matplotlib`](https://matplotlib.org/) installed.
