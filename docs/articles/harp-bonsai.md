@@ -1,6 +1,10 @@
-## Bonsai Device Setup
+## Bonsai
 
-To control the SoundCard with Bonsai, we will setup a [Harp device pattern](https://harp-tech.org/articles/operators.html#device-pattern). This will initialize the device and provide hooks to send commands as well as receive messages from the SoundCard using the harp [communication protocol](https://harp-tech.org/protocol/BinaryProtocol-8bit.html). It will also [log data](acquisition.md) from the device.
+Bonsai is a visual reactive programming language for building interactive experiments and processing data streams in real time. It supports a growing ecosystem of hardware and software packages that are commonly used in neuroscience. More information on Bonsai can be found in the official [documentation](https://bonsai-rx.org/docs/).
+
+### Harp Device Pattern
+
+To control the SoundCard with Bonsai, we will setup a [Harp device pattern](https://harp-tech.org/articles/operators.html#device-pattern) using the [Harp.SoundCard](./installation.md#bonsai) package. This will initialize the device, log data, and provide hooks to send commands as well as receive messages from the SoundCard using the [Harp communication protocol](https://harp-tech.org/protocol/BinaryProtocol-8bit.html).
 
 Before beginning, connect the [USB Micro-B](connections.md#connections) cable to the computer. Launch "Bonsai" from the Windows Start menu.
 
@@ -18,7 +22,7 @@ Before beginning, connect the [USB Micro-B](connections.md#connections) cable to
 - Click on the [`SoundCardDataWriter (DeviceDataWriter)`] operator and set the `Path` property for the name and location of the save file (e.g. `Data\SoundCard.harp`).
 - Press the "Start" button in Bonsai to run the workflow.
 
-If the connection is successful, the [green LED](troubleshooting.md#indicator-lights) indicator light on the device will cycle on and off with a period of 2 secs to indicate that its communicating with Bonsai. If it does not change or an error appears in Bonsai, check out the [troubleshooting](troubleshooting.md) guide. 
+If the connection is successful, the [green LED](troubleshooting.md#indicator-lights) indicator light on the device will cycle on and off with a period of 2 seconds to indicate that it is communicating with Bonsai. If it does not change or an error appears in Bonsai, check out the [troubleshooting](troubleshooting.md) guide.
 
 Otherwise, move on to the [play sound](play-sound.md) article to play your first sound!
 

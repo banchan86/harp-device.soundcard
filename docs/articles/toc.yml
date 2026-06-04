@@ -12,7 +12,7 @@
   href: installation.md
 - name: SoundCard GUI
   href: upload-waveform-gui.md
-- name: Bonsai Device Setup
+- name: Bonsai
   href: harp-bonsai.md
 - name: Bonsai Workflows
 - name: Play Sounds
