@@ -1,8 +1,8 @@
-## Ports
+## Connections
 
 ![Harp SoundCard Device Pinout](../images/soundcard-devicepinout.svg){width=600}
 
-**Power** - This port requires a 12 V power supply (wall adapter included with device).
+**Power** - This port requires a 12 V power supply.
 
 **Soundbank** - This port connects to the device's onboard sound memory bank for uploading of waveforms. Once the sounds have been uploaded, this cable can be disconnected, as it is not required for sound playback.
 
@@ -12,13 +12,15 @@
 
 **GPIO** - The general purpose input/output (GPIO) pins can be used to communicate with external devices to trigger sound playback, control volume, etc. The following pins are provided:
 
-* 3x general purpose digital outputs (3.3V or 5V) (OUT0-OUT2)
-* 3x general purpose digital inputs (5V tolerant) (IN0-IN2)
-* 2x analog inputs (3.3V max - 5V tolerant) (ADC0-ADC1)
+* 3x digital outputs (3.3V or 5V) (OUT0-OUT2)
+* 3x digital inputs (5V tolerant) (IN0-IN2)
+* 2x analog inputs (5V max) (ADC0-ADC1)
 
 For more information on how to use them, refer to the configure [digital input](configure-digitalinput.md) or [digital output](configure-digitaloutput.md) articles.
 
-**Audio Channels** - The left and right channels can be used independently for mono output or together for stereo output.
+**Left Channel** - Can be used independently for mono output or together with the right channel for stereo output.
+
+**Right Channel** - Can be used independently for mono output or together with the left channel for stereo output.
 
 ## Audio Setup
 
