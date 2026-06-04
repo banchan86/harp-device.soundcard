@@ -1,8 +1,8 @@
-## Harp Soundcard
+## Harp SoundCard
 
 This is a high performance sound card with two output channels using 24 bits DACs at 192kHz sample rate.
 
-![HarpSoundcard](../images/OEPS-SoundCard.png){width=450}
+![Harp SoundCard](../images/OEPS-SoundCard.png){width=450}
 
 ### Key Features
 
@@ -22,7 +22,7 @@ This is a high performance sound card with two output channels using 24 bits DAC
 - Timestamp resolution: 32 µs
 - Digital outputs: 3 (3.3V or 5V)
 - Digital inputs: 3 (5V tolerant)
-- Analog inputs: 2 (3.3V max - 5V tolerant)
+- Analog inputs: 2 (5V max)
 
 ### Benchmarks
 
