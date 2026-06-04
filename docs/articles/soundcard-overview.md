@@ -46,3 +46,5 @@ This is a high performance sound card with two output channels using 24 bits DAC
 | **<= 2.2** | [Device.SoundCard][2] | >= 1.0           |                                         |
 
 [2]: https://github.com/harp-tech/device.soundcard
+
+[!INCLUDE [](version-footer.md)]

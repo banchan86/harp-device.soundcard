@@ -1,8 +1,12 @@
-## Harp Audio Amplifier
+## Peripherals
+
+Placeholder text.
+
+### Harp Audio Amplifier
 
 Low distortion, high-bandwidth audio amplifier designed to pair with the SoundCard for high-fidelity speaker output.
 
-!["harpaudioamplifier"](../images/OEPS-Amplifier.png){width=450}
+!["Harp Audio Amplifier"](../images/OEPS-Amplifier.png){width=450}
 
 ### Key Features
 
