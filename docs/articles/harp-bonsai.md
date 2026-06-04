@@ -16,7 +16,7 @@ Before beginning, connect the [USB Micro-B](connections.md#connections) cable to
 - Paste the workflow into Bonsai.
 
 > [!TIP]
-> If your workflow does not look the one above, make sure that the [Harp.SoundCard`](./installation.md#bonsai) package is installed.
+> If your workflow does not look the one above, make sure that the [Harp.SoundCard](./installation.md#bonsai) package is installed.
 
 - Click on the [`SoundCard (Device)`] operator and set the `PortName` property to the communications port for the device (e.g. COM8).
 - Click on the [`SoundCardDataWriter (DeviceDataWriter)`] operator and set the `Path` property for the name and location of the save file (e.g. `Data\SoundCard.harp`).
