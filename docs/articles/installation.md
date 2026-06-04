@@ -1,6 +1,6 @@
 ## Installation
 
-These steps are only required the first time you connect the SoundCard to a new computer. Feel free to install only the packages you need.
+This page covers the software you'll need to interface with the SoundCard. These steps are only required the first time you connect it to a new computer, and you can install just the packages for the functionality you need.
 
 ### WinUSB 
 
