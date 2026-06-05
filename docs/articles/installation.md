@@ -1,6 +1,6 @@
 ## Installation
 
-This page covers the software you'll need to interface with the SoundCard. These steps are only required the first time you connect it to a new computer, and you can install just the packages for the functionality you need.
+This page covers the software you'll need to interact with the SoundCard. These steps are only required the first time you connect it to a new computer, and you can install just the packages for the functionality you need.
 
 ### WinUSB 
 
@@ -45,19 +45,26 @@ The [harp-python](https://pypi.org/project/harp-python/) library provides a low-
 pip install harp-python 
 ```
 
-## Firmware
+## Updating Firmware
 
-| Tag | Description |
-| - | - |
-| SoundCard-* | Firmware for the sound card's microcontroller (8 bits processor) |
-| SoundCard.PIC32-* | Firmware for the sound card's 32 bits processor |
+New features are added and bugs are fixed with firmware updates. The firmware is published on the [release page](https://github.com/harp-tech/device.soundcard/releases) in the SoundCard repository. Each firmware release is tagged with a `fw` prefix (e.g. `fw2.2-harp1.13`), and the files can be found in the "Assets" section. To update the firmware:
 
-### Updating Firmware
+- Download these two firmware:
 
-1 - Install the [Harp Converto to CSV](https://bitbucket.org/fchampalimaud/downloads/downloads/Harp_Convert_To_CSV_v1.8.3.zip).
+   - `SoundCard-*.hex` - Firmware for the 8-bit device interface microcontroller.
 
-2 - Open the Harp Convert to CSV application and write *bootloader* under List box on the Options tab
+   - `SoundCard.PIC32-*.hex` - Firmware for the 32-bit sound-memory microcontroller.
 
-3 - Select the correspondent COM port and then select the firmware to be loaded for both microcontrollers 
+> [!WARNING]
+> Pay close attention to the `hwX.X` portion of the filename, as that corresponds to the hardware version of the device. The hardware version will be printed on the board.
+
+- Install the [Harp Convert to CSV](https://bitbucket.org/fchampalimaud/downloads/downloads/Harp_Convert_To_CSV_v1.8.3.zip) application.
+
+- Open the Harp Convert to CSV application and write *bootloader* under List box on the Options tab.
+
+- Select the correspondent COM port and then select the firmware to be loaded for both microcontrollers.
+
+>[!NOTE]
+> This method should be replaced by either [Harp-Toolkit](https://harp-tech.org/toolkit/) or [Harp-Regulator](https://github.com/harp-tech/harp-regulator) when they become available and support the SoundCard.
 
 [!INCLUDE [](version-footer.md)]
