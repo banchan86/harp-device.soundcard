@@ -2,7 +2,7 @@
 
 This page covers the software you'll need to interact with the SoundCard. These steps are only required the first time you connect it to a new computer, and you can install just the packages for the functionality you need.
 
-### WinUSB 
+### Driver
 
 The WinUSB driver is required to upload waveforms to the onboard sound memory bank.
 

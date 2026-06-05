@@ -1,4 +1,8 @@
-## Connections
+## Ports and Connections
+
+This article will cover the ports on the device, as well as how to connect the SoundCard to peripherals and external devices.
+
+### Ports
 
 ![Harp SoundCard Device Pinout](../images/soundcard-devicepinout.svg){width=600}
 
@@ -22,7 +26,7 @@ For more information on how to use them, refer to the configure [digital input](
 
 **Right Channel** - Can be used independently for mono output or together with the left channel for stereo output. Need to be connected to an external amplifier and speakers.
 
-## Audio Setup
+### Connections
 
 ![Harp SoundCard Connections](../images/connection-labelled.svg){width=450}
 

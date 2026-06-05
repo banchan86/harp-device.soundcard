@@ -5,7 +5,7 @@ The SoundCard GUI provides an easy to use interface to generate and upload wavef
 > [!TIP]
 > Alternatively, you can play [pure tones](play-sound.md) with the onboard sine wave generator or [upload waveforms in Bonsai](../tutorials/upload-waveform-bonsai.md), which offers greater flexibility and functionality.
 
-Before beginning, follow the audio setup [guide](connections.md#audio-setup) and connect the [USB Mini-B and USB Micro-B](connections.md#connections) cables to the computer. Launch "Harp.SoundCard.App" from the Windows Start menu.
+Before beginning, follow the audio setup [guide](connections.md#connections) and connect the [USB Mini-B and USB Micro-B](connections.md#connections) cables to the computer. Launch "Harp.SoundCard.App" from the Windows Start menu.
 
 ![SoundCard GUI](../images/gui-labelled.svg)
 

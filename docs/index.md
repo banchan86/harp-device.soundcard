@@ -19,11 +19,11 @@ The Audio Amplifier provides low-distortion amplification of SoundCard signals, 
 
 A full end-to-end audio performance characterization of the SoundCard, Audio Amplifier, and speakers is documented in this [publication](https://doi.org/10.1016/j.ohx.2024.e00555).
 
-### Acquiring
+## Getting a Device
 
 Assembled units are available from the [Open Ephys store](https://open-ephys.org/harp), or build your own using the hardware design files in the [SoundCard](https://github.com/harp-tech/device.soundcard) or [Audio Amplifier](https://github.com/harp-tech/peripheral.audioamp) repository.
 
-### Acknowledgments
+## Acknowledgments
 
 Hardware design and GUI contributed by [Champalimaud Foundation](https://www.cf-hw.org/), Bonsai interface by [Neurogears](https://neurogears.org/), and documentation by [Open Ephys](https://open-ephys.org/).
 
