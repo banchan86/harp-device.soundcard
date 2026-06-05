@@ -7,7 +7,7 @@ Bonsai is a visual reactive programming language for building interactive experi
 
 ### Harp Device Pattern
 
-We will setup a [Harp device pattern](https://harp-tech.org/articles/operators.html#device-pattern) using the [Harp.SoundCard](./installation.md#bonsai) package. This will initialize the device, log data, and provide hooks to send commands as well as receive messages from the SoundCard using the [Harp communication protocol](https://harp-tech.org/protocol/BinaryProtocol-8bit.html).
+To communicate with the device, we will use a [Harp device pattern](https://harp-tech.org/articles/operators.html#device-pattern). This will initialize the device, log data, and provide hooks to send commands as well as receive messages from the SoundCard using the [Harp communication protocol](https://harp-tech.org/protocol/BinaryProtocol-8bit.html).
 
 Before beginning, connect the [USB Micro-B](connections.md#connections) cable to the computer. Launch "Bonsai" from the Windows Start menu.
 
@@ -27,7 +27,7 @@ Before beginning, connect the [USB Micro-B](connections.md#connections) cable to
 
 If the connection is successful, the [green LED](troubleshooting.md#indicator-lights) indicator light on the device will cycle on and off with a period of 2 seconds to indicate that it is communicating with Bonsai. If it does not change or an error appears in Bonsai, check out the [troubleshooting](troubleshooting.md) guide.
 
-Otherwise, move on to the [play sound](play-sound.md) article to play your first sound!
+Otherwise, the device is ready to use. We suggest going through the "Bonsai Workflows" section if you are not familiar with the device. Start with the [play sound](play-sound.md) article to play your first sound!
 
 [!INCLUDE [](version-footer.md)]
 
