@@ -1,4 +1,8 @@
-## Indicator Lights
+## Indicators and Errors
+
+This article covers how to read the SoundCard's status indicators and resolve common connection errors.
+
+### Indicator Lights
 
 The SoundCard has onboard LED indicators that can be used to troubleshoot common errors. 
 
@@ -16,7 +20,7 @@ The three red LEDs:
 - `Audio` will turn ON when producing audio.
 - `USB` will turn ON when communicating through USB or the USB communication is not available
 
-## COM Port Errors
+### COM Port Errors
 
 **Q: In Bonsai, running the workflow throws an error "The port `ComX` does not exist."**
 

@@ -1,4 +1,4 @@
-## Harp SoundCard
+## SoundCard
 
 This is a high performance sound card with two output channels using 24 bits DACs at 192kHz sample rate.
 
