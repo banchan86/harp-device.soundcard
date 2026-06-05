@@ -12,7 +12,7 @@ The green `Status` LED cycles on and off with a period of:
 
 - 2 seconds when it's communicating with Bonsai
 - 4 seconds when in standby
-- 100 ms when a catastrophic error occurs
+- 100 milliseconds when a catastrophic error occurs
 
 The three red LEDs:
 

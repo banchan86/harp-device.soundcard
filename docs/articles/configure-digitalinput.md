@@ -1,10 +1,6 @@
 ## Configure Digital Input
 
-The digital input channels on the SoundCard can be configured to report TTL signals coming from other devices or trigger sound index playback.
-
-For the examples in this article, connect `DI0` (5 V tolerant) and `GND` on the SoundCard to a TTL output from another device.
-
-(Placeholder for wiring diagram)
+This article will cover how to configure the digital input channels on the SoundCard to report TTL signals coming from other devices or trigger sound index playback.Refer to the [connections](./connections.md) article to set up the hardware connection.
 
 The complete workflow is shown below:
 

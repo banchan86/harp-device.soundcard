@@ -34,4 +34,7 @@ To play sounds, the SoundCard must be connected to external amplifiers and speak
 
 **Speaker** - The choice of speaker depends on the amplifier's rated impedance and power. For the Harp Audio Amplifier, any speaker with an impedance from 4 to 8 ohms can be used. The XT25SC90-04 (Peerless by Tymphany) has been tested and offers a good frequency response up to 80 kHz.
 
+>[!NOTE]
+> Wiring diagrams for other configurations will be placed here (e.g. stereo, digital input, digital output, analog input, audio switch, etc) in a full guide expansion.
+
 [!INCLUDE [](version-footer.md)]
