@@ -1,10 +1,13 @@
 ## Bonsai
 
-Bonsai is a visual reactive programming language for building interactive experiments and processing data streams in real time. It supports a growing ecosystem of hardware and software packages that are commonly used in neuroscience. More information on Bonsai can be found in the official [documentation](https://bonsai-rx.org/docs/).
+Bonsai is a visual reactive programming language for building interactive experiments and processing data streams in real time. It supports a growing ecosystem of hardware and software packages that are commonly used in neuroscience. This article will cover how to set up the SoundCard in Bonsai.
+
+>[!TIP]
+> More information on Bonsai can be found in the official [documentation](https://bonsai-rx.org/docs/).
 
 ### Harp Device Pattern
 
-To control the SoundCard with Bonsai, we will setup a [Harp device pattern](https://harp-tech.org/articles/operators.html#device-pattern) using the [Harp.SoundCard](./installation.md#bonsai) package. This will initialize the device, log data, and provide hooks to send commands as well as receive messages from the SoundCard using the [Harp communication protocol](https://harp-tech.org/protocol/BinaryProtocol-8bit.html).
+We will setup a [Harp device pattern](https://harp-tech.org/articles/operators.html#device-pattern) using the [Harp.SoundCard](./installation.md#bonsai) package. This will initialize the device, log data, and provide hooks to send commands as well as receive messages from the SoundCard using the [Harp communication protocol](https://harp-tech.org/protocol/BinaryProtocol-8bit.html).
 
 Before beginning, connect the [USB Micro-B](connections.md#connections) cable to the computer. Launch "Bonsai" from the Windows Start menu.
 
