@@ -1,6 +1,10 @@
 ## Installation
 
-This page covers the software you'll need to interact with the SoundCard. These steps are only required the first time you connect it to a new computer, and you can install just the packages for the functionality you need.
+This page covers the software you'll need to interact with the SoundCard, as well as how to update the firmware on the device.
+
+## Software Packages
+
+These steps are only required the first time you connect the device to a new computer, and you can install just the packages for the functionality you need.
 
 ### Driver
 
@@ -48,14 +52,14 @@ New features are added and bugs are fixed with firmware updates which are publis
 
 - Download two files matching this format for the hardware version of your device:
    - `SoundCard-*.hex` - Firmware for the 8-bit device interface microcontroller.
-   - `SoundCard.PIC32-*.hex` - Firmware for the 32-bit sound-memory microcontroller.
+   - `SoundCard.PIC32-*.hex` - Firmware for the 32-bit sound memory microcontroller.
 
 >[!TIP]
 > The hardware version is printed on the board silkscreen and should match the `hwX.X` portion of the firmware filename.
 
 - Install the [Harp Convert to CSV](https://bitbucket.org/fchampalimaud/downloads/downloads/Harp_Convert_To_CSV_v1.8.3.zip) application.
-- Open the Harp Convert to CSV application and write *bootloader* under List box on the Options tab.
-- Select the correspondent COM port and then select the firmware to be loaded for both microcontrollers.
+- Open the Harp Convert to CSV application and write *bootloader* under "List" box on the "Options" tab.
+- Select the corresponding COM port and then select the firmware to be loaded for both microcontrollers.
 
 > [!NOTE]
 > This method should be replaced by either [Harp-Toolkit](https://harp-tech.org/toolkit/) or [Harp-Regulator](https://github.com/harp-tech/harp-regulator) when they become available and support the SoundCard.
