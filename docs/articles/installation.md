@@ -45,18 +45,18 @@ The [harp-python](https://pypi.org/project/harp-python/) library provides a low-
 pip install harp-python 
 ```
 
-## Updating Firmware
+## Firmware Update
 
-New features are added and bugs are fixed with firmware updates. The firmware is published on the [release page](https://github.com/harp-tech/device.soundcard/releases) in the SoundCard repository. Each firmware release is tagged with a `fw` prefix (e.g. `fw2.2-harp1.13`), and the files can be found in the "Assets" section. To update the firmware:
+New features are added and bugs are fixed with firmware updates which are published on the [release page](https://github.com/harp-tech/device.soundcard/releases) in the SoundCard repository. Each firmware release is tagged with a `fw` prefix (e.g. `fw2.2-harp1.13`), and the files can be found in the "Assets" section. To update the firmware:
 
-- Download these two firmware:
+- Download two files matching this format for the hardware version of your device:
 
    - `SoundCard-*.hex` - Firmware for the 8-bit device interface microcontroller.
 
    - `SoundCard.PIC32-*.hex` - Firmware for the 32-bit sound-memory microcontroller.
 
-> [!WARNING]
-> Pay close attention to the `hwX.X` portion of the filename, as that corresponds to the hardware version of the device. The hardware version will be printed on the board.
+>[!TIP]
+> The hardware version is printed on the board silkscreen and should match the `hwX.X` portion of the firmware filename.
 
 - Install the [Harp Convert to CSV](https://bitbucket.org/fchampalimaud/downloads/downloads/Harp_Convert_To_CSV_v1.8.3.zip) application.
 
@@ -64,7 +64,7 @@ New features are added and bugs are fixed with firmware updates. The firmware is
 
 - Select the correspondent COM port and then select the firmware to be loaded for both microcontrollers.
 
->[!NOTE]
+> [!NOTE]
 > This method should be replaced by either [Harp-Toolkit](https://harp-tech.org/toolkit/) or [Harp-Regulator](https://github.com/harp-tech/harp-regulator) when they become available and support the SoundCard.
 
 [!INCLUDE [](version-footer.md)]
