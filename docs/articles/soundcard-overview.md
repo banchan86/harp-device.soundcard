@@ -26,7 +26,7 @@ High performance sound card with two output channels using 24 bits DACs at 192kH
 
 ### Benchmarks
 
-- THD: -111dB (1 kHz @ 2 V rms)
+- THD: -111 dB (1 kHz @ 2 V rms)
 - Noise Floor: 20 µV rms | -94 dB (20 Hz – 80 kHz)
 - SNR: 100 dB | 113 dBA (20 Hz – 80 kHz @ 2 V rms)
 

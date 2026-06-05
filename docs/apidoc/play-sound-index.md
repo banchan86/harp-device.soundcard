@@ -1,6 +1,6 @@
 ### Play Sound Index
 
-Sounds can be played from the `SoundCard` onboard memory by specifying the sound index in the [`PlaySoundOrFrequency`] register. Sound duration and amplitude are determined by the properties of the stored waveform.
+Sounds can be played from the `SoundCard` onboard memory by specifying the sound index in the [`PlaySoundOrFrequency`] register payload. Sound duration and amplitude are determined by the properties of the stored waveform.
 
 :::workflow
 ![Play Sound Index Keydown](../workflows/playsound-indexkeydown.bonsai)

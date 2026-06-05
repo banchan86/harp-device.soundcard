@@ -1,6 +1,6 @@
 ### Play Pure Tone Frequency
 
-Pure tones can be played from the `SoundCard` internal sine wave generator by specifying the frequency in the [`PlaySoundOrFrequency`] register. Sounds will be played continuously at the device's max amplitude until stopped.
+Pure tones can be played from the `SoundCard` internal sine wave generator by specifying the frequency in the [`PlaySoundOrFrequency`] register payload. Sounds will be played continuously at the device's max amplitude until stopped.
 
 :::workflow
 ![Play Sound Frequency](../workflows/playsound-frequency.bonsai)
