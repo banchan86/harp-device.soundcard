@@ -28,9 +28,11 @@ A: Either the wrong communications port in the `PortName` property in [`Device`]
 
 A: Only one interface connection to the SoundCard can be opened at one time. Check that Bonsai and the SoundCard GUI are not running simultaneously. Also check that multiple instances of either are not running. 
 
-Sometimes, the port can be also be locked by a program that did not terminate correctly, restarting the computer fixes it.
+Sometimes, the port can also be locked by a program that did not terminate correctly; restarting the computer fixes it.
 
 Another possible source of the error is that the wrong communications port was selected, try selecting a different communications port for the device.
 
 <!--Reference Style Links -->
 [`Device`]: xref:Harp.SoundCard.Device
+
+[!INCLUDE [](version-footer.md)]

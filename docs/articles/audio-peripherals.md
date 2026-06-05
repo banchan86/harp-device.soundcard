@@ -20,9 +20,9 @@ Low distortion, high-bandwidth audio amplifier for high-fidelity speaker output.
 
 ### Benchmarks
 
-- SNR: 119 dB (A-weighted 80kHz bandwidth)
-- Spectral variation: <0.1dB 20Hz - 80kHz
-- Distortion: <0.03% @ 1W
+- SNR: 119 dB (A-weighted 80 kHz bandwidth)
+- Spectral variation: <0.1 dB 20 Hz - 80 kHz
+- Distortion: <0.03% @ 1 W
 
 ### Speakers
 

@@ -17,7 +17,7 @@ On another branch:
 - Insert a [`KeyDown`] source and set the `Filter` property to `S`.
 - Insert a [`CreateMessage`] operator and configure these properties:
    - `Payload` - Select [`StopPayload`].
-   - `Stop` - Set the value to 1 (or any other value than 0).
+   - `Stop` - Set the value to 1 (any non-zero value stops playback).
 - Insert a [`MulticastSubject`] operator named `SoundCard Commands`.
 
 Run the workflow, press the <kbd>A</kbd> key to play the sound, and press the <kbd>S</kbd> key to stop playback.

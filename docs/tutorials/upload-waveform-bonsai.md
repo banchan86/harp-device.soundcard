@@ -5,7 +5,7 @@ The [Harp.SoundCard](../articles/installation.md#bonsai) Bonsai package supports
 ## Prerequisites
 
 - Install the following packages from the Bonsai [package manager](https://bonsai-rx.org/docs/articles/packages.html):
-   - `Bonsai.WindowsInput`
+   - `Bonsai.Windows.Input`
    - `Bonsai.Dsp`
    - `Bonsai.Dsp.Design`
    - `Bonsai.Audio`

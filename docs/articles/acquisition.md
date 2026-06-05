@@ -1,6 +1,6 @@
 ## Acquisition and Logging
 
-The SoundCard will echo any command it receives and broadcast events occurring on the device using the [harp communication protocol](https://harp-tech.org/protocol/BinaryProtocol-8bit.html). This article covers how to visualize and log these [`HarpMessages`] while the workflow is running.
+The SoundCard will echo any command it receives and broadcast events occurring on the device using the [Harp communication protocol](https://harp-tech.org/protocol/BinaryProtocol-8bit.html). This article covers how to visualize and log these [`HarpMessages`] while the workflow is running.
 
 The complete workflow is shown below:
 
@@ -35,7 +35,7 @@ The first number corresponds to the `Payload` value, in this case the sound inde
 ![SoundCard Device Pattern](../workflows/harp-devicepattern.bonsai)
 :::
 
-The [`DeviceDataWriter`] in the [Harp device pattern](harp-bonsai.md#harp-device-pattern) will log raw data from all device registers in the harp binary format, which can be analyzed directly with [harp-python](visualize-data.md).
+The [`DeviceDataWriter`] in the [Harp device pattern](harp-bonsai.md#harp-device-pattern) will log raw data from all device registers in the Harp binary format, which can be analyzed directly with [harp-python](visualize-data.md).
 
 [!INCLUDE [](version-footer.md)]
 

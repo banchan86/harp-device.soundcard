@@ -25,6 +25,6 @@ Assembled units are available from the [Open Ephys store](https://open-ephys.org
 
 ## Acknowledgments
 
-Hardware design and GUI contributed by [Champalimaud Foundation](https://www.cf-hw.org/), Bonsai interface by [Neurogears](https://neurogears.org/), and documentation by [Open Ephys](https://open-ephys.org/).
+Hardware design and GUI contributed by [Champalimaud Foundation](https://www.cf-hw.org/), Bonsai interface by [NeuroGEARS](https://neurogears.org/), and documentation by [Open Ephys](https://open-ephys.org/).
 
 [!INCLUDE [](./articles/version-footer.md)]

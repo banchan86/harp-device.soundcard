@@ -22,9 +22,9 @@ This article will cover the ports on the SoundCard, as well as how to connect th
 
 For more information on how to use them, refer to the configure [digital input](configure-digitalinput.md) or [digital output](configure-digitaloutput.md) articles.
 
-**Left Channel** - Can be used independently for mono output or together with the right channel for stereo output. Need to be connected to an external amplifier and speakers.
+**Left Channel** - Can be used independently for mono output or together with the right channel for stereo output. Needs to be connected to an external amplifier and speakers.
 
-**Right Channel** - Can be used independently for mono output or together with the left channel for stereo output. Need to be connected to an external amplifier and speakers.
+**Right Channel** - Can be used independently for mono output or together with the left channel for stereo output. Needs to be connected to an external amplifier and speakers.
 
 ### Connections
 
