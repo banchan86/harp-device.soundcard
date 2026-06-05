@@ -46,7 +46,7 @@ The [harp-python](https://pypi.org/project/harp-python/) library provides a low-
 pip install harp-python 
 ```
 
-## Firmware Update
+## Firmware
 
 New features are added and bugs are fixed with firmware updates which are published on the [release page](https://github.com/harp-tech/device.soundcard/releases) in the SoundCard repository. Each firmware release is tagged with a `fw` prefix (e.g. `fw2.2-harp1.13`), and the files can be found in the "Assets" section. To update the firmware:
 
@@ -57,6 +57,7 @@ New features are added and bugs are fixed with firmware updates which are publis
 >[!TIP]
 > The hardware version is printed on the board silkscreen and should match the `hwX.X` portion of the firmware filename.
 
+- Install the [Labview Runtime](https://bitbucket.org/fchampalimaud/downloads/downloads/Runtime-1.0.zip).
 - Install the [Harp Convert to CSV](https://bitbucket.org/fchampalimaud/downloads/downloads/Harp_Convert_To_CSV_v1.8.3.zip) application.
 - Open the Harp Convert to CSV application and write *bootloader* under "List" box on the "Options" tab.
 - Select the corresponding COM port and then select the firmware to be loaded for both microcontrollers.
