@@ -4,8 +4,6 @@ This article covers how to read the SoundCard's status indicators and resolve co
 
 ### Indicator Lights
 
-The SoundCard has onboard LED indicators that can be used to troubleshoot common errors. 
-
 ![Harp SoundCard LED](../images/soundcard-led.svg){width=600}
 
 The green `Status` LED cycles on and off with a period of:

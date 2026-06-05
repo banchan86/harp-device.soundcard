@@ -13,8 +13,6 @@ The complete workflow is shown below:
 
 [!INCLUDE [](../apidoc/attenuate-sound.md)]
 
-[!INCLUDE [](../apidoc/attenuate-channel.md)]
-
 [!INCLUDE [](version-footer.md)]
 
 <!--Reference Style Links -->

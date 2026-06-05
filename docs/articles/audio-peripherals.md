@@ -1,8 +1,8 @@
 ## Peripherals
 
-Placeholder text.
+The SoundCard can be paired with dedicated Harp audio peripherals for high-performance output or to extend its capabilities.
 
-### Harp Audio Amplifier
+### Audio Amplifier
 
 Low distortion, high-bandwidth audio amplifier designed to pair with the SoundCard for high-fidelity speaker output.
 
