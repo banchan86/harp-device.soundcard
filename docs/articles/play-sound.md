@@ -15,7 +15,7 @@ The complete workflow is shown below:
 
 [!INCLUDE [](../apidoc/play-frequency.md)]
 
-### Controlling Sound Playback with Other Events
+### Alternative: Controlling Sound Playback with Other Events
 
 You can replace [`KeyDown`] with other operators to trigger sound playback on other events in Bonsai.
 
@@ -23,7 +23,7 @@ You can replace [`KeyDown`] with other operators to trigger sound playback on ot
 ![Play Sound Index Timer](../workflows/playsound-indextimer.bonsai)
 :::
 
-- Replace the [`KeyDown`] source with a [`Timer`] source and set the `DueTime` property to the number of seconds to wait before playing the sound (use 0 to play immediately when the workflow starts).
+- Replace the [`KeyDown`] source in the previous workflows with a [`Timer`] source and set the `DueTime` property to the number of seconds to wait before playing the sound (use 0 to play immediately when the workflow starts).
 - Insert a [`SubscribeWhen`] operator after `SoundCard Commands`.
 - Insert a [`SubscribeSubject`] operator named `SoundCard Events`, and connect it to [`SubscribeWhen`].
 
