@@ -2,4 +2,6 @@
 uid: Harp.SoundCard.CreateSoundIndexDI0Payload
 ---
 
-[!INCLUDE [](../apidoc/configureDI-triggersound.md)]
+:::workflow
+![Configure Digital Input Trigger Sound](../workflows/configureDI-triggersound.bonsai)
+:::

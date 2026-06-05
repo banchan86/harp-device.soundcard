@@ -2,6 +2,14 @@
 uid: Harp.SoundCard.PlaySoundOrFrequency
 ---
 
-[!INCLUDE [](../apidoc/play-sound-index.md)]
+### Play Sound Index
 
-[!INCLUDE [](../apidoc/play-frequency.md)]
+:::workflow
+![Play Sound Index Keydown](../workflows/playsound-indexkeydown.bonsai)
+:::
+
+### Play Pure Tone Frequency
+
+:::workflow
+![Play Sound Frequency](../workflows/playsound-frequency.bonsai)
+:::

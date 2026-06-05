@@ -2,4 +2,8 @@
 uid: Harp.SoundCard.CreateConfigureDO0Payload
 ---
 
-[!INCLUDE [](../apidoc/configureDO-signalsound.md)]
+### Signal Sound Playback
+
+:::workflow
+![Configure DO Signal Sound](../workflows/configureDO-signalsound.bonsai)
+:::

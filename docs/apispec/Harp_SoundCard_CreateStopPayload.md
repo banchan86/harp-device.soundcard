@@ -2,4 +2,8 @@
 uid: Harp.SoundCard.CreateStopPayload
 ---
 
-[!INCLUDE [](../apidoc/play-frequency.md)]
+### Stop Pure Tone Frequency
+
+:::workflow
+![Play Sound Frequency](../workflows/playsound-frequency.bonsai)
+:::

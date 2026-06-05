@@ -2,4 +2,8 @@
 uid: Harp.SoundCard.CreateAttenuationAndPlaySoundOrFreqPayload
 ---
 
-[!INCLUDE [](../apidoc/attenuate-sound.md)]
+### Attenuate and Play Sound
+
+:::workflow
+![Adjust Volume Attenuation](../workflows/adjustvolume-attenuation.bonsai)
+:::
