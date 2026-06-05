@@ -6,7 +6,7 @@
 - name: Peripherals
   href: audio-peripherals.md
 - name: Getting Started
-- name: Connections
+- name: Ports and Connections
   href: connections.md
 - name: Installation
   href: installation.md

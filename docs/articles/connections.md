@@ -1,6 +1,6 @@
 ## Ports and Connections
 
-This article will cover the ports on the device, as well as how to connect the SoundCard to peripherals and external devices.
+This article will cover the ports on the SoundCard, as well as how to connect the device to peripherals and external devices.
 
 ### Ports
 
