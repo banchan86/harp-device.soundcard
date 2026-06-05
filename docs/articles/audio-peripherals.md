@@ -1,10 +1,10 @@
 ## Peripherals
 
-The SoundCard can be paired with dedicated Harp audio peripherals for high-performance output or to extend its capabilities.
+Dedicated Harp audio peripherals designed to pair with the SoundCard for high-performance output or to extend its capabilities.
 
 ### Audio Amplifier
 
-Low distortion, high-bandwidth audio amplifier designed to pair with the SoundCard for high-fidelity speaker output.
+Low distortion, high-bandwidth audio amplifier for high-fidelity speaker output.
 
 !["Harp Audio Amplifier"](../images/OEPS-Amplifier.png){width=450}
 

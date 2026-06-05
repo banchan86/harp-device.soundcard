@@ -18,23 +18,21 @@
 
 For more information on how to use them, refer to the configure [digital input](configure-digitalinput.md) or [digital output](configure-digitaloutput.md) articles.
 
-**Left Channel** - Can be used independently for mono output or together with the right channel for stereo output.
+**Left Channel** - Can be used independently for mono output or together with the right channel for stereo output. Need to be connected to an external amplifier and speakers.
 
-**Right Channel** - Can be used independently for mono output or together with the left channel for stereo output.
+**Right Channel** - Can be used independently for mono output or together with the left channel for stereo output. Need to be connected to an external amplifier and speakers.
 
 ## Audio Setup
-
-To play sounds, the SoundCard must be connected to external amplifiers and speakers. 
 
 ![Harp SoundCard Connections](../images/connection-labelled.svg){width=450}
 
 *<small>Adapted from [Silva et al. (2024)](https://doi.org/10.1016/j.ohx.2024.e00555). CC BY 4.0.</small>*
 
-**Amplifier** - Any external amplifier that accepts line-level RCA inputs is supported. For high-fidelity applications, consider using the Harp [Audio Amplifier](audio-peripherals.md#harp-audio-amplifier) (pictured above).
+**Amplifier** - Any external amplifier that accepts line-level RCA inputs is supported. For high-fidelity applications, consider using the Harp [Audio Amplifier](audio-peripherals.md#audio-amplifier) (pictured above).
 
 **Speaker** - The choice of speaker depends on the amplifier's rated impedance and power. For the Harp Audio Amplifier, any speaker with an impedance from 4 to 8 ohms can be used. The XT25SC90-04 (Peerless by Tymphany) has been tested and offers a good frequency response up to 80 kHz.
 
 >[!NOTE]
-> Wiring diagrams for other configurations will be placed here (e.g. stereo, digital input, digital output, analog input, audio switch, etc) in a full guide expansion.
+> Wiring diagrams for other configurations will be placed here (e.g. stereo, digital input, digital output, analog input, audio switch, etc) in a full guide expansion. Similar to [Onix Hardware Guide](https://open-ephys.github.io/onix-docs/Hardware%20Guide/Connections%20%26%20Cables/index.html).
 
 [!INCLUDE [](version-footer.md)]

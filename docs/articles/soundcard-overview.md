@@ -1,6 +1,6 @@
 ## SoundCard
 
-This is a high performance sound card with two output channels using 24 bits DACs at 192kHz sample rate.
+High performance sound card with two output channels using 24 bits DACs at 192kHz sample rate.
 
 ![Harp SoundCard](../images/OEPS-SoundCard.png){width=450}
 
