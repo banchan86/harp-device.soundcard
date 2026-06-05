@@ -1,7 +1,3 @@
-## Peripherals
-
-Dedicated Harp audio peripherals designed to pair with the SoundCard for high-performance output or to extend its capabilities.
-
 ## Audio Amplifier
 
 Low distortion, high-bandwidth audio amplifier for high-fidelity speaker output.
