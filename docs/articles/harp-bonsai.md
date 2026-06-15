@@ -5,29 +5,33 @@ Bonsai is a visual reactive programming language for building interactive experi
 >[!TIP]
 > More information on Bonsai can be found in the official [documentation](https://bonsai-rx.org/docs/).
 
-### Harp Device Pattern
 
-To communicate with the device, we will use a [Harp device pattern](https://harp-tech.org/articles/operators.html#device-pattern). This will initialize the device, log data, and provide hooks to send commands as well as receive messages from the SoundCard using the [Harp communication protocol](https://harp-tech.org/protocol/BinaryProtocol-8bit.html).
+### Hello World Example
 
-Before beginning, connect the [USB Micro-B](connections.md#connections) cable to the computer. Launch "Bonsai" from the Windows Start menu.
+We will use a simple example to connect and test the device in Bonsai. This example will trigger the playback of a sound 5 seconds after the workflow is run.
+
+Before beginning:
+- Connect the [USB Micro-B](connections.md#connections) cable to the computer. 
+- Upload a sound to the sound index 2 using the [SoundCard GUI](./upload-waveform-gui.md). 
+- Launch "Bonsai" from the Windows Start menu.
 
 :::workflow
-![SoundCard Device Pattern](../workflows/harp-devicepattern.bonsai)
+![SoundCard Hello World](../workflows/soundcard-helloworld.bonsai)
 :::
 
 - Hover over the workflow cell above, and click on the "Copy" icon on the top right. 
 - Paste the workflow into Bonsai.
 
 > [!TIP]
-> If your workflow does not look like the one above, make sure that the [Harp.SoundCard](./installation.md#software-packages) package is installed.
+> The [Harp device pattern](https://harp-tech.org/articles/operators.html#device-pattern) will initialize the device, log data, and provide hooks to send commands as well as receive messages from the SoundCard using the [Harp communication protocol](https://harp-tech.org/protocol/BinaryProtocol-8bit.html). If your workflow does not look like the one above, make sure that the [Harp.SoundCard](./installation.md#software-packages) package is installed.
 
 - Click on the [`SoundCard (Device)`] operator and set the `PortName` property to the communications port for the device (e.g. COM8).
 - Click on the [`SoundCardDataWriter (DeviceDataWriter)`] operator and set the `Path` property for the name and location of the save file (e.g. `Data\SoundCard.harp`).
 - Press the "Start" button in Bonsai to run the workflow.
 
-If the connection is successful, the [green LED](troubleshooting.md#indicator-lights) indicator light on the device will cycle on and off with a period of 2 seconds to indicate that it is communicating with Bonsai. If it does not change or an error appears in Bonsai, check out the [troubleshooting](troubleshooting.md) guide.
+If the connection is successful, you will hear the sound play. If you do not hear anything, or an error appears in Bonsai, check out the [troubleshooting](troubleshooting.md) section.
 
-Otherwise, the device is ready to use. We suggest going through the "Bonsai Workflows" section if you are not familiar with the device. Start with the [play sound](play-sound.md) article to play your first sound!
+Otherwise, the device is ready to use. We suggest going through the "Bonsai Workflows" section if you are not familiar with the device.
 
 [!INCLUDE [](version-footer.md)]
 
