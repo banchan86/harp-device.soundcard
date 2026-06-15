@@ -6,7 +6,7 @@ This page covers the software you'll need to interact with the SoundCard, as wel
 
 These steps are only required the first time you connect the device to a new computer, and you can install just the packages for the functionality you need.
 
-### Driver
+# [Driver](#tab/driver)
 
 The WinUSB driver is required to upload waveforms to the onboard sound memory bank.
 
@@ -17,7 +17,7 @@ The WinUSB driver is required to upload waveforms to the onboard sound memory ba
 - Select the "Harp Sound Card" from the list. If the device is not available, go to "Options" > "List All Devices".
 - Select the "WinUSB" driver and click "Install Driver".
 
-### SoundCard GUI
+# [SoundCard GUI](#tab/soundcard-gui)
 
 The SoundCard GUI offers a graphical interface for [generating and uploading waveforms](upload-waveform-gui.md). 
 
@@ -28,7 +28,7 @@ The SoundCard GUI offers a graphical interface for [generating and uploading wav
 > [!NOTE]
 > Alternatively, waveforms can be [generated and uploaded in Bonsai](../tutorials/upload-waveform-bonsai.md).
 
-### Bonsai
+# [Bonsai](#tab/bonsai)
 
 [Bonsai](https://bonsai-rx.org/) is a visual reactive programming language that provides flexible and comprehensive control of the SoundCard.
 
@@ -38,13 +38,15 @@ The SoundCard GUI offers a graphical interface for [generating and uploading wav
 - Launch Bonsai and install the `Harp.SoundCard` package by searching for it in the [Bonsai package manager](https://bonsai-rx.org/docs/articles/packages.html).
 - (Optional) Install the `Bonsai.Windows.Input` package to follow along with the examples in this user guide.
 
-### harp-python
+# [harp-python](#tab/harp-python)
 
 The [harp-python](https://pypi.org/project/harp-python/) library provides a low-level interface to [read and manipulate](visualize-data.md) data from Harp devices. You can install it in a Python environment with:
 
 ```cmd
 pip install harp-python 
 ```
+
+***
 
 ## Firmware
 
