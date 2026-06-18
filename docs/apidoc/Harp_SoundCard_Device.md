@@ -8,6 +8,12 @@ Use the `Harp.SoundCard` package to:
 - [Configure Digital Inputs](../articles/configure-digitalinput.md)
 - [Configure Digital Outputs](../articles/configure-digitaloutput.md)
 
+### Harp Device Pattern
+
+:::workflow
+![Harp Device Pattern](../workflows/harp-devicepattern.bonsai)
+:::
+
 <table>
   <thead>
     <tr><th colspan="2">SoundCard</th></tr>
