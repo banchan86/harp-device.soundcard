@@ -31,7 +31,9 @@ Before beginning:
 
 If the connection is successful, you will hear the sound play. If you do not hear anything, or an error appears in Bonsai, check out the [troubleshooting](troubleshooting.md) section.
 
-Otherwise, the device is ready to use. We suggest going through the "Bonsai Workflows" section if you are not familiar with the device.
+Otherwise, the device is ready to use! We suggest going through the "Bonsai Workflows" section if you are not familiar with using Harp devices in Bonsai.
+
+Alternatively, if you have experience with Harp devices, you can check the [register table](xref:Harp.SoundCard) in the reference to access the device functionality directly.
 
 [!INCLUDE [](version-footer.md)]
 

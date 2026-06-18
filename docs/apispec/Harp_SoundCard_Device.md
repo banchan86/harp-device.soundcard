@@ -2,6 +2,12 @@
 uid: Harp.SoundCard.Device
 ---
 
+Use the `Harp.SoundCard` package to:  
+- [Play Sounds](../articles/play-sound.md)
+- [Adjust Volume](../articles/adjust-volume.md)
+- [Configure Digital Inputs](../articles/configure-digitalinput.md)
+- [Configure Digital Outputs](../articles/configure-digitaloutput.md)
+
 <table>
   <thead>
     <tr><th colspan="2">SoundCard</th></tr>
