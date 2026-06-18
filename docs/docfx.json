@@ -42,8 +42,7 @@
       }
     ],
     "overwrite": [
-      "apidoc/**/*.md",
-      "apispec/**.md"
+      "apidoc/**/*.md"
     ],
     "output": "../artifacts/docs/site/",
     "template": [

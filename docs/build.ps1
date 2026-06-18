@@ -11,7 +11,7 @@ try {
     $deviceYml = "..\device.yml"
 
     Write-Output "Generating schema tables for $deviceYml..."
-    dotnet run --project .\harp-schema-processor $deviceYml .\apispec
+    dotnet run --project .\harp-schema-processor $deviceYml .\apidoc
 
     $libPaths = @()
     $libPaths += Get-ChildItem "..\artifacts\bin\*\release_net4*" -Directory | Select-Object -Expand FullName
