@@ -40,6 +40,8 @@ Run the workflow and press the <kbd>A</kbd> key to play the sound at reduced vol
 [`AttenuationAndPlaySoundOrFreqPayload`]: xref:Harp.SoundCard.CreateAttenuationAndPlaySoundOrFreqPayload
 [`CreateMessage`]: xref:Harp.SoundCard.CreateMessage
 [`HarpMessage`]: xref:Bonsai.Harp.HarpMessage
+[`KeyDown`]: xref:Bonsai.Windows.Input.KeyDown
 [`Merge`]: xref:Bonsai.Reactive.Merge
+[`MulticastSubject`]: xref:Bonsai.Expressions.MulticastSubject
 [`PlaySoundOrFrequency`]: xref:Harp.SoundCard.PlaySoundOrFrequency
 [`Stop`]: xref:Harp.SoundCard.Stop
