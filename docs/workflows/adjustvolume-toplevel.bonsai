@@ -61,6 +61,28 @@
       <Expression xsi:type="MulticastSubject">
         <Name>SoundCard Commands</Name>
       </Expression>
+      <Expression xsi:type="Annotation">
+        <Name>Attenuate Channels</Name>
+        <Text><![CDATA[]]></Text>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="wie:KeyDown">
+          <wie:Filter>G</wie:Filter>
+          <wie:SuppressRepetitions>false</wie:SuppressRepetitions>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="p1:CreateMessage">
+        <harp:MessageType>Write</harp:MessageType>
+        <harp:Payload xsi:type="p1:CreateAttenuationBothPayload">
+          <p1:AttenuationBoth>
+            <p1:unsignedShort>100</p1:unsignedShort>
+            <p1:unsignedShort>100</p1:unsignedShort>
+          </p1:AttenuationBoth>
+        </harp:Payload>
+      </Expression>
+      <Expression xsi:type="MulticastSubject">
+        <Name>SoundCard Commands</Name>
+      </Expression>
     </Nodes>
     <Edges>
       <Edge From="1" To="2" Label="Source1" />
@@ -68,6 +90,8 @@
       <Edge From="3" To="4" Label="Source1" />
       <Edge From="6" To="7" Label="Source1" />
       <Edge From="7" To="8" Label="Source1" />
+      <Edge From="10" To="11" Label="Source1" />
+      <Edge From="11" To="12" Label="Source1" />
     </Edges>
   </Workflow>
 </WorkflowBuilder>

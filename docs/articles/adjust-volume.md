@@ -1,9 +1,12 @@
 ## Adjust Volume
 
-The [`PlaySoundOrFrequency`] register in the [play sound](play-sound.md) article will play the sound at the amplitude of the stored waveform or at maximum amplitude for the pure tone frequency generator. This article will demonstrate how to dynamically lower the amplitude with other registers.
+By default, the [`PlaySoundOrFrequency`] register will play the sound at the amplitude of the stored waveform or at maximum amplitude for the pure tone frequency generator. This article will demonstrate how to adjust the volume by setting the attenuation level with other registers.
 
 > [!NOTE]
-> The playback amplitude of stored waveforms can be attenuated but not amplified. Upload waveforms at full 24-bit depth to maximize the volume.
+> The maximum volume for playback of stored waveforms depends on its recorded amplitude. Upload waveforms at full 24-bit depth to maximize the volume.
+
+> [!WARNING]
+> Attenuation is set on a per-channel basis, does not stack (each command replaces the previous value), and persists. Any sound you play afterwards with the [`PlaySoundOrFrequency`] register will play at the most recently set channel attenuation level until you change it.
 
 The complete workflow is shown below:
 
@@ -16,7 +19,7 @@ The complete workflow is shown below:
 Use the [`AttenuationAndPlaySoundOrFreq`] register as a drop-in replacement for the [`PlaySoundOrFrequency`] register to start sound playback at a lower volume. The attenuation is set in 0.1 dB steps.
 
 :::workflow
-![Adjust Volume Attenuation](../workflows/adjustvolume-attenuation.bonsai)
+![Attenuate Channels and Play Sound](../workflows/adjustvolume-attenuation.bonsai)
 :::
 
 - Insert a [`KeyDown`] source and set the `Filter` property to `A`. 
@@ -33,15 +36,38 @@ Run the workflow and press the <kbd>A</kbd> key to play the sound at reduced vol
 > [!TIP]
 > Just like the [`PlaySoundOrFrequency`] register, pure tone playback must be stopped explicitly via the [`Stop`] register.
 
+### Attenuate Channels
+
+Use the [`AttenuationBoth`] registers to adjust the channel volume before or during sound playback. 
+
+:::workflow
+![Attenuate Channels](../workflows/adjustvolume-attenuatechannels.bonsai)
+:::
+
+- Insert a [`KeyDown`] source and set the `Filter` property to `S`.
+- Insert a [`CreateMessage`] operator and configure these properties:
+    - `Payload` - Select [`AttenuationBothPayload`].
+    - `AttenuationBoth` - Click on the dialog button in the property grid to open the member collection editor. Add two members:
+        - The left channel attenuation (e.g. 100 = -10 dB).
+        - The right channel attenuation (e.g. 100 = -10 dB).
+- Insert a [`MulticastSubject`] operator named `SoundCard Commands`.
+
+Run the workflow and press <kbd>A</kbd> button to play the sound with the [`AttenuationAndPlaySoundOrFreq`] register and <kbd>S</kbd> to dynamically change the volume while the sound is playing. If you are using the same values as the examples above, the sound will become louder.
+
+> [!TIP]
+> Use the [`AttenuationLeft`] or [`AttenuationRight`] channels to set the attenuation level for each channel independently.
+
 [!INCLUDE [](version-footer.md)]
 
 <!--Reference Style Links -->
 [`AttenuationAndPlaySoundOrFreq`]: xref:Harp.SoundCard.AttenuationAndPlaySoundOrFreq
 [`AttenuationAndPlaySoundOrFreqPayload`]: xref:Harp.SoundCard.CreateAttenuationAndPlaySoundOrFreqPayload
+[`AttenuationLeft`]: xref:Harp.SoundCard.AttenuationLeft
+[`AttenuationRight`]: xref:Harp.SoundCard.AttenuationRight
+[`AttenuationBoth`]: xref:Harp.SoundCard.AttenuationBoth
+[`AttenuationBothPayload`]: xref:Harp.SoundCard.CreateAttenuationBothPayload
 [`CreateMessage`]: xref:Harp.SoundCard.CreateMessage
-[`HarpMessage`]: xref:Bonsai.Harp.HarpMessage
 [`KeyDown`]: xref:Bonsai.Windows.Input.KeyDown
-[`Merge`]: xref:Bonsai.Reactive.Merge
 [`MulticastSubject`]: xref:Bonsai.Expressions.MulticastSubject
 [`PlaySoundOrFrequency`]: xref:Harp.SoundCard.PlaySoundOrFrequency
 [`Stop`]: xref:Harp.SoundCard.Stop
