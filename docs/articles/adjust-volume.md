@@ -38,10 +38,10 @@ Run the workflow and press the <kbd>A</kbd> key to play the sound at reduced vol
 
 ### Attenuate Channels
 
-Use the [`AttenuationBoth`] registers to adjust the channel volume before or during sound playback. 
+Use the [`AttenuationBoth`] register to adjust the channel volume before or during sound playback. 
 
 :::workflow
-![Attenuate Channels](../workflows/adjustvolume-attenuatechannels.bonsai)
+![Attenuate Both Channels](../workflows/adjustvolume-attenuateboth.bonsai)
 :::
 
 - Insert a [`KeyDown`] source and set the `Filter` property to `S`.
