@@ -10,7 +10,7 @@ The complete workflow is shown below:
 
 ### Signal Sound Playback
 
-The digital output channel can be set to `High` for sound onset and `Low` for sound offset.
+To signal sound playback on a digital output, set the configuration mode for the selected channel. Once set, the digital output channel will be driven high for sound onset and low for sound offset.
 
 :::workflow
 ![Configure DO Signal Sound](../workflows/configureDO-signalsound.bonsai)
@@ -28,6 +28,40 @@ Run the workflow and press <kbd>1</kbd> to set the configuration, then play a so
 > [!WARNING]
 > Only sound index reporting on `DO0` is supported currently.
 
+### Signal Other Events
+
+You can also control the digital output lines directly to signal other workflow events in Bonsai. 
+
+:::workflow
+![Configure DO Signal Other Events](../workflows/configureDO-signalotherevents.bonsai)
+:::
+
+- Insert a [`KeyDown`] source and set the `Filter` property to `A`.
+- Insert a [`CreateMessage`] operator and configure these properties:
+    - `Payload` - Select [`OutputSetPayload`] to drive the line high.
+    - `OutputSet` - Select the channel to drive (e.g. `DO0`).
+- Insert a [`MulticastSubject`] operator named `SoundCard Commands`.
+
+On a second branch:
+
+- Insert a [`KeyDown`] source and set the `Filter` property to `S`.
+- Insert a [`CreateMessage`] operator and configure these properties:
+    - `Payload` - Select [`OutputClearPayload`] to drive the line low.
+    - `OutputClear` - Select the channel to drive (e.g. `DO0`).
+- Insert a [`MulticastSubject`] operator named `SoundCard Commands`.
+
+On a third branch:
+
+- Insert a [`KeyDown`] source and set the `Filter` property to `D`.
+- Insert a [`CreateMessage`] operator and configure these properties:
+    - `Payload` - Select [`OutputTogglePayload`] to toggle the line between low and high.
+    - `OutputToggle` - Select the channel to toggle (e.g. `DO0`).
+- Insert a [`MulticastSubject`] operator named `SoundCard Commands`.
+
+Run the workflow and press <kbd>A</kbd>, <kbd>S</kbd>, or <kbd>D</kbd> to set, clear, or toggle `DO0`, then check the TTL signal on the other device.
+
+> [!NOTE]
+> Software-triggered outputs are subject to operating system and hardware communication latencies.
 
 [!INCLUDE [](version-footer.md)]
 
@@ -36,3 +70,6 @@ Run the workflow and press <kbd>1</kbd> to set the configuration, then play a so
 [`CreateMessage`]: xref:Harp.SoundCard.CreateMessage
 [`KeyDown`]: xref:Bonsai.Windows.Input.KeyDown
 [`MulticastSubject`]: xref:Bonsai.Expressions.MulticastSubject
+[`OutputSetPayload`]: xref:Harp.SoundCard.CreateOutputSetPayload
+[`OutputClearPayload`]: xref:Harp.SoundCard.CreateOutputClearPayload
+[`OutputTogglePayload`]: xref:Harp.SoundCard.CreateOutputTogglePayload
