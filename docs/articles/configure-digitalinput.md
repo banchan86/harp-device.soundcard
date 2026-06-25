@@ -1,6 +1,6 @@
 ## Configure Digital Input
 
-This article will cover how to configure the digital input channels on the SoundCard to report TTL signals coming from other devices or trigger sound index playback. Refer to the [connections](./connections.md) article to set up the hardware connection.
+This article will cover how to configure the digital input channels on the SoundCard to trigger sound playback. Refer to the [connections](./connections.md) article to set up the hardware connection.
 
 The complete workflow is shown below:
 
@@ -9,6 +9,8 @@ The complete workflow is shown below:
 :::
 
 ### Trigger Sound Playback
+
+To trigger sound playback from a digital input, set the configuration mode for the selected channel and the index for the stored sound to play. Once set, a rising edge on that digital input channel will play the sound directly on the device.
 
 :::workflow
 ![Configure Digital Input Trigger Sound](../workflows/configureDI-triggersound.bonsai)

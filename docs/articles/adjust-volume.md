@@ -16,7 +16,7 @@ The complete workflow is shown below:
 
 ### Attenuate and Play Sound
 
-Use the [`AttenuationAndPlaySoundOrFreq`] register as a drop-in replacement for the [`PlaySoundOrFrequency`] register to start sound playback at a lower volume. The attenuation is set in 0.1 dB steps.
+Use the [`AttenuationAndPlaySoundOrFreq`] register as a drop-in replacement for the [`PlaySoundOrFrequency`] register to start sound playback and set the channel attenuation at the same time in 0.1 dB steps.
 
 :::workflow
 ![Attenuate Channels and Play Sound](../workflows/adjustvolume-attenuation.bonsai)
@@ -52,7 +52,7 @@ Use the [`AttenuationBoth`] register to adjust the channel volume before or duri
         - The right channel attenuation (e.g. 100 = -10 dB).
 - Insert a [`MulticastSubject`] operator named `SoundCard Commands`.
 
-Run the workflow and press <kbd>A</kbd> button to play the sound with the [`AttenuationAndPlaySoundOrFreq`] register and <kbd>S</kbd> to dynamically change the volume while the sound is playing. If you are using the same values as the examples above, the sound will become louder.
+Run the workflow and press <kbd>A</kbd> to play the sound with the [`AttenuationAndPlaySoundOrFreq`] register and <kbd>S</kbd> to dynamically change the volume while the sound is playing. If you are using the same values as the examples above, the sound will become louder (going from more attenuation to less).
 
 > [!TIP]
 > Use the [`AttenuationLeft`] or [`AttenuationRight`] channels to set the attenuation level for each channel independently.
