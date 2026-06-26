@@ -2,8 +2,8 @@
 uid: Harp.SoundCard.OutputSet
 ---
 
-### Signal Other Events
+### Signal Workflow Events
 
 :::workflow
-![Configure DO Signal Other Events](../workflows/configureDO-signalotherevents.bonsai)
+![Configure DO Signal Workflow Events](../workflows/configureDO-signalworkflowevents.bonsai)
 :::

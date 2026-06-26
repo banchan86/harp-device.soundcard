@@ -28,12 +28,12 @@ Run the workflow and press <kbd>1</kbd> to set the configuration, then play a so
 > [!WARNING]
 > Only sound index reporting on `DO0` is supported currently.
 
-### Signal Other Events
+### Signal Workflow Events
 
-You can also control the digital output lines directly to signal other workflow events in Bonsai. 
+You can also control the digital output lines directly to signal other workflow events in Bonsai.
 
 :::workflow
-![Configure DO Signal Other Events](../workflows/configureDO-signalotherevents.bonsai)
+![Configure DO Signal Workflow Events](../workflows/configureDO-signalworkflowevents.bonsai)
 :::
 
 - Insert a [`KeyDown`] source and set the `Filter` property to `A`.

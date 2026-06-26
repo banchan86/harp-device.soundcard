@@ -77,7 +77,7 @@
         <Name>SoundCard Commands</Name>
       </Expression>
       <Expression xsi:type="Annotation">
-        <Name>Signal Other Events</Name>
+        <Name>Signal Workflow Events</Name>
         <Text><![CDATA[]]></Text>
       </Expression>
       <Expression xsi:type="Combinator">
