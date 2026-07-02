@@ -32,7 +32,7 @@ The SoundCard GUI offers a graphical interface for [generating and uploading wav
 
 [Bonsai](https://bonsai-rx.org/) is a visual reactive programming language that provides flexible and comprehensive control of the SoundCard.
 
-![Bonsai Package Manager](../images/Bonsai_PackageManager.png){width=600}
+![Bonsai Package Manager](../images/bonsai-packagemanager.png){width=600}
 
 - Download and install [Bonsai](https://bonsai-rx.org/docs/articles/installation.html).
 - Launch Bonsai and install the `Harp.SoundCard` package by searching for it in the [Bonsai package manager](https://bonsai-rx.org/docs/articles/packages.html).

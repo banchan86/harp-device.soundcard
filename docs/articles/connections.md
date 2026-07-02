@@ -28,7 +28,9 @@ For more information on how to use them, refer to the configure [digital input](
 
 ### Connections
 
-![Harp SoundCard Connections](../images/connection-labelled.svg){width=450}
+#### Mono Channel
+
+![Harp SoundCard Mono Channel](../images/connection-labelled.svg){width=450}
 
 *<small>Adapted from [Silva et al. (2024)](https://doi.org/10.1016/j.ohx.2024.e00555). CC BY 4.0.</small>*
 
@@ -36,7 +38,12 @@ For more information on how to use them, refer to the configure [digital input](
 
 **Speaker** - The choice of speaker depends on the amplifier's rated impedance and power. For the Harp Audio Amplifier, any speaker with an impedance from 4 to 8 ohms can be used. The XT25SC90-04 (Peerless by Tymphany) has been tested and offers a good frequency response up to 80 kHz.
 
->[!NOTE]
-> Wiring diagrams for other configurations will be placed here (e.g. stereo, digital input, digital output, analog input, audio switch, etc) in a full guide expansion. Similar to [Onix Hardware Guide](https://open-ephys.github.io/onix-docs/Hardware%20Guide/Connections%20%26%20Cables/index.html).
+#### Digital Input
+
+![Harp SoundCard Digital Input](../images/connection-digitalinput.svg){width=450}
+
+#### Digital Output
+
+![Harp SoundCard Digital Output](../images/connection-digitaloutput.svg){width=450}
 
 [!INCLUDE [](version-footer.md)]
