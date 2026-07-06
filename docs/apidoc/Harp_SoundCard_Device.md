@@ -2,17 +2,19 @@
 uid: Harp.SoundCard.Device
 ---
 
-Use the `Harp.SoundCard` package to:  
-- [Play Sounds](../articles/play-sound.md)
-- [Adjust Volume](../articles/adjust-volume.md)
-- [Configure Digital Inputs](../articles/configure-digitalinput.md)
-- [Configure Digital Outputs](../articles/configure-digitaloutput.md)
-
-### Harp Device Pattern
+Use the [Harp device pattern](https://harp-tech.org/articles/operators.html#device-pattern) to initialize the device, log data, and send commands to and receive messages from the SoundCard.
 
 :::workflow
 ![Harp Device Pattern](../workflows/harp-devicepattern.bonsai)
 :::
+
+Check out the following in-depth guides to learn how to access the device functionality with the `Harp.SoundCard` package:
+- [Play Sounds](../articles/play-sound.md)
+- [Adjust Volume](../articles/adjust-volume.md)
+- [Configure Digital Input](../articles/configure-digitalinput.md)
+- [Configure Digital Output](../articles/configure-digitaloutput.md)
+
+Refer to the register table below for a complete listing of the available registers on the device.
 
 <table>
   <thead>
