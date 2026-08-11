@@ -2,7 +2,7 @@
 
 Low distortion, high-bandwidth audio amplifier for high-fidelity speaker output.
 
-!["Harp Audio Amplifier"](../images/OEPS-Amplifier.png){width=450}
+!["Harp Audio Amplifier"](../../images/OEPS-Amplifier.png){width=450}
 
 ### Key Features
 
@@ -25,4 +25,4 @@ Low distortion, high-bandwidth audio amplifier for high-fidelity speaker output.
 * Audio speakers with ~4 Ohms or higher can be used with this amplifier
 * The XT25SC90-04 speaker from Peerless by Tymphany is recommended due to its good frequency response up to 80 kHz
 
-[!INCLUDE [](version-footer.md)]
+[!INCLUDE [](../version-footer.md)]

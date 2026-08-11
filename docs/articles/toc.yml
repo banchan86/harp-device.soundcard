@@ -1,10 +1,11 @@
 - name: Introduction
 - name: Overview
   href: ../index.md
+- name: Specs
 - name: SoundCard
   href: soundcard-overview.md
-- name: Audio Amplifier (Peripheral)
-  href: audio-peripherals.md
+- name: Peripherals
+  href: ./peripherals/toc.yml
 - name: Getting Started
 - name: Ports and Connections
   href: connections.md
@@ -23,11 +24,11 @@
   href: configure-digitalinput.md
 - name: Configure Digital Output
   href: configure-digitaloutput.md
+- name: Configure Analog Input
+  href: configure-analoginput.md
 - name: Data Management
-- name: Acquisition & Logging
-  href: acquisition.md
-- name: Analysis
-  href: visualize-data.md
+- name: Logging and Analysis
+  href: logging-analysis.md
 - name: Troubleshooting
-- name: Indicators and Errors
+- name: Errors
   href: troubleshooting.md

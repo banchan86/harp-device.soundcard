@@ -1,6 +1,6 @@
 ## Configure Digital Input
 
-This article will cover how to configure the digital input channels on the SoundCard to trigger sound playback. Refer to the [connections](./connections.md) article to set up the hardware connection.
+This article will cover how to configure the digital input channels on the SoundCard to trigger sound playback from an external device. Refer to the [connections](./connections.md) article to set up the hardware connection.
 
 The complete workflow is shown below:
 
@@ -8,26 +8,25 @@ The complete workflow is shown below:
 ![Configure Digital Input Top Level](../workflows/configureDI-toplevel.bonsai)
 :::
 
-### Trigger Sound Playback
+### Configure Digital Input Trigger
 
 To trigger sound playback from a digital input, set the configuration mode for the selected channel and the index for the stored sound to play. Once set, a rising edge on that digital input channel will play the sound directly on the device.
 
 :::workflow
-![Configure Digital Input Trigger Sound](../workflows/configureDI-triggersound.bonsai)
+![Configure Digital Input Trigger](../workflows/configureDI-triggersound.bonsai)
 :::
 
-- Insert a [`KeyDown`] operator and configure these properties:
-   - `Filter` - Set to `1`.
+- Insert a [`KeyDown`] operator and set the `Filter` property to `A`.
 - Insert a [`CreateMessage`] operator and configure these properties:
-   - `Payload` - Select [`ConfigureDI0Payload`].
-   - `ConfigureDI0` - Select `StartSound`.
+    - `Payload` - Select [`ConfigureDI0Payload`].
+    - `ConfigureDI0` - Select `StartSound`.
 - Insert a [`MulticastSubject`] operator named `SoundCard Commands`.
 - Insert a second [`CreateMessage`] operator and configure these properties:
-   - `Payload` - Select [`SoundIndexDI0Payload`].
-   - `SoundIndexDI0` - Set the sound index for playback.
+    - `Payload` - Select [`SoundIndexDI0Payload`].
+    - `SoundIndexDI0` - Set the sound index for playback.
 - Insert another [`MulticastSubject`] operator named `SoundCard Commands`.
 
-Run the workflow and press <kbd>1</kbd> to set the configuration, then send the TTL signal from the other device to trigger sound playback.
+Run the workflow and press <kbd>A</kbd> to set the configuration, then send the TTL signal from the other device to trigger sound playback.
 
 > [!WARNING]
 > Only sound index triggering is supported currently.

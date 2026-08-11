@@ -30,12 +30,26 @@
      inkscape:zoom="0.38812325"
      inkscape:cx="702.09656"
      inkscape:cy="488.24697"
-     inkscape:window-width="2560"
-     inkscape:window-height="1351"
-     inkscape:window-x="-9"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="2551"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g1" />
+     inkscape:current-layer="layer2" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="WhiteBG"
+     style="fill:#ffffff;stroke:#ffffff">
+    <rect
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:3.38087;stroke-linejoin:round"
+       id="rect1"
+       width="2071.6191"
+       height="1377.6191"
+       x="1.6904353"
+       y="1.6904353"
+       ry="2.553597" />
+  </g>
   <g
      inkscape:groupmode="layer"
      inkscape:label="GUI"

@@ -34,7 +34,7 @@ Continuous streaming of sample buffers is not supported, so the entire waveform 
 - `Channels` - Both mono and stereo waveforms are supported.
 - `Size` - Each sound index on the `SoundCard` memory can store an 8 MB file, corresponding to ~2 million samples. Mono waveforms are duplicated for dual-channel playback and occupy the same amount of storage space as stereo waveforms.
 
-Given these parameters, sounds are limited to a length of 10.922 s at a 96 kHz sample rate, or 5.461 s at 192 kHz. 
+Given these parameters, sounds are limited to a length of 10.922 s at a 96 kHz sample rate, or 5.461 s at 192 kHz.
 
 ## Generate periodic waveform
 
@@ -96,7 +96,7 @@ Waveforms can be loaded from uncompressed WAV files, but will require bit depth 
 Run the workflow and press the <kbd>A</kbd> key to upload the waveform. Test it out by playing the [sound index](../articles/play-sound.md#play-sound-index).
 
 > [!WARNING]
-> 24-bit (or higher) and `WAVE_FORMAT_EXTENSIBLE` WAV files are not currently supported by [`AudioReader`]. 
+> 24-bit (or higher) and `WAVE_FORMAT_EXTENSIBLE` WAV files are not currently supported by [`AudioReader`].
 
 ## Load waveform from raw binary matrix file
 
@@ -110,7 +110,7 @@ Waveforms can also be loaded from raw binary matrix files (`*.bin`).
 - Insert a [`MatrixReader`] source and configure the following properties:
    - `BufferLength` - Set 0 to load the entire file into a single buffer (`SampleRate` is ignored here).
    - `ChannelCount` - Set the number of channels in the file (1 for mono or 2 for stereo).
-   - `Depth` - Select the bit depth of the input file (e.g. `S32`). 
+   - `Depth` - Select the bit depth of the input file (e.g. `S32`).
    - `Layout` - For mono files, this has no effect. For stereo files, select `RowMajor` if the channels are stored sequentially, or `ColumnMajor` if the channels are interleaved.
    - `Path` - Set the file path of the `*.bin` file to load.
 - Insert a [`UpdateSoundWaveform`] operator and configure the relevant properties.

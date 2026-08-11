@@ -16,14 +16,13 @@ To signal sound playback on a digital output, set the configuration mode for the
 ![Configure DO Signal Sound](../workflows/configureDO-signalsound.bonsai)
 :::
 
-- Insert a [`KeyDown`] operator and configure these properties:
-   - `Filter` - Set to `1`.
+- Insert a [`KeyDown`] operator and set the `Filter` property to `A`.
 - Insert a [`CreateMessage`] operator and configure these properties:
-   - `Payload` - Select [`ConfigureDO0Payload`].
-   - `ConfigureDO0` - Select `HighWhenSound`.
+    - `Payload` - Select [`ConfigureDO0Payload`].
+    - `ConfigureDO0` - Select `HighWhenSound`.
 - Insert a [`MulticastSubject`] operator named `SoundCard Commands`.
 
-Run the workflow and press <kbd>1</kbd> to set the configuration, then play a sound and check the TTL signal on the other device.
+Run the workflow and press <kbd>A</kbd> to set the configuration, then play a sound and check the TTL signal on the other device.
 
 > [!WARNING]
 > Only sound index reporting on `DO0` is supported currently.
@@ -36,29 +35,29 @@ You can also control the digital output lines directly to signal other workflow 
 ![Configure DO Signal Workflow Events](../workflows/configureDO-signalworkflowevents.bonsai)
 :::
 
-- Insert a [`KeyDown`] source and set the `Filter` property to `A`.
+- Insert a [`KeyDown`] source and set the `Filter` property to `S`.
 - Insert a [`CreateMessage`] operator and configure these properties:
     - `Payload` - Select [`OutputSetPayload`] to drive the line high.
     - `OutputSet` - Select the channel to drive (e.g. `DO0`).
 - Insert a [`MulticastSubject`] operator named `SoundCard Commands`.
 
-On a second branch:
+In a separate branch:
 
-- Insert a [`KeyDown`] source and set the `Filter` property to `S`.
+- Insert a [`KeyDown`] source and set the `Filter` property to `D`.
 - Insert a [`CreateMessage`] operator and configure these properties:
     - `Payload` - Select [`OutputClearPayload`] to drive the line low.
     - `OutputClear` - Select the channel to drive (e.g. `DO0`).
 - Insert a [`MulticastSubject`] operator named `SoundCard Commands`.
 
-On a third branch:
+In a separate branch:
 
-- Insert a [`KeyDown`] source and set the `Filter` property to `D`.
+- Insert a [`KeyDown`] source and set the `Filter` property to `F`.
 - Insert a [`CreateMessage`] operator and configure these properties:
     - `Payload` - Select [`OutputTogglePayload`] to toggle the line between low and high.
     - `OutputToggle` - Select the channel to toggle (e.g. `DO0`).
 - Insert a [`MulticastSubject`] operator named `SoundCard Commands`.
 
-Run the workflow and press <kbd>A</kbd>, <kbd>S</kbd>, or <kbd>D</kbd> to set, clear, or toggle `DO0`, then check the TTL signal on the other device.
+Run the workflow and press <kbd>S</kbd>, <kbd>D</kbd>, or <kbd>F</kbd> to set, clear, or toggle `DO0`, then check the TTL signal on the other device.
 
 > [!NOTE]
 > Software-triggered outputs are subject to operating system and hardware communication latencies.

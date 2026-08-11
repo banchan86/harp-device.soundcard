@@ -13,6 +13,7 @@ Check out the following in-depth guides to learn how to access the device functi
 - [Adjust Volume](../articles/adjust-volume.md)
 - [Configure Digital Input](../articles/configure-digitalinput.md)
 - [Configure Digital Output](../articles/configure-digitaloutput.md)
+- [Configure Analog Input](../articles/configure-analoginput.md)
 
 Refer to the register table below for a complete listing of the available registers on the device.
 

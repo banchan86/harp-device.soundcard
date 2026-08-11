@@ -1,6 +1,6 @@
 ## SoundCard GUI
 
-The SoundCard GUI provides an easy to use interface to generate and upload waveforms to the SoundCard. 
+The SoundCard GUI provides an easy to use interface to generate and upload waveforms to the SoundCard.
 
 > [!TIP]
 > Alternatively, you can play [pure tones](play-sound.md) with the onboard sine wave generator or [upload waveforms in Bonsai](../tutorials/upload-waveform-bonsai.md), which offers greater flexibility and functionality.

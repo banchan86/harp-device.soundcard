@@ -20,9 +20,9 @@ High performance sound card with two output channels using 24 bits DACs at 192kH
 - Flash memory: 30 indices, 8 MB per index (2 million samples)
 - Sound duration: 10.922 s at 96 kHz sample rate, or 5.461 s at 192 kHz sample rate
 - Timestamp resolution: 32 µs
-- Digital outputs: 3 (3.3V or 5V)
-- Digital inputs: 3 (5V tolerant)
-- Analog inputs: 2 (5V max)
+- Digital outputs: 3 (3.3 V or 5 V - default 5 V, adjustable by jumper setting) 
+- Digital inputs: 3 (5 V tolerant)
+- Analog inputs: 2 (5 V max, 12-bit analog-to-digital conversion)
 
 ### Benchmarks
 
@@ -30,21 +30,20 @@ High performance sound card with two output channels using 24 bits DACs at 192kH
 - Noise Floor: 20 µV rms | -94 dB (20 Hz – 80 kHz)
 - SNR: 100 dB | 113 dBA (20 Hz – 80 kHz @ 2 V rms)
 
-### Hardware Compatibility
+### Hardware
 
-| HW Version | Board                    | Board HW Version  | Notes                             |
-| ---------- | ------------------------ |------------------ | --------------------------------- |
-| **All**    | [Peripheral.AudioAmp][1] | >= 2.0            |                                   |
+| Version | Notes |
+| ------- | ----- |
+| 2.2 | <ul><li>Minor routing and silkscreen revision</li></ul> |
+| 2.1 | <ul><li>Added analog inputs</li></ul> |
+| 1.1 | <ul><li>Original board design</li></ul> |
 
-[1]: https://github.com/harp-tech/peripheral.audioamp
+### Firmware
 
-### Firmware Compatibility
-
-| FW Version | Board                 | Board HW Version | Notes                                   |
-| ---------- | --------------------- | ---------------- | --------------------------------------- |
-| **>= 2.2** | [Device.SoundCard][2] | >= 1.0           | Bpod serial communication not supported |
-| **<= 2.2** | [Device.SoundCard][2] | >= 1.0           |                                         |
-
-[2]: https://github.com/harp-tech/device.soundcard
+| Version | Notes |
+| ------- | ----- |
+| 2.2 | <ul><li>Update harp core to 1.13</li><li>Bpod serial communication support dropped</li></ul> |
+| 2.1 | <ul><li>New sine wave generator</li><li>Refactor interface scripts to take libusb dependency from NuGet</li><li>Add prototype device schema and interface</li><li>Update interface to use new generators</li></ul> |
+| 2.0 | <ul><li>Initial firmware release</li></ul> |
 
 [!INCLUDE [](version-footer.md)]

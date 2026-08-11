@@ -22,13 +22,13 @@ Use the [`AttenuationAndPlaySoundOrFreq`] register as a drop-in replacement for 
 ![Attenuate Channels and Play Sound](../workflows/adjustvolume-attenuation.bonsai)
 :::
 
-- Insert a [`KeyDown`] source and set the `Filter` property to `A`. 
+- Insert a [`KeyDown`] source and set the `Filter` property to `A`.
 - Insert a [`CreateMessage`] operator and configure these properties:
-   - `Payload` - Select [`AttenuationAndPlaySoundOrFreqPayload`].
-   - `AttenuationAndPlaySoundOrFreq` - Click on the dialog button in the property grid to open the member collection editor. Add three members:
-      - The sound index or pure tone frequency to be played (e.g. 2).
-      - The attenuation of the left channel (e.g. 200 = -20 dB).
-      - The attenuation of the right channel (e.g. 200 = -20 dB).
+    - `Payload` - Select [`AttenuationAndPlaySoundOrFreqPayload`].
+    - `AttenuationAndPlaySoundOrFreq` - Click on the dialog button in the property grid to open the member collection editor. Add three members:
+        - The sound index or pure tone frequency to be played (e.g. 2).
+        - The attenuation of the left channel (e.g. 200 = -20 dB).
+        - The attenuation of the right channel (e.g. 200 = -20 dB).
 - Insert a [`MulticastSubject`] operator named `SoundCard Commands`.
 
 Run the workflow and press the <kbd>A</kbd> key to play the sound at reduced volume.
@@ -38,7 +38,7 @@ Run the workflow and press the <kbd>A</kbd> key to play the sound at reduced vol
 
 ### Attenuate Channels
 
-Use the [`AttenuationBoth`] register to adjust the channel volume before or during sound playback. 
+Use the [`AttenuationBoth`] register to adjust the channel volume before or during sound playback.
 
 :::workflow
 ![Attenuate Both Channels](../workflows/adjustvolume-attenuateboth.bonsai)
