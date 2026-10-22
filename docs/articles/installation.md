@@ -23,7 +23,7 @@ The SoundCard GUI offers a graphical interface for [generating and uploading wav
 
 ![SoundCard GUI](../images/gui-window.png){width=600}
 
-- Download and install the [SoundCard GUI](https://github.com/fchampalimaud/device.soundcard/releases/tag/app1.0.0-alpha.1).
+- Download and install the [SoundCard GUI](https://github.com/fchampalimaud/device.soundcard/releases).
 
 > [!NOTE]
 > Alternatively, waveforms can be [generated and uploaded in Bonsai](../tutorials/upload-waveform-bonsai.md).
